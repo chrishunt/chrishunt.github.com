@@ -1,1 +1,25 @@
-Hello World.
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>huntca - Github</title>
+    <link rel="stylesheet" href="proudify/proudify.min.css" type="text/css"/>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script type="text/javascript" src="proudify/jquery-proudify.min.js"></script>
+  </head>
+  <body>
+
+    <div id="container">
+      <div id="coderwall"></div>
+      <script type="text/javascript">
+        $('#coderwall').proudify({'username':'huntca', 'service':'coderwall'});
+      </script>
+
+      <div id="github"></div>
+      <script type="text/javascript">
+        $('#github').proudify({'username':'huntca', 'service':'github'});
+      </script>
+    </div>
+
+  </body>
+</html>

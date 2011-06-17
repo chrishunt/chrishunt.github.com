@@ -1,0 +1,18 @@
+*{
+  padding: none;
+  margin: none;
+}
+
+body{
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #111;
+}
+
+#container{
+  width: 900px;
+  margin: 70px auto;
+}
+
+#coderwall{
+  margin: 0 auto;
+}
