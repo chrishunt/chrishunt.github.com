@@ -1,45 +1,62 @@
-*{
-  padding: none;
-  margin: none;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-  font-family: Verdana, Helvetica, Arial;
-  font-size: 95%;
-  background: #111;
+body {
+  font-family: Georgia, Times, serif;
+  color: #888;
+  background: #eee;
+  font-size: 20px;
 }
 
-a{
-  color: #fff;
+p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+p#bio {
+  font-style: italic;
+}
+
+a {
+  color: #888;
   text-decoration: none;
 }
 
-h1{
-  padding: 0;
-  margin: 0;
-  font-size: 300%;
-  color: #fff;
+#avatar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 500;
+}
+
+#card {
+  background: #fff;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 10px 40px 10px;
+  border: 20px solid #eee;
+}
+
+#card h1 {
+  color: #555;
   text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
 }
 
-h2{
-  padding: 0;
-  margin: 0;
-  font-size: 150%;
-  text-align: center;
+.shadow {
+  -moz-box-shadow: 3px 3px 20px #aaa;
+  -webkit-box-shadow: 3px 3px 20px #aaa;
+  box-shadow: 3px 3px 20px #aaa;
 }
 
-h2, h2 a{
-  color: #333;
-}
-
-
-#container{
-  width: 900px;
-  margin: 0 auto;
-}
-
-#coderwall{
-  width: 810px;
-  margin: 0 auto;
+.round {
+  -moz-border-radius: 0 0 400px 400px;
+  -webkit-border-radius: 0 0 400px 400px;
+  border-radius: 0 0 400px 400px;
 }
