@@ -5,15 +5,15 @@
 
 body {
   font-family: Georgia, Times, serif;
-  color: #888;
+  font-size: 30px;
   background: #eee;
-  font-size: 20px;
+  color: #888;
 }
 
 h1 {
   color: #555;
+  font-size: 100px;
   text-align: center;
-  font-size: 80px;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -26,18 +26,23 @@ p {
 }
 
 a {
-  margin-left: 10px;
   color: #aaa;
   text-decoration: none;
 }
 
-span#bio {
-  font-style: italic;
+a:hover {
+  opacity: 0.9;
 }
+
 
 #aboutme {
   margin-top: 60px;
   text-align: center;
+}
+
+#bio {
+  font-style: italic;
+  margin-right: 10px;
 }
 
 #avatar {
@@ -46,3 +51,8 @@ span#bio {
   bottom: 0;
   z-index: 500;
 }
+
+#avatar:hover {
+  opacity: 0.9;
+}
+
