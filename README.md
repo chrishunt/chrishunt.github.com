@@ -1,5 +1,5 @@
 chrishunt.co
 ------------
-Project for huntca.github.com.
+Project for `huntca.github.com`.
 
-Please visit `http://chrishunt.co`
+Please visit [chrishunt.co](http://chrishunt.co)
