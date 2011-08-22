@@ -10,18 +10,34 @@ body {
   font-size: 20px;
 }
 
+h1 {
+  color: #555;
+  text-align: center;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: lowercase;
+}
+
 p {
   margin-top: 10px;
   text-align: center;
 }
 
-p#bio {
+a {
+  margin-left: 10px;
+  color: #aaa;
+  text-decoration: none;
+}
+
+span#bio {
   font-style: italic;
 }
 
-a {
-  color: #888;
-  text-decoration: none;
+#aboutme {
+  margin-top: 60px;
+  text-align: center;
 }
 
 #avatar {
@@ -29,34 +45,4 @@ a {
   left: 0;
   bottom: 0;
   z-index: 500;
-}
-
-#card {
-  background: #fff;
-  width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px 10px 40px 10px;
-  border: 20px solid #eee;
-}
-
-#card h1 {
-  color: #555;
-  text-align: center;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-}
-
-.shadow {
-  -moz-box-shadow: 3px 3px 20px #aaa;
-  -webkit-box-shadow: 3px 3px 20px #aaa;
-  box-shadow: 3px 3px 20px #aaa;
-}
-
-.round {
-  -moz-border-radius: 0 0 400px 400px;
-  -webkit-border-radius: 0 0 400px 400px;
-  border-radius: 0 0 400px 400px;
 }
