@@ -48,10 +48,24 @@ a:hover {
   position: fixed;
   left: 0;
   bottom: 0;
-  z-index: -500;
 }
 
 #avatar:hover {
   opacity: 0.9;
 }
 
+#avatar, #twitter_update_list {
+  z-index: -10;
+}
+
+#twitter_update_list {
+  position: fixed;
+  left: 170px;
+  bottom: 10px;
+  font-size: 15px;
+  padding: 10px;
+}
+
+#twitter_update_list li {
+  list-style: none;
+}
