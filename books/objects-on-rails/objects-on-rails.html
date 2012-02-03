@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
                "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
-lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Objects on Rails</title>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="title" content="Objects on Rails"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2011-11-16 01:13:53 EST"/>
+<meta name="generated" content="2012-02-03 15:12:26 EST"/>
 <meta name="author" content="Avdi Grimm"/>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
@@ -44,6 +44,12 @@ lang="en" xml:lang="en">
   dt { font-weight: bold; }
   div.figure { padding: 0.5em; }
   div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background: #ffffcc;
+  }
   textarea { overflow-x: auto; }
   .linenr { font-size:smaller }
   .code-highlighted {background-color:#ffff00;}
@@ -92,100 +98,100 @@ lang="en" xml:lang="en">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">1 About </a>
+<li><a href="#sec-1">1 About</a>
 <ul>
-<li><a href="#sec-1-1">1.1 History </a></li>
+<li><a href="#sec-1-1">1.1 History</a></li>
 </ul>
 </li>
-<li><a href="#sec-2">2 Preface </a></li>
-<li><a href="#sec-3">3 Introduction </a>
+<li><a href="#sec-2">2 Preface</a></li>
+<li><a href="#sec-3">3 Introduction</a>
 <ul>
-<li><a href="#sec-3-1">3.1 What this is not </a></li>
-<li><a href="#sec-3-2">3.2 About the approach </a></li>
-<li><a href="#sec-3-3">3.3 A note on scale </a></li>
-<li><a href="#sec-3-4">3.4 Why OOP? </a></li>
+<li><a href="#sec-3-1">3.1 What this is not</a></li>
+<li><a href="#sec-3-2">3.2 About the approach</a></li>
+<li><a href="#sec-3-3">3.3 About the Code</a></li>
+<li><a href="#sec-3-4">3.4 A note on scale</a></li>
+<li><a href="#sec-3-5">3.5 Why OOP?</a></li>
 </ul>
 </li>
-<li><a href="#sec-4">4 Yet another frickin' blog app </a></li>
-<li><a href="#sec-5">5 Adding blog entries </a>
+<li><a href="#sec-4">4 Yet another frickin' blog app</a></li>
+<li><a href="#sec-5">5 Adding blog entries</a>
 <ul>
-<li><a href="#sec-5-1">5.1 Placeholder blog entries </a></li>
-<li><a href="#sec-5-2">5.2 Making new entries </a></li>
-<li><a href="#sec-5-3">5.3 The <code>Post</code> class </a></li>
-<li><a href="#sec-5-4">5.4 Why <code>#publish</code>? </a></li>
-<li><a href="#sec-5-5">5.5 Adding entries to the blog </a></li>
+<li><a href="#sec-5-1">5.1 Placeholder blog entries</a></li>
+<li><a href="#sec-5-2">5.2 Making new entries</a></li>
+<li><a href="#sec-5-3">5.3 Posts vs. Entries</a></li>
+<li><a href="#sec-5-4">5.4 The <code>Post</code> class</a></li>
+<li><a href="#sec-5-5">5.5 Why <code>#publish</code>?</a></li>
+<li><a href="#sec-5-6">5.6 Adding entries to the blog</a></li>
 </ul>
 </li>
-<li><a href="#sec-6">6 Submitting posts </a></li>
-<li><a href="#sec-7">7 Getting the tests running again </a></li>
-<li><a href="#sec-8">8 Adding timestamps </a></li>
-<li><a href="#sec-9">9 OMG Dependency Injection! </a></li>
-<li><a href="#sec-10">10 Sorting and limiting posts </a></li>
-<li><a href="#sec-11">11 Adding validation </a></li>
-<li><a href="#sec-12">12 Presenters </a>
+<li><a href="#sec-6">6 Submitting posts</a>
 <ul>
-<li><a href="#sec-12-1">12.1 Presenting the Presenter </a></li>
-<li><a href="#sec-12-2">12.2 Refactoring the presenters </a></li>
-<li><a href="#sec-12-3">12.3 Do we need helpers? </a></li>
+<li><a href="#sec-6-1">6.1 Object Trees and Lone Wolves</a></li>
 </ul>
 </li>
-<li><a href="#sec-13">13 Presenters for REST </a></li>
-<li><a href="#sec-14">14 Making the data stick around </a>
+<li><a href="#sec-7">7 Getting the tests running again</a></li>
+<li><a href="#sec-8">8 Adding timestamps</a></li>
+<li><a href="#sec-9">9 OMG Dependency Injection!</a></li>
+<li><a href="#sec-10">10 Sorting and limiting posts</a></li>
+<li><a href="#sec-11">11 Adding validation</a></li>
+<li><a href="#sec-12">12 Presenters</a>
 <ul>
-<li><a href="#sec-14-1">14.1 The trouble with ActiveRecord </a></li>
-<li><a href="#sec-14-2">14.2 Adding ActiveRecord </a></li>
-<li><a href="#sec-14-3">14.3 Why does <code>Blog</code> do the saving? </a></li>
-<li><a href="#sec-14-4">14.4 Updating the <code>Blog</code> tests </a></li>
-<li><a href="#sec-14-5">14.5 Separating out integration tests </a></li>
-<li><a href="#sec-14-6">14.6 Updating the <code>Post</code> tests </a></li>
-<li><a href="#sec-14-7">14.7 Using ActivRecord objects as data access objects </a></li>
+<li><a href="#sec-12-1">12.1 Presenting the Presenter</a></li>
+<li><a href="#sec-12-2">12.2 Refactoring the presenters</a></li>
+<li><a href="#sec-12-3">12.3 Do we need helpers?</a></li>
 </ul>
 </li>
-<li><a href="#sec-15">15 Concealing ActiveRecord behind a <code>FigLeaf</code> </a></li>
-<li><a href="#sec-16">16 Adding tags </a></li>
-<li><a href="#sec-17">17 An Object Model for Tags </a></li>
-<li><a href="#sec-18">18 Attaching the <code>TagList</code> to a <code>Post</code> </a></li>
-<li><a href="#sec-19">19 Making <code>Post</code> more tag-aware </a></li>
-<li><a href="#sec-20">20 Accepting and displaying tags </a></li>
-<li><a href="#sec-21">21 Extracting a Taggable role </a></li>
-<li><a href="#sec-22">22 Refactoring to a separate ActiveRecord model </a></li>
-<li><a href="#sec-23">23 Data-Context-Interaction </a></li>
-<li><a href="#sec-24">24 Conclusion </a>
+<li><a href="#sec-13">13 Presenters for REST</a></li>
+<li><a href="#sec-14">14 Making the data stick around</a>
 <ul>
-<li><a href="#sec-24-1">24.1 Feelin' the burn </a></li>
-<li><a href="#sec-24-2">24.2 Wrap-up </a></li>
+<li><a href="#sec-14-1">14.1 The trouble with ActiveRecord</a></li>
+<li><a href="#sec-14-2">14.2 Adding ActiveRecord</a></li>
+<li><a href="#sec-14-3">14.3 Why does <code>Blog</code> do the saving?</a></li>
+<li><a href="#sec-14-4">14.4 Updating the <code>Blog</code> tests</a></li>
+<li><a href="#sec-14-5">14.5 Separating out integration tests</a></li>
+<li><a href="#sec-14-6">14.6 Updating the <code>Post</code> tests</a></li>
+<li><a href="#sec-14-7">14.7 Using ActivRecord objects as data access objects</a></li>
 </ul>
 </li>
-<li><a href="#sec-25">25 Further reading </a></li>
-<li><a href="#sec-26">26 Photo Credits </a></li>
-<li><a href="#sec-27">27 Issues </a>
+<li><a href="#sec-15">15 Concealing ActiveRecord behind a <code>FigLeaf</code></a></li>
+<li><a href="#sec-16">16 Adding tags</a></li>
+<li><a href="#sec-17">17 An Object Model for Tags</a></li>
+<li><a href="#sec-18">18 Attaching the <code>TagList</code> to a <code>Post</code></a></li>
+<li><a href="#sec-19">19 Making <code>Post</code> more tag-aware</a></li>
+<li><a href="#sec-20">20 Accepting and displaying tags</a></li>
+<li><a href="#sec-21">21 Extracting a Taggable role</a></li>
+<li><a href="#sec-22">22 Refactoring to a separate ActiveRecord model</a></li>
+<li><a href="#sec-23">23 Conclusion</a>
 <ul>
-<li><a href="#sec-27-1">27.1 Either resolve or explain mixed "entries"/"posts" terminology </a></li>
-<li><a href="#sec-27-2">27.2 Show all requires? </a></li>
-<li><a href="#sec-27-3">27.3 Show definition of <code>pubdate</code> accessors </a></li>
-<li><a href="#sec-27-4">27.4 Reference Greg Moeck's work </a></li>
-<li><a href="#sec-27-5">27.5 Consider Droid Sans for HTML version </a></li>
-<li><a href="#sec-27-6">27.6 Talk a little about the project setup </a></li>
+<li><a href="#sec-23-1">23.1 Feelin' the burn</a></li>
+<li><a href="#sec-23-2">23.2 Wrap-up</a></li>
 </ul>
 </li>
+<li><a href="#sec-24">24 Further reading</a>
+<ul>
+<li><a href="#sec-24-1">24.1 General</a></li>
+<li><a href="#sec-24-2">24.2 Fast Tests and Mock Objects</a></li>
+<li><a href="#sec-24-3">24.3 Data-Context-Interaction</a></li>
+</ul>
+</li>
+<li><a href="#sec-25">25 Photo Credits</a></li>
 </ul>
 </div>
 </div>
 
 <div id="outline-container-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> About </h2>
+<h2 id="sec-1"><span class="section-number-2">1</span> About</h2>
 <div class="outline-text-2" id="text-1">
 
-<p>  <img src="./images/snail-rail.png" align="center" style="border: 1px solid black" alt="./images/snail-rail.png" />
+<p>  <img src="./images/cover.jpg" align="center" style="border: 1px solid black" alt="./images/cover.jpg" />
 </p>
+
+
 <p>
-  Objects on Rails
+<strong>Objects on Rails Version 0.0.4</strong>
 </p>
 <p>
   Copyright &copy; 2011 by Avdi Grimm. All rights reserved.
-</p>
-<p>
-  Version 0.0.2
 </p>
 <p>
   Have comments, suggestions, or corrections; or want to discuss the
@@ -196,12 +202,30 @@ lang="en" xml:lang="en">
 </div>
 
 <div id="outline-container-1-1" class="outline-3">
-<h3 id="sec-1-1"><span class="section-number-3">1.1</span> History </h3>
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> History</h3>
 <div class="outline-text-3" id="text-1-1">
 
 
 
 <ul>
+<li>2012-02-03 Moved version into external file.
+</li>
+<li>2012-02-03 Revise project creation section. - Add notes on Rails and Ruby versions. - Show project generation. - Update generation of initial controller.
+</li>
+<li>2012-02-03 Move all DCI stuff into "further reading" section. Start categorizing links to further reading. Add links to Greg Moeck talk/article.
+</li>
+<li>2012-02-03 Show definition of Post#pubdate.
+</li>
+<li>2012-02-03 Add note about code samples.
+</li>
+<li>2012-02-02 Added section on "Object Trees and Lone Wolves"
+</li>
+<li>2012-01-19 Update history
+</li>
+<li>2012-01-19 New cover art
+</li>
+<li>2012-01-19 Add "Posts vs. Entries" section.
+</li>
 <li>2011-11-16 First round of typo fixes after beta release
 </li>
 </ul>
@@ -215,7 +239,7 @@ lang="en" xml:lang="en">
 </div>
 
 <div id="outline-container-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> Preface </h2>
+<h2 id="sec-2"><span class="section-number-2">2</span> Preface</h2>
 <div class="outline-text-2" id="text-2">
 
 
@@ -242,7 +266,7 @@ lang="en" xml:lang="en">
 </div>
 
 <div id="outline-container-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> Introduction </h2>
+<h2 id="sec-3"><span class="section-number-2">3</span> Introduction</h2>
 <div class="outline-text-2" id="text-3">
 
 
@@ -254,7 +278,7 @@ it attempts to apply a strongly Object-Oriented philosophy to the
 process.
 </p>
 <p>
-"Wait a sec" you may ask. "Isn't Rails already Object-Oriented?" Well,
+"Wait a sec!" you say. "Isn't Rails already Object-Oriented?" Well,
 yes and no. While Rails is written in a thoroughly OO language, and built on
 some solid OO patterns, there are aspects of conventional Rails
 application development which depart significantly from OO practices.
@@ -278,7 +302,7 @@ We'll also take a look at some more experimental techniques. Full
 disclosure: I've used the development of this text as a proving ground
 for some approaches I haven't yet applied to production
 applications. I don't think anything I'm presenting here is a terrible
-idea (or I wouldn't be presenting it); but some of the strategies
+idea (or I wouldn't be presenting it), but some of the strategies
 haven't been battle-tested over the full development cycle. In
 transferring what you learn into your own work, use judgment, confer
 with the rest of your team, and don't rewrite your whole app
@@ -288,7 +312,7 @@ overnight.
 </div>
 
 <div id="outline-container-3-1" class="outline-3">
-<h3 id="sec-3-1"><span class="section-number-3">3.1</span> What this is not </h3>
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> What this is not</h3>
 <div class="outline-text-3" id="text-3-1">
 
 
@@ -321,7 +345,7 @@ overnight.
 </div>
 
 <div id="outline-container-3-2" class="outline-3">
-<h3 id="sec-3-2"><span class="section-number-3">3.2</span> About the approach </h3>
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> About the approach</h3>
 <div class="outline-text-3" id="text-3-2">
 
 
@@ -335,7 +359,7 @@ overnight.
    development, there is a major piece missing from our TDD
    stack. Ordinarily, when building a "real" app, I would drive each
    feature from the outside in using acceptance tests, typically
-   writtin using Cucumber. However, in the interests of brevity, I
+   written using Cucumber. However, in the interests of brevity, I
    omit the acceptance testing component in this document.
 </p>
 </div>
@@ -343,8 +367,24 @@ overnight.
 </div>
 
 <div id="outline-container-3-3" class="outline-3">
-<h3 id="sec-3-3"><span class="section-number-3">3.3</span> A note on scale </h3>
+<h3 id="sec-3-3"><span class="section-number-3">3.3</span> About the Code</h3>
 <div class="outline-text-3" id="text-3-3">
+
+<p>   With a few exceptions, all the code samples are from the working
+   demo codebase I built as I wrote the text. If you have the "deluxe
+   edition" you have access to a full copy of the source code,
+   including revision history. I've taken the liberty of eliding some
+   of the code samples in the text to show only the bits that are 
+   interesting or relevant to the discussion; this means, for
+   instance, that some <code>require</code> statements have been omitted.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-3-4" class="outline-3">
+<h3 id="sec-3-4"><span class="section-number-3">3.4</span> A note on scale</h3>
+<div class="outline-text-3" id="text-3-4">
 
 
 <p>
@@ -372,9 +412,9 @@ overnight.
 
 </div>
 
-<div id="outline-container-3-4" class="outline-3">
-<h3 id="sec-3-4"><span class="section-number-3">3.4</span> Why OOP? </h3>
-<div class="outline-text-3" id="text-3-4">
+<div id="outline-container-3-5" class="outline-3">
+<h3 id="sec-3-5"><span class="section-number-3">3.5</span> Why OOP?</h3>
+<div class="outline-text-3" id="text-3-5">
 
 
 <p>
@@ -451,13 +491,32 @@ With that intent in mind, let's jump in!
 </div>
 
 <div id="outline-container-4" class="outline-2">
-<h2 id="sec-4"><span class="section-number-2">4</span> Yet another frickin' blog app </h2>
+<h2 id="sec-4"><span class="section-number-2">4</span> Yet another frickin' blog app</h2>
 <div class="outline-text-2" id="text-4">
 
 
 <p>
-Let's write a new blog app in Rails, since no one's ever done that before!
+Let's write a new blog app in Rails, since no one's ever done that
+before!
 </p>
+<p>
+We'll use Rails version 3.0, running on Ruby (MRI) 1.9.2. 
+</p>
+
+
+
+<pre class="example">$ rails new bloog --skip-test-unit --skip-prototype
+      create  
+      create  README
+      create  Rakefile
+      create  config.ru
+      create  .gitignore
+      create  Gemfile
+      create  app
+      # ...
+</pre>
+
+
 <p>
 I guess we should start with the home page. Let's add a route:
 </p>
@@ -468,8 +527,6 @@ I guess we should start with the home page. Let's add a route:
 </pre>
 
 
-
-
 <p>
 Now we'll need a controller for that route to work:
 </p>
@@ -477,15 +534,14 @@ Now we'll need a controller for that route to work:
 
 
 <pre class="example">$ rails g controller blog index
-   identical  app/controllers/blog_controller.rb
+      create  app/controllers/blog_controller.rb
        route  get "blog/index"
       invoke  erb
-       exist    app/views/blog
-   identical    app/views/blog/index.html.erb
+      create    app/views/blog
+      create    app/views/blog/index.html.erb
       invoke  helper
-   identical    app/helpers/blog_helper.rb
+      create    app/helpers/blog_helper.rb
 </pre>
-
 
 
 <p>
@@ -505,8 +561,6 @@ to represent the blog.
 </pre>
 
 
-
-
 <p>
 OK, now we know we need a blog object in the view. Let's create it in
 the controller:
@@ -522,8 +576,6 @@ the controller:
   <span class="org-keyword">end</span>
 <span class="org-keyword">end</span>
 </pre>
-
-
 
 
 <p>
@@ -546,8 +598,6 @@ Looks like we need a <code>Blog</code> class next.
 </pre>
 
 
-
-
 <p>
 At this point we can load the page:
 </p>
@@ -559,7 +609,7 @@ At this point we can load the page:
 </div>
 
 <div id="outline-container-5" class="outline-2">
-<h2 id="sec-5"><span class="section-number-2">5</span> Adding blog entries </h2>
+<h2 id="sec-5"><span class="section-number-2">5</span> Adding blog entries</h2>
 <div class="outline-text-2" id="text-5">
 
 
@@ -589,8 +639,6 @@ describe <span class="org-type">Blog</span> <span class="org-keyword">do</span>
 </pre>
 
 
-
-
 <p>
 Running this spec results in a failure:
 </p>
@@ -612,7 +660,6 @@ NoMethodError: undefined method `entries' for #&lt;Blog:0x894b044&gt;
 </pre>
 
 
-
 <p>
 To make it pass, we add an <code>entries</code> attribute to <code>Blog</code>:
 </p>
@@ -631,8 +678,6 @@ To make it pass, we add an <code>entries</code> attribute to <code>Blog</code>:
 </pre>
 
 
-
-
 <p>
 When we run the tests again, they pass:
 </p>
@@ -649,16 +694,15 @@ Finished in 0.002619 seconds.
 </pre>
 
 
-
 <p>
 You may have noticed that we're not using any kind of Rails
 integration for setting up and running the tests. We're not even
 relying on Rails constant autoloading. This is intentional. By writing
-ordinary "plain old tests" which don't rely on any special Rails
-helpers, we keep the tests isolated and force ourselves to be
-deliberate about creating any dependencies between our objects. We
-anticipate that this will have a salutory effect on the object design
-which emerges from our TDD process.
+"plain old tests" which don't rely on any special Rails helpers, we
+keep the tests isolated and force ourselves to be deliberate about
+creating any dependencies between our objects. We anticipate that this
+will have a salutary effect on the object design which emerges from
+our TDD process.
 </p>
 <p>
 As a welcome side effect, the tests run ridiculously fast.
@@ -667,7 +711,7 @@ As a welcome side effect, the tests run ridiculously fast.
 </div>
 
 <div id="outline-container-5-1" class="outline-3">
-<h3 id="sec-5-1"><span class="section-number-3">5.1</span> Placeholder blog entries </h3>
+<h3 id="sec-5-1"><span class="section-number-3">5.1</span> Placeholder blog entries</h3>
 <div class="outline-text-3" id="text-5-1">
 
 
@@ -692,8 +736,6 @@ in it. Let's add some temporary example blog posts in the
 </pre>
 
 
-
-
 <p>
 You may have noticed that we're calling a <code>#new_post</code> method which
 doesn't exist yet, followed by some other methods on the return value
@@ -705,7 +747,7 @@ it exist.
 </div>
 
 <div id="outline-container-5-2" class="outline-3">
-<h3 id="sec-5-2"><span class="section-number-3">5.2</span> Making new entries </h3>
+<h3 id="sec-5-2"><span class="section-number-3">5.2</span> Making new entries</h3>
 <div class="outline-text-3" id="text-5-2">
 
 
@@ -731,8 +773,6 @@ posts are created easy to swap out:
   <span class="org-keyword">end</span>
 <span class="org-keyword">end</span>
 </pre>
-
-
 
 
 <p>
@@ -768,8 +808,6 @@ describe <span class="org-type">Blog</span> <span class="org-keyword">do</span>
 </pre>
 
 
-
-
 <p>
 Here, we substitute a lambda which simply returns an <code>OpenStruct</code> for
 the <code>#post_maker</code>.
@@ -792,15 +830,90 @@ Making these pass is straightforward:
 </pre>
 
 
-
-
 </div>
 
 </div>
 
 <div id="outline-container-5-3" class="outline-3">
-<h3 id="sec-5-3"><span class="section-number-3">5.3</span> The <code>Post</code> class </h3>
+<h3 id="sec-5-3"><span class="section-number-3">5.3</span> Posts vs. Entries</h3>
 <div class="outline-text-3" id="text-5-3">
+
+<p>   Hold on a sec. Aren't we getting our terms confused here? First we
+   said a <code>Blog</code> has "entries". But then we started talking about
+   "posts". Shouldn't we pick one or the other?
+</p>
+<p>
+   In fact, this choice to use multiple terms is deliberate. The dark
+   side of having sensible framework conventions is that after a
+   while, those conventions turn into assumptions. In this case, if we
+   called the <code>entries</code> collection <code>posts</code> instead, there's a good
+   chance we'd start mentally conflating it with the <code>Post</code>
+   class. Anything in <code>blog.posts</code> is a <code>Post</code> object, end of story.
+</p>
+<p>
+   This is one of those subtle assumptions that can lead to big
+   problems. For instance, if we assume <code>blog.new_post</code> is equivalent
+   to <code>Post.new</code>, we might start to just skip the <code>Blog</code> part and
+   write <code>Post.new(...)</code> or <code>Post.create(...)</code> whenever we want a new
+   blog entry.
+</p>
+<p>
+   Now imagine some time passes, and we add the ability for a <code>Blog</code>
+   to have many different types of posts&mdash;photos, embedded videos,
+   etc, each represented by different classes such as <code>PhotoPost</code> and
+   <code>VideoPost</code>. A call to <code>Blog.new_post(...)</code> looks at the arguments
+   arguments and chooses the right type of object to
+   instantiate. Unfortunately, we hardcoded references to <code>Post</code>
+   everywhere, and now we have to go back and change them all.
+</p>
+<p>
+   These kinds of assumptions don't just lead to extra work; they can
+   introduce security holes. Let's say we made the "blog entries are
+   <code>Posts</code>" assumption, and as a result we coded various controller
+   actions to look like this:
+</p>
+
+
+
+<pre class="src src-ruby"><span class="org-keyword">def</span> <span class="org-function-name">update</span>
+  <span class="org-variable-name">@post</span> = <span class="org-type">Post</span>.find(params[<span class="org-constant">:id</span>])
+  <span class="org-comment-delimiter"># </span><span class="org-comment">...</span>
+<span class="org-keyword">end</span>
+</pre>
+
+
+<p>
+   Then one day we decide to add the ability to host multiple
+   blogs. Instead of a singleton <code>Blog</code> instance, there are multiple
+   blogs, each owned by a different user. The controllers are all
+   updated to make sure that actions modifying a <code>Blog</code> can only be
+   made by the user who owns that blog.
+</p>
+<p>
+   The upgrade goes easily, and everything is working great. Then one
+   day a clever user realizes that if he can guess the ID of someone
+   else's post, he can modify its content! Why is this possible?
+   Because all those calls to <code>Post.find()</code> bypassed any scope
+   constraints imposed by accessing posts from a <code>Blog</code> instance
+   instead of fetching them directly.
+</p>
+<p>
+   These are not hypothetical issues; I've seen them in production
+   codebases. Using different terms for "the blog's entries" and "a
+   Post object" doesn't automatically fix the problem. But if they
+   mentally trip us up a bit, that might just be the nudge we need to
+   remember that the entries managed by a blog are not necessarily
+   equivalent to the set of all <code>Post</code> records. The topic of this text
+   is looking at Rails projects with a fresh perspective, and playing
+   with naming is one way to do that.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-5-4" class="outline-3">
+<h3 id="sec-5-4"><span class="section-number-3">5.4</span> The <code>Post</code> class</h3>
+<div class="outline-text-3" id="text-5-4">
 
 
 <p>
@@ -860,8 +973,6 @@ describe <span class="org-type">Post</span> <span class="org-keyword">do</span>
 </pre>
 
 
-
-
 <p>
 Next we satisfy the specification:
 </p>
@@ -880,15 +991,13 @@ Next we satisfy the specification:
 </pre>
 
 
-
-
 </div>
 
 </div>
 
-<div id="outline-container-5-4" class="outline-3">
-<h3 id="sec-5-4"><span class="section-number-3">5.4</span> Why <code>#publish</code>? </h3>
-<div class="outline-text-3" id="text-5-4">
+<div id="outline-container-5-5" class="outline-3">
+<h3 id="sec-5-5"><span class="section-number-3">5.5</span> Why <code>#publish</code>?</h3>
+<div class="outline-text-3" id="text-5-5">
 
 
 <p>
@@ -899,10 +1008,10 @@ calling the method which makes a new blog entry <code>#publish</code> instead of
 <p>
 One of the central elements of object-oriented design is capturing the
 <em>language of the domain</em> in our models. Think for a minute about the
-language of blogging. No one ever says "I <em>saved</em> a blog post the
-other day". They say "I <em>published</em> a blog post" or maybe "I <em>posted</em>
-a blog entry". By calling the method <code>#publish</code>, we are continuing to
-build a system which echoes our mental model of the domain.
+language of blogging. No one says "I <em>saved</em> a blog post the other
+day". They say "I <em>published</em> a blog post" or maybe "I <em>posted</em> a blog
+entry". By calling the method <code>#publish</code>, we are continuing to build a
+system which echoes our mental model of the domain.
 </p>
 <p>
 Consider how we might extend this program in the future. We might add
@@ -925,8 +1034,6 @@ post.publish
 </pre>
 
 
-
-
 <p>
 This is not a coincidence. Choosing appropriate domain language for
 program elements often means we don't need to rename as many things as
@@ -936,9 +1043,9 @@ we add more features down the road.
 
 </div>
 
-<div id="outline-container-5-5" class="outline-3">
-<h3 id="sec-5-5"><span class="section-number-3">5.5</span> Adding entries to the blog </h3>
-<div class="outline-text-3" id="text-5-5">
+<div id="outline-container-5-6" class="outline-3">
+<h3 id="sec-5-6"><span class="section-number-3">5.6</span> Adding entries to the blog</h3>
+<div class="outline-text-3" id="text-5-6">
 
 
 <p>
@@ -962,8 +1069,6 @@ quickly spec it out and add it.
 
 
 
-
-
 <pre class="src src-ruby"><span class="org-keyword">class</span> <span class="org-type">Blog</span>
   <span class="org-comment-delimiter"># </span><span class="org-comment">...</span>
   <span class="org-keyword">def</span> <span class="org-function-name">add_entry</span>(entry)
@@ -972,8 +1077,6 @@ quickly spec it out and add it.
   <span class="org-comment-delimiter"># </span><span class="org-comment">...</span>
 <span class="org-keyword">end</span>
 </pre>
-
-
 
 
 <p>
@@ -986,8 +1089,6 @@ in the title as an argument:
 
 <pre class="src src-ruby">post2 = <span class="org-variable-name">@blog</span>.new_post(title: <span class="org-string">"Still wet"</span>)
 </pre>
-
-
 
 
 <p>
@@ -1008,8 +1109,6 @@ it <span class="org-string">"should accept an attribute hash on behalf of the po
 </pre>
 
 
-
-
 <p>
 And then the implementation:
 </p>
@@ -1024,8 +1123,6 @@ And then the implementation:
 <span class="org-keyword">end</span>
 <span class="org-comment-delimiter"># </span><span class="org-comment">...</span>
 </pre>
-
-
 
 
 <p>
@@ -1048,8 +1145,6 @@ keyword arguments on the <code>Post</code> initializer.
 
 
 
-
-
 <pre class="src src-ruby"><span class="org-keyword">class</span> <span class="org-type">Post</span>
   <span class="org-comment-delimiter"># </span><span class="org-comment">...</span>
   <span class="org-keyword">def</span> <span class="org-function-name">initialize</span>(attrs={})
@@ -1058,8 +1153,6 @@ keyword arguments on the <code>Post</code> initializer.
   <span class="org-comment-delimiter"># </span><span class="org-comment">...</span>
 <span class="org-keyword">end</span>
 </pre>
-
-
 
 
 <p>
@@ -1076,8 +1169,6 @@ Now we just need to update the views to show our posts.
 
 
 
-
-
 <pre class="src src-html"><span class="org-comment-delimiter">&lt;!-- </span><span class="org-comment">app/views/blog/_entry.html.erb </span><span class="org-comment-delimiter">--&gt;</span>
 &lt;<span class="org-function-name">article</span>&gt;
   &lt;<span class="org-function-name">header</span>&gt;
@@ -1086,8 +1177,6 @@ Now we just need to update the views to show our posts.
   &lt;<span class="org-function-name">p</span>&gt;&lt;%= entry.body %&gt;&lt;/<span class="org-function-name">p</span>&gt;
 &lt;/<span class="org-function-name">article</span>&gt;
 </pre>
-
-
 
 
 <p>
@@ -1105,7 +1194,7 @@ Reloading the page, we can see our demo entries.
 </div>
 
 <div id="outline-container-6" class="outline-2">
-<h2 id="sec-6"><span class="section-number-2">6</span> Submitting posts </h2>
+<h2 id="sec-6"><span class="section-number-2">6</span> Submitting posts</h2>
 <div class="outline-text-2" id="text-6">
 
 
@@ -1132,8 +1221,6 @@ First we'll add a "New post" link.
 </pre>
 
 
-
-
 <p>
 For that <code>new_post_path</code> call to work we need a route:
 </p>
@@ -1145,8 +1232,6 @@ For that <code>new_post_path</code> call to work we need a route:
 resources <span class="org-constant">:posts</span>
 <span class="org-comment-delimiter"># </span><span class="org-comment">...</span>
 </pre>
-
-
 
 
 <p>
@@ -1163,8 +1248,6 @@ And for the route to work we need a controller:
   <span class="org-keyword">end</span>
 <span class="org-keyword">end</span>
 </pre>
-
-
 
 
 <p>
@@ -1192,8 +1275,6 @@ as the <code>BlogController</code>. Time to factor the code that sets it out int
 </pre>
 
 
-
-
 <p>
 That's enough to make the link render but we need somewhere for it to
 go. We'll create a quick "new post" form:
@@ -1209,8 +1290,6 @@ go. We'll create a quick "new post" form:
   &lt;%= f.submit %&gt;
 &lt;% end %&gt;
 </pre>
-
-
 
 
 <p>
@@ -1238,8 +1317,6 @@ ourselves: <code>#persisted?</code>. For now, it's sufficient to just return
   <span class="org-comment-delimiter"># </span><span class="org-comment">...</span>
 <span class="org-keyword">end</span>
 </pre>
-
-
 
 
 <p>
@@ -1271,8 +1348,6 @@ add a <code>PostsController#create</code> action.
 </pre>
 
 
-
-
 <p>
 We can get rid of the demo posts in <code>BlogController</code> now.
 </p>
@@ -1284,8 +1359,6 @@ We can get rid of the demo posts in <code>BlogController</code> now.
   <span class="org-keyword">end</span>
 <span class="org-keyword">end</span>
 </pre>
-
-
 
 
 <p>
@@ -1305,8 +1378,6 @@ store an instance to an app-wide <code>Blog</code> object using an initializer.
 </pre>
 
 
-
-
 <p>
 Now we change the before filter which sets the <code>@blog</code> variable to use
 that constant:
@@ -1323,20 +1394,168 @@ that constant:
 </pre>
 
 
-
-
 <p>
 And now we can submit new posts!
 </p>
 <p>
 <img src="./images/post-added.png"  alt="./images/post-added.png" />
 </p>
+
+</div>
+
+<div id="outline-container-6-1" class="outline-3">
+<h3 id="sec-6-1"><span class="section-number-3">6.1</span> Object Trees and Lone Wolves</h3>
+<div class="outline-text-3" id="text-6-1">
+
+
+<p>
+   Let's take one last look at our controller action for submitting
+   new posts.
+</p>
+
+
+
+<pre class="src src-ruby"><span class="org-keyword">def</span> <span class="org-function-name">create</span>
+  <span class="org-variable-name">@post</span> = <span class="org-variable-name">@blog</span>.new_post(params[<span class="org-constant">:post</span>])
+  <span class="org-variable-name">@post</span>.publish
+  redirect_to root_path, <span class="org-constant">:notice</span> =&gt; <span class="org-string">"Post added!"</span>
+<span class="org-keyword">end</span>
+</pre>
+
+
+<p>
+   Notably absent from this action is any direct reference to the
+   <code>Post</code> class. We talked about this a little already in "Posts
+   vs. Entries". But I want to look at this from one more angle before
+   moving on.
+</p>
+<p>
+   Object-oriented programs tend, more often than not, to evolve into
+   a roughly tree-shaped structure. This is not surprising, since it
+   mimics how we tend to think of the world around us as well as the
+   world inside our programs. A website has a blog, a blog has
+   categories, categories contain entries, an entry has tags and
+   comments, and so on.
+</p>
+<p>
+   It's easy to go nuts with this, of course. When I first learned
+   about OOP there was a huge emphasis on using it to break the world
+   down into heirarchical ontologies which made for pretty UML
+   diagrams. The problem with this view of OOP is that most complex
+   systems don't have a single natural heirarchy to them. To use the
+   blog example, we could also say a blog has authors, authors have
+   entries, and the entries might have categories associated with
+   them. This is no more "correct" than the version where categories
+   are the concept which "contain" entries.
+</p>
+<p>
+   But the point is that we naturally break our systems into
+   heirarchies, which practically speaking means <em>trees of objects</em>.
+   In a tree of objects, each object mediates access to its "leaf" or
+   "branch" objects. So you might access a blog object from a site
+   object, a category from the blog object, and an article from the
+   category object.
+</p>
+<p>
+   This pattern has some attractive properties. Having "parent" (I use
+   the term loosely) objects mediate access to "child" objects gives
+   us a natural "seam" in our design. At the seam, we can do a number
+   of things:
+</p>
+<ol>
+<li>Control access based on authorization information&mdash;as we saw in
+      "<a href="#sec-5-3">*Posts vs. Entries</a>.
+</li>
+<li>Pre-load child objects with a reference back to their
+      parent. The <code>#new_post</code> method above does this, enabling the
+      post object to publish itself.
+</li>
+<li>Save a reference to the child object in the parent.
+      ActiveRecord's <a href="http://api.rubyonrails.org/classes/ActiveRecord/AutosaveAssociation.html">autosave</a> facility does this. When we are careful
+      to access child objects from the parent, ActiveRecord is able to
+      persist all new, modified, or deleted child objects
+      automatically when the parent object is saved.
+</li>
+<li>Decide the actual class of the object to be instantiated, based
+      on the parameters or the state of the parent.
+</li>
+</ol>
+
+
+<p>
+   And the great thing about having the seam is that <em>we don't have to    think about any of those concerns at the beginning</em>. We can add
+   them in at the seam point transparently, as the need arises.
+</p>
+<p>
+   Every time we put in an explicit reference to a class, rather than
+   creating or accessing the object via its "parent" in the tree, we
+   are implicitly rejecting all of these advantages. Sometimes this
+   may be what we want. More often, it's a mistake.
+</p>
+<p>
+   Consider these common, seemingly innucuous lines:
+</p>
+
+
+
+<pre class="src src-ruby"><span class="org-variable-name">@post</span> = <span class="org-type">Post</span>.new(params[<span class="org-constant">:post</span>])
+<span class="org-variable-name">@post</span> = <span class="org-type">Post</span>.create(params[<span class="org-constant">:post</span>])
+<span class="org-variable-name">@post</span> = <span class="org-type">Post</span>.find(params[<span class="org-constant">:id</span>])
+</pre>
+
+
+<p>
+   Every one of these creates an object which is a "lone wolf". It's
+   an object with no family, no ties to its community. If this object
+   was arrested and had a bail hearing, it would be considered a
+   flight risk. It is an object which believes it will never be part
+   of something bigger than itself. 
+</p>
+<p>
+   It's also an object which makes our tests more painful. How many
+   times have you seen test setup that looks like this:
+</p>
+
+
+
+<pre class="src src-ruby"><span class="org-comment-delimiter"># </span><span class="org-comment">RSpec</span>
+post = stub(<span class="org-constant">:post</span>)
+<span class="org-type">Post</span>.stub(<span class="org-constant">:new</span>).and_return(<span class="org-constant">:post</span>)
+</pre>
+
+
+<p>
+   Or:
+</p>
+
+
+
+<pre class="src src-ruby"><span class="org-comment-delimiter"># </span><span class="org-comment">Mocha</span>
+<span class="org-type">Post</span>.any_instance_stubs(<span class="org-constant">:foo</span>)
+</pre>
+
+
+<p>
+   These lines just add extra work and noise to tests. Having to stub
+   <code>#new</code>, or override a method on every instance of an object, is a
+   hamfisted, shotgun-blast approach to testing. And it is usually
+   made necessary as a result of of "lone wolf" object creation.
+</p>
+<p>
+   Seams are useful things to have in growing programs. Rejecting them
+   has serious implications for extensability, as well as for security
+   and correctness. That's why I regard any bare references to a class
+   as a red flag, especially in Rails controller actions. I feel a lot
+   more comfortable when I can clearly see the tree structure&mdash;trunk
+   to limb, limb to branches, branches to twigs, twigs to leaves.
+</p>
+</div>
 </div>
 
 </div>
 
 <div id="outline-container-7" class="outline-2">
-<h2 id="sec-7"><span class="section-number-2">7</span> Getting the tests running again </h2>
+<h2 id="sec-7"><span class="section-number-2">7</span> Getting the tests running again</h2>
 <div class="outline-text-2" id="text-7">
 
 
@@ -1352,8 +1571,6 @@ app/models/post.rb:2:in `&lt;class:Post&gt;': uninitialized constant Post::Activ
         from spec/models/post_spec.rb:2:in `require_relative'
         from spec/models/post_spec.rb:2:in `&lt;main&gt;'
 </pre>
-
-
 
 
 <p>
@@ -1389,8 +1606,6 @@ require_relative <span class="org-string">'../../app/models/post'</span>
 </pre>
 
 
-
-
 <p>
 This gets the test passing again. But this approach is
 problematic. Let's say we had these tests running as part of a Rake
@@ -1422,8 +1637,6 @@ auto-loadable. Here's a method which does just that.
 </pre>
 
 
-
-
 <p>
 This method uses <code>#const_get</code> to attempt to reference the given
 module. If the module is defined, or if calling <code>#const_get</code> causes it
@@ -1448,8 +1661,6 @@ require_relative <span class="org-string">'../../app/models/post'</span>
 </pre>
 
 
-
-
 <p>
 The tests are once again passing:
 </p>
@@ -1466,13 +1677,12 @@ Finished in 0.000530 seconds.
 </pre>
 
 
-
 </div>
 
 </div>
 
 <div id="outline-container-8" class="outline-2">
-<h2 id="sec-8"><span class="section-number-2">8</span> Adding timestamps </h2>
+<h2 id="sec-8"><span class="section-number-2">8</span> Adding timestamps</h2>
 <div class="outline-text-2" id="text-8">
 
 
@@ -1497,8 +1707,6 @@ in the views to display the (as-yet nonexistent) timestamp.
   &lt;<span class="org-function-name">p</span>&gt;&lt;%= entry.body %&gt;&lt;/<span class="org-function-name">p</span>&gt;
 &lt;/<span class="org-function-name">article</span>&gt;
 </pre>
-
-
 
 
 <p>
@@ -1530,8 +1738,6 @@ filled in once it is published. Let's spec that out.
 </pre>
 
 
-
-
 <p>
 Note the use of <code>stub!</code> at line <a href="#coderef-stub" class="coderef" onmouseover="CodeHighlightOn(this, 'coderef-stub');" onmouseout="CodeHighlightOff(this, 'coderef-stub');">nil</a>. MiniTest's built-in mocking
 was becoming insufficient for our needs, so we've supplemented it with
@@ -1549,6 +1755,17 @@ require <span class="org-string">'rr'</span>
 </pre>
 
 
+<p>
+Implementing <code>#pubdate</code> is just a matter of adding a new attribute
+accessor:
+</p>
+
+
+
+<pre class="src src-ruby"><span class="org-keyword">class</span> <span class="org-type">Post</span>
+  attr_accessor <span class="org-constant">:blog</span>, <span class="org-constant">:title</span>, <span class="org-constant">:body</span>, <span class="org-constant">:pubdate</span>
+  <span class="org-comment-delimiter"># </span><span class="org-comment">...</span>
+</pre>
 
 
 <p>
@@ -1582,18 +1799,16 @@ describe <span class="org-string">"#pubdate"</span> <span class="org-keyword">do
 </pre>
 
 
-
-
 <p>
 That's a lot of test setup; any more and we'd want to find a way to
 refactor the tests.
 </p>
 <p>
-Now, besides for creating a stubbed <code>blog</code> instance, we're also
-creating a <code>@clock</code> stub. We create a fixed <code>@now</code> time for the clock
-to respond with when <code>#now</code> is called on it. Then we pass the clock
-into the <code>Post#publish</code> method and assert that it uses the <code>@now</code> time
-to set its <code>#pubdate</code> attribute.
+Now, besides creating a stubbed <code>blog</code> instance, we're also creating a
+<code>@clock</code> stub. We create a fixed <code>@now</code> time for the clock to respond
+with when <code>#now</code> is called on it. Then we pass the clock into the
+<code>Post#publish</code> method and assert that it uses the <code>@now</code> time to set
+its <code>#pubdate</code> attribute.
 </p>
 <p>
 Wait a second&hellip; does this mean the app will always have to pass a
@@ -1616,8 +1831,6 @@ Sensible defaults to the rescue! Let's update the
 </pre>
 
 
-
-
 <p>
 We add a <code>clock</code> parameter, and make it default to <code>DateTime</code>. That
 way in the absence of any parameter, the method will just take its
@@ -1625,12 +1838,12 @@ timestamp from the system clock via <code>DateTime</code>.
 </p>
 <p>
 Why make it possible to pass the clock in? We might turn the question
-around: since up until in our unit tests now we've been very careful
-to isolate our Code Under Test (CUT) from any external dependencies,
-why make an exception for the system clock? By making it possible to
-pass a clock object in, we make it very easy to test the behavior of
-<code>#publish</code> deterministically, without resorting to heavy-handed
-clock-overriding libraries such as <a href="https://github.com/jtrupiano/timecop">Timecop</a>.
+around: our tests up until now have been very careful to isolate our
+Sode Under Test (SUT) from any external dependencies, why make an
+exception for the system clock? By making it possible to pass a clock
+object in, we make it very easy to test the behavior of <code>#publish</code>
+deterministically, without resorting to heavy-handed clock-overriding
+libraries such as <a href="https://github.com/jtrupiano/timecop">Timecop</a>.
 </p>
 <p>
 But there are other advantages to passing the clock in, which we'll
@@ -1641,7 +1854,7 @@ discuss in the next section.
 </div>
 
 <div id="outline-container-9" class="outline-2">
-<h2 id="sec-9"><span class="section-number-2">9</span> OMG Dependency Injection! </h2>
+<h2 id="sec-9"><span class="section-number-2">9</span> OMG Dependency Injection!</h2>
 <div class="outline-text-2" id="text-9">
 
 
@@ -1667,8 +1880,6 @@ injection twice. First, we used <em>setter injection</em> to strategize how
 </pre>
 
 
-
-
 <p>
 And then moments ago we used <em>parameter injection</em> to pass in a clock
 object to <code>Post#publish</code>:
@@ -1683,8 +1894,6 @@ object to <code>Post#publish</code>:
 <span class="org-keyword">end</span>
 <span class="org-comment-delimiter"># </span><span class="org-comment">...</span>
 </pre>
-
-
 
 
 <p>
@@ -1720,8 +1929,6 @@ publish dates without making any changes at all to <code>Post</code>:
 </pre>
 
 
-
-
 <p>
 Here, we've just used <code>OpenStruct</code> to create a quick ad-hoc object
 which responds to the <code>#now</code> method with a fixed date.
@@ -1742,8 +1949,6 @@ live:
 <span class="org-comment-delimiter"># </span><span class="org-comment">...</span>
 <span class="org-variable-name">@post</span>.publish(<span class="org-type">DelayClock</span>.new)
 </pre>
-
-
 
 
 <p>
@@ -1772,7 +1977,7 @@ about it.
 </div>
 
 <div id="outline-container-10" class="outline-2">
-<h2 id="sec-10"><span class="section-number-2">10</span> Sorting and limiting posts </h2>
+<h2 id="sec-10"><span class="section-number-2">10</span> Sorting and limiting posts</h2>
 <div class="outline-text-2" id="text-10">
 
 
@@ -1820,8 +2025,6 @@ describe <span class="org-string">"#entries"</span> <span class="org-keyword">do
 </pre>
 
 
-
-
 <p>
 Implementation:
 </p>
@@ -1835,8 +2038,6 @@ Implementation:
 <span class="org-keyword">end</span>
 <span class="org-comment-delimiter"># </span><span class="org-comment">...</span>
 </pre>
-
-
 
 
 <p>
@@ -1855,8 +2056,6 @@ copy:
 </pre>
 
 
-
-
 <p>
 With that, our blog is starting to behave more like the real thing:
 </p>
@@ -1868,7 +2067,7 @@ With that, our blog is starting to behave more like the real thing:
 </div>
 
 <div id="outline-container-11" class="outline-2">
-<h2 id="sec-11"><span class="section-number-2">11</span> Adding validation </h2>
+<h2 id="sec-11"><span class="section-number-2">11</span> Adding validation</h2>
 <div class="outline-text-2" id="text-11">
 
 
@@ -1898,8 +2097,6 @@ it <span class="org-string">"should be valid with a non-blank title"</span> <spa
 </pre>
 
 
-
-
 <p>
 We could manually implement a <code>#valid?</code> method here. But we know that
 Rails needs more than just a <code>#valid?</code> method in order to present
@@ -1919,8 +2116,6 @@ that method when it's a one-liner using ActiveModel?
 </pre>
 
 
-
-
 <p>
 Now that we're using ActiveModel to satisfy our own expectations as
 well as Rails' expectations, we can no longer stub out the ActiveModel
@@ -1937,8 +2132,6 @@ stub_module <span class="org-string">'ActiveModel::Naming'</span>
 </pre>
 
 
-
-
 <p>
 And we have to add a requirement for ActiveModel to the model file:
 </p>
@@ -1947,8 +2140,6 @@ And we have to add a requirement for ActiveModel to the model file:
 
 <pre class="src src-ruby">require <span class="org-string">'active_model'</span>
 </pre>
-
-
 
 
 <p>
@@ -1986,10 +2177,6 @@ describe <span class="org-string">"#publish"</span> <span class="org-keyword">do
 
 
 
-
-
-
-
 <pre class="src src-ruby"><span class="org-keyword">class</span> <span class="org-type">Post</span>
 <span class="org-comment-delimiter"># </span><span class="org-comment">...</span>
 <span class="org-keyword">def</span> <span class="org-function-name">publish</span>(clock=<span class="org-type">DateTime</span>)
@@ -2000,8 +2187,6 @@ describe <span class="org-string">"#publish"</span> <span class="org-keyword">do
 <span class="org-comment-delimiter"># </span><span class="org-comment">...</span>
 <span class="org-keyword">end</span>
 </pre>
-
-
 
 
 <p>
@@ -2024,8 +2209,6 @@ handle validation failures:
 </pre>
 
 
-
-
 <p>
 With that change and some tweaks to the view (not shown), we now get
 an error message when we try to submit a blog post with no title.
@@ -2041,7 +2224,7 @@ an error message when we try to submit a blog post with no title.
 </div>
 
 <div id="outline-container-12" class="outline-2">
-<h2 id="sec-12"><span class="section-number-2">12</span> Presenters </h2>
+<h2 id="sec-12"><span class="section-number-2">12</span> Presenters</h2>
 <div class="outline-text-2" id="text-12">
 
 
@@ -2068,8 +2251,6 @@ picture URL field to the new post form:
 </pre>
 
 
-
-
 <p>
 And we'll create partials for both displaying text-only entries and
 for displaying picture entries. Here's the one for picture entries:
@@ -2083,8 +2264,6 @@ for displaying picture entries. Here's the one for picture entries:
   &lt;<span class="org-function-name">figcaption</span>&gt;&lt;%= post.body %&gt;&lt;/<span class="org-function-name">figcaption</span>&gt;
 &lt;<span class="org-function-name">figure</span>/&gt;
 </pre>
-
-
 
 
 <p>
@@ -2101,8 +2280,6 @@ We also go ahead and add an <code>image_url</code> attribute to the <code>Post</
 attr_accessor <span class="org-constant">:blog</span>, <span class="org-constant">:title</span>, <span class="org-constant">:body</span>, <span class="org-constant">:image_url</span>, <span class="org-constant">:pubdate</span>
 <span class="org-comment-delimiter"># </span><span class="org-comment">...</span>
 </pre>
-
-
 
 
 <p>
@@ -2122,8 +2299,6 @@ something like this:
 &lt;% end %&gt;
 <span class="org-comment-delimiter">&lt;!-- </span><span class="org-comment">... </span><span class="org-comment-delimiter">--&gt;</span>
 </pre>
-
-
 
 
 <p>
@@ -2158,7 +2333,7 @@ of object between a Model and a View.
 </div>
 
 <div id="outline-container-12-1" class="outline-3">
-<h3 id="sec-12-1"><span class="section-number-3">12.1</span> Presenting the Presenter </h3>
+<h3 id="sec-12-1"><span class="section-number-3">12.1</span> Presenting the Presenter</h3>
 <div class="outline-text-3" id="text-12-1">
 
 
@@ -2207,8 +2382,6 @@ describe <span class="org-type">PicturePostPresenter</span> <span class="org-key
 </pre>
 
 
-
-
 <p>
 We define stubs for both a "post" object, and a "template" object. The
 <code>@post</code> stub stands in for a <code>Post</code> instance. The <code>@template</code> object
@@ -2242,8 +2415,6 @@ require <span class="org-string">'delegate'</span>
   <span class="org-keyword">end</span>
 <span class="org-keyword">end</span>
 </pre>
-
-
 
 
 <p>
@@ -2285,8 +2456,6 @@ require <span class="org-string">'delegate'</span>
   <span class="org-keyword">end</span>
 <span class="org-keyword">end</span>
 </pre>
-
-
 
 
 <p>
@@ -2334,8 +2503,6 @@ describe <span class="org-type">PresentersHelper</span> <span class="org-keyword
 </pre>
 
 
-
-
 <p>
 By it's nature, <code>PresentersHelper</code> is a piece of code which will have
 to reference a lot of different classes, both model classes and
@@ -2367,8 +2534,6 @@ Here's helper code which satisfies the spec:
   <span class="org-keyword">end</span>
 <span class="org-keyword">end</span>
 </pre>
-
-
 
 
 <p>
@@ -2409,8 +2574,6 @@ describe <span class="org-string">"#picture?"</span> <span class="org-keyword">d
 </pre>
 
 
-
-
 <p>
 Implementation:
 </p>
@@ -2423,8 +2586,6 @@ Implementation:
 <span class="org-keyword">end</span>
 <span class="org-comment-delimiter"># </span><span class="org-comment">...</span>
 </pre>
-
-
 
 
 
@@ -2441,8 +2602,6 @@ the place in the future, we'll put it in our <code>ApplicationController</code>:
   <span class="org-comment-delimiter"># </span><span class="org-comment">...</span>
 <span class="org-keyword">end</span>
 </pre>
-
-
 
 
 <p>
@@ -2463,8 +2622,6 @@ the blog entry partial.
 </pre>
 
 
-
-
 <p>
 No more conditionals in the view! Just a simple method call to
 <code>#render_body</code> which Does The Right Thing.
@@ -2480,7 +2637,7 @@ Here's how it looks when we post a picture:
 </div>
 
 <div id="outline-container-12-2" class="outline-3">
-<h3 id="sec-12-2"><span class="section-number-3">12.2</span> Refactoring the presenters </h3>
+<h3 id="sec-12-2"><span class="section-number-3">12.2</span> Refactoring the presenters</h3>
 <div class="outline-text-3" id="text-12-2">
 
 <p>The two presenters we defined are nearly identical. Clearly, they are
@@ -2501,8 +2658,6 @@ require <span class="org-string">'delegate'</span>
 </pre>
 
 
-
-
 <p>
 Now our presenters are are a lot slimmer:
 </p>
@@ -2517,8 +2672,6 @@ Now our presenters are are a lot slimmer:
   <span class="org-keyword">end</span>
 <span class="org-keyword">end</span>
 </pre>
-
-
 
 
 <p>
@@ -2545,8 +2698,6 @@ base class.
 </pre>
 
 
-
-
 <p>
 We don't have time to demonstrate it here, but these will help prevent
 certain "gotchas" down the road. The first one defines <code>#to_model</code> to
@@ -2562,7 +2713,7 @@ encounter models wrapped in presenters.
 </div>
 
 <div id="outline-container-12-3" class="outline-3">
-<h3 id="sec-12-3"><span class="section-number-3">12.3</span> Do we need helpers? </h3>
+<h3 id="sec-12-3"><span class="section-number-3">12.3</span> Do we need helpers?</h3>
 <div class="outline-text-3" id="text-12-3">
 
 
@@ -2585,8 +2736,6 @@ many times have you seen helper code like this:
   <span class="org-comment-delimiter"># </span><span class="org-comment">...</span>
 <span class="org-keyword">end</span>
 </pre>
-
-
 
 
 <p>
@@ -2613,8 +2762,6 @@ HTML5-style images with captions:
 </pre>
 
 
-
-
 <p>
 This helper generates markup that looks like this:
 </p>
@@ -2628,8 +2775,6 @@ This helper generates markup that looks like this:
 </pre>
 
 
-
-
 <p>
 This is pretty generic code, and I think it works well in a helper.
 </p>
@@ -2639,7 +2784,7 @@ This is pretty generic code, and I think it works well in a helper.
 </div>
 
 <div id="outline-container-13" class="outline-2">
-<h2 id="sec-13"><span class="section-number-2">13</span> Presenters for REST </h2>
+<h2 id="sec-13"><span class="section-number-2">13</span> Presenters for REST</h2>
 <div class="outline-text-2" id="text-13">
 
 <p>  Let's add a rudimentary RESTful API to our blog.
@@ -2673,8 +2818,6 @@ This is pretty generic code, and I think it works well in a helper.
 </pre>
 
 
-
-
 <p>
   Constructing hyperlinked responses like this one presents us with a
   problem. Normally, when rendering HTML representations, we render
@@ -2695,8 +2838,6 @@ This is pretty generic code, and I think it works well in a helper.
   respond_with(<span class="org-variable-name">@post</span>)
 <span class="org-keyword">end</span>
 </pre>
-
-
 
 
 <p>
@@ -2733,7 +2874,7 @@ This is pretty generic code, and I think it works well in a helper.
 <p>
   These are three of the standard link types defined in the HTML4
   spec. When we serve a JSON representation of a blog post, we want to
-  include a link to the next chronoloigical post, the preceding post,
+  include a link to the next chronological post, the preceding post,
   and the "parent" resource (<code>up</code>), which is the blog itself.
 </p>
 <p>
@@ -2783,8 +2924,6 @@ This is pretty generic code, and I think it works well in a helper.
 </pre>
 
 
-
-
 <p>
   In order to generate URLs, the <code>LinkPresenter</code> relies on the model
   to respond to three methods, unsurprisingly called <code>#prev</code>, <code>#next</code>,
@@ -2825,8 +2964,6 @@ This is pretty generic code, and I think it works well in a helper.
 </pre>
 
 
-
-
 <p>
   Remember, we're avoiding exposing ActiveRecord built-in methods in
   the <code>Post</code> public API, so we have to define explicit class-level
@@ -2854,8 +2991,6 @@ This is pretty generic code, and I think it works well in a helper.
 </pre>
 
 
-
-
 <p>
   Then we modify <code>PostsController</code> to expose a <code>#show</code> method.
 </p>
@@ -2875,8 +3010,6 @@ This is pretty generic code, and I think it works well in a helper.
   <span class="org-keyword">end</span>
 <span class="org-keyword">end</span>
 </pre>
-
-
 
 
 <p>
@@ -2933,8 +3066,6 @@ This is pretty generic code, and I think it works well in a helper.
 </pre>
 
 
-
-
 <p>
   If you know of a better solution, please get in touch!
 </p>
@@ -2972,8 +3103,6 @@ This is pretty generic code, and I think it works well in a helper.
 </pre>
 
 
-
-
 <p>
   That's just a beginning. I'm sure you can imagine how we might
   expand this out to include a JSON version of the home page, which
@@ -2983,7 +3112,7 @@ This is pretty generic code, and I think it works well in a helper.
 </div>
 
 <div id="outline-container-14" class="outline-2">
-<h2 id="sec-14"><span class="section-number-2">14</span> Making the data stick around </h2>
+<h2 id="sec-14"><span class="section-number-2">14</span> Making the data stick around</h2>
 <div class="outline-text-2" id="text-14">
 
 
@@ -3010,7 +3139,7 @@ But first, a little philosophizing.
 </div>
 
 <div id="outline-container-14-1" class="outline-3">
-<h3 id="sec-14-1"><span class="section-number-3">14.1</span> The trouble with ActiveRecord </h3>
+<h3 id="sec-14-1"><span class="section-number-3">14.1</span> The trouble with ActiveRecord</h3>
 <div class="outline-text-3" id="text-14-1">
 
 
@@ -3025,9 +3154,9 @@ is (theoretically) outside of the ORM's responsibilities.
 <p>
 In practice, real world Rails-based projects tend to be almost
 inextricably coupled to the ActiveRecord library. And not just to
-ActiveRecord; AR-based apps also tend to have very tight
+ActiveRecord; ActiveRecord-based apps also tend to have very tight
 intercoupling between the various models in the system. In
-pathological cases, controllers and even views are also tightly
+pathological cases, controllers and even views are also closely
 married to the details of ActiveRecord and database schema.
 </p>
 <p>
@@ -3095,7 +3224,7 @@ backbone of our design.
 </div>
 
 <div id="outline-container-14-2" class="outline-3">
-<h3 id="sec-14-2"><span class="section-number-3">14.2</span> Adding ActiveRecord </h3>
+<h3 id="sec-14-2"><span class="section-number-3">14.2</span> Adding ActiveRecord</h3>
 <div class="outline-text-3" id="text-14-2">
 
 
@@ -3124,8 +3253,6 @@ that table.
   <span class="org-keyword">end</span>
 <span class="org-keyword">end</span>
 </pre>
-
-
 
 
 <p>
@@ -3157,8 +3284,6 @@ require <span class="org-string">'active_record'</span>
   <span class="org-keyword">end</span>
 <span class="org-keyword">end</span>
 </pre>
-
-
 
 
 <ul>
@@ -3215,8 +3340,6 @@ Moving on to <code>Blog</code>:
 </pre>
 
 
-
-
 <ul>
 <li>The <code>@entries</code> instance variable, which used to point to an array of
   entries, is gone. In it's place is an <code>@entry_fetcher</code> variable
@@ -3246,7 +3369,7 @@ Moving on to <code>Blog</code>:
 </div>
 
 <div id="outline-container-14-3" class="outline-3">
-<h3 id="sec-14-3"><span class="section-number-3">14.3</span> Why does <code>Blog</code> do the saving? </h3>
+<h3 id="sec-14-3"><span class="section-number-3">14.3</span> Why does <code>Blog</code> do the saving?</h3>
 <div class="outline-text-3" id="text-14-3">
 
 
@@ -3295,8 +3418,6 @@ hook in <code>Post</code>, something like this:
 </pre>
 
 
-
-
 <p>
 The trouble is, spamming social networks is almost entirely orthogonal
 to a <code>Post</code>'s primary responsibility of representing a blog post. The
@@ -3319,8 +3440,6 @@ When we keep the conceptual responsibility of adding a new post on the
 </pre>
 
 
-
-
 <p>
 That's shorter and (I'd argue) a better place for the code. The larger
 point here is that by first building up our domain models divorced
@@ -3341,7 +3460,7 @@ notifications.)
 </div>
 
 <div id="outline-container-14-4" class="outline-3">
-<h3 id="sec-14-4"><span class="section-number-3">14.4</span> Updating the <code>Blog</code> tests </h3>
+<h3 id="sec-14-4"><span class="section-number-3">14.4</span> Updating the <code>Blog</code> tests</h3>
 <div class="outline-text-3" id="text-14-4">
 
 
@@ -3367,8 +3486,6 @@ before <span class="org-keyword">do</span>
 </pre>
 
 
-
-
 <p>
 And instead of asserting that <code>#add_entry</code> adds an item to an internal
 list, we now assert that it calls <code>#save</code> to add the entry:
@@ -3386,8 +3503,6 @@ describe <span class="org-string">"#add_entry"</span> <span class="org-keyword">
 <span class="org-keyword">end</span>
 <span class="org-comment-delimiter"># </span><span class="org-comment">...</span>
 </pre>
-
-
 
 
 <p>
@@ -3456,8 +3571,6 @@ describe <span class="org-type">Blog</span> <span class="org-keyword">do</span>
 </pre>
 
 
-
-
 <p>
 This spec will continue to specify the expected order and collection
 size regardless of how the selection is accomplished inside <code>Blog</code>.
@@ -3467,7 +3580,7 @@ size regardless of how the selection is accomplished inside <code>Blog</code>.
 </div>
 
 <div id="outline-container-14-5" class="outline-3">
-<h3 id="sec-14-5"><span class="section-number-3">14.5</span> Separating out integration tests </h3>
+<h3 id="sec-14-5"><span class="section-number-3">14.5</span> Separating out integration tests</h3>
 <div class="outline-text-3" id="text-14-5">
 
 
@@ -3485,7 +3598,7 @@ possible in super-fast isolation means we can complete the
 red-green-refactor cycle in seconds rather than minutes.
 </p>
 <p>
-You may have notices some new methods being called in the <code>before</code> and
+You may have noticed some new methods being called in the <code>before</code> and
 <code>after</code> blocks. These ensure that the database contents is blown away
 before and after test runs. Here are the definitions:
 </p>
@@ -3509,14 +3622,12 @@ require_relative <span class="org-string">'../config/environment.rb'</span>
 <span class="org-keyword">end</span>
 </pre>
 
-
-
 </div>
 
 </div>
 
 <div id="outline-container-14-6" class="outline-3">
-<h3 id="sec-14-6"><span class="section-number-3">14.6</span> Updating the <code>Post</code> tests </h3>
+<h3 id="sec-14-6"><span class="section-number-3">14.6</span> Updating the <code>Post</code> tests</h3>
 <div class="outline-text-3" id="text-14-6">
 
 
@@ -3534,8 +3645,6 @@ instance, this test asserts that we can pass attributes into
   it.body.must_equal <span class="org-string">"mybody"</span>
 <span class="org-keyword">end</span>
 </pre>
-
-
 
 
 <p>
@@ -3574,8 +3683,6 @@ for <code>Post</code> tests:
 </pre>
 
 
-
-
 <p>
 In this setup block, we take a second reference to the object being
 tested and call it <code>@ar</code>. It's actually the same object, but we'll use
@@ -3600,8 +3707,6 @@ it <span class="org-string">"should not add the post to the blog"</span> <span c
 <span class="org-keyword">end</span>
 <span class="org-comment-delimiter"># </span><span class="org-comment">...</span>
 </pre>
-
-
 
 
 <p>
@@ -3633,8 +3738,6 @@ after <span class="org-keyword">do</span>
 </pre>
 
 
-
-
 <p>
 These helpers are defined in <code>spec_helper_lite.rb</code>:
 </p>
@@ -3655,14 +3758,12 @@ These helpers are defined in <code>spec_helper_lite.rb</code>:
 </pre>
 
 
-
-
 </div>
 
 </div>
 
 <div id="outline-container-14-7" class="outline-3">
-<h3 id="sec-14-7"><span class="section-number-3">14.7</span> Using ActivRecord objects as data access objects </h3>
+<h3 id="sec-14-7"><span class="section-number-3">14.7</span> Using ActivRecord objects as data access objects</h3>
 <div class="outline-text-3" id="text-14-7">
 
 
@@ -3697,7 +3798,7 @@ These helpers are defined in <code>spec_helper_lite.rb</code>:
 </div>
 
 <div id="outline-container-15" class="outline-2">
-<h2 id="sec-15"><span class="section-number-2">15</span> Concealing ActiveRecord behind a <code>FigLeaf</code> </h2>
+<h2 id="sec-15"><span class="section-number-2">15</span> Concealing ActiveRecord behind a <code>FigLeaf</code></h2>
 <div class="outline-text-2" id="text-15">
 
 <p>  So far, our attempts to treat ActiveRecord as a private
@@ -3797,8 +3898,6 @@ These helpers are defined in <code>spec_helper_lite.rb</code>:
 </pre>
 
 
-
-
 <p>
 In a nutshell, <code>FigLeaf</code> enables us to selectively make public methods
 inherited from other classes and modules private. The objects can
@@ -3821,8 +3920,6 @@ ahead and apply it to the <code>Post</code> class.
 </pre>
 
 
-
-
 <p>
 In this code, we hide the entire <code>ActiveRecord::Base</code> interface, with
 just a few carefully chosen exceptions like <code>#valid?</code> and <code>#save</code>. We
@@ -3843,11 +3940,9 @@ NoMethodError: private method `find' called for #&lt;Class:0xa1a4a50&gt;
 
 
 
-
 <pre class="example">ruby-1.9.2-p0 &gt; Post.new.destroy
 NoMethodError: Attempt to call private method
 </pre>
-
 
 
 <p>
@@ -3866,7 +3961,6 @@ tries to use <code>Post.all</code> to fetch blog entries.
 <pre class="example">app/models/blog.rb:5:in `public_method': 
   method `all' for class `Class' is private (NameError)
 </pre>
-
 
 
 <p>
@@ -3889,8 +3983,6 @@ more.
 </pre>
 
 
-
-
 <p>
 We then change <code>Blog</code> to use this scope when fetching entries.
 </p>
@@ -3901,8 +3993,6 @@ We then change <code>Blog</code> to use this scope when fetching entries.
   <span class="org-variable-name">@entry_fetcher</span> = entry_fetcher
 <span class="org-keyword">end</span>
 </pre>
-
-
 
 
 <p>
@@ -3917,8 +4007,6 @@ The sorting and limiting code in <code>Blog</code> is now redundant:
 </pre>
 
 
-
-
 <p>
 We remove it, confident that our integration tests will let us know if
 the change breaks the intended semantics of the method.
@@ -3930,8 +4018,6 @@ the change breaks the intended semantics of the method.
   fetch_entries
 <span class="org-keyword">end</span>
 </pre>
-
-
 
 
 <p>
@@ -3958,7 +4044,7 @@ way of going about what you were doing.
 </div>
 
 <div id="outline-container-16" class="outline-2">
-<h2 id="sec-16"><span class="section-number-2">16</span> Adding tags </h2>
+<h2 id="sec-16"><span class="section-number-2">16</span> Adding tags</h2>
 <div class="outline-text-2" id="text-16">
 
 <p>  Now let's add the ability to annotate posts with tags.
@@ -4000,7 +4086,7 @@ way of going about what you were doing.
 </div>
 
 <div id="outline-container-17" class="outline-2">
-<h2 id="sec-17"><span class="section-number-2">17</span> An Object Model for Tags </h2>
+<h2 id="sec-17"><span class="section-number-2">17</span> An Object Model for Tags</h2>
 <div class="outline-text-2" id="text-17">
 
 <p>   Looking at the list of use cases, it seems clear that we'll need
@@ -4014,8 +4100,6 @@ way of going about what you were doing.
   <span class="org-comment-delimiter"># </span><span class="org-comment">...</span>
 <span class="org-keyword">end</span>
 </pre>
-
-
 
 
 <p>
@@ -4045,8 +4129,6 @@ way of going about what you were doing.
 </pre>
 
 
-
-
 <p>
    <code>TagList</code> should assist us in converting from the space- or
    comma-separated strings that users type in.
@@ -4074,8 +4156,6 @@ way of going about what you were doing.
 </pre>
 
 
-
-
 <p>
    It should also eliminate any duplicates.
 </p>
@@ -4092,8 +4172,6 @@ way of going about what you were doing.
   <span class="org-keyword">end</span>
 <span class="org-keyword">end</span>
 </pre>
-
-
 
 
 <p>
@@ -4114,8 +4192,6 @@ way of going about what you were doing.
 </pre>
 
 
-
-
 <p>
    It shouldn't be tripped up by being instantiated with <code>nil</code>.
 </p>
@@ -4134,8 +4210,6 @@ way of going about what you were doing.
 </pre>
 
 
-
-
 <p>
    We'll need to be able to combine tag lists together if we're going
    to show an overview of all tags in use on the blog.
@@ -4150,8 +4224,6 @@ way of going about what you were doing.
   <span class="org-keyword">end</span>
 <span class="org-keyword">end</span>
 </pre>
-
-
 
 
 <p>
@@ -4178,8 +4250,6 @@ way of going about what you were doing.
   <span class="org-keyword">end</span>
 <span class="org-keyword">end</span>
 </pre>
-
-
 
 
 <p>
@@ -4211,8 +4281,6 @@ way of going about what you were doing.
   <span class="org-keyword">end</span>
 <span class="org-keyword">end</span>
 </pre>
-
-
 
 
 <p>
@@ -4277,8 +4345,6 @@ way of going about what you were doing.
 </pre>
 
 
-
-
 <p>
    Our <code>TagList</code> implementation behaves much like an Array, and in
    fact it is built on top of an internal Array called <code>@tags</code> which
@@ -4293,7 +4359,7 @@ way of going about what you were doing.
 </div>
 
 <div id="outline-container-18" class="outline-2">
-<h2 id="sec-18"><span class="section-number-2">18</span> Attaching the <code>TagList</code> to a <code>Post</code> </h2>
+<h2 id="sec-18"><span class="section-number-2">18</span> Attaching the <code>TagList</code> to a <code>Post</code></h2>
 <div class="outline-text-2" id="text-18">
 
 
@@ -4318,12 +4384,10 @@ way of going about what you were doing.
 </pre>
 
 
-
-
 <p>
    Now we need to tell <code>Post</code> to represent its new <code>tags</code> attribute as
-   as a <code>TagList</code> instead of as a raw string. We do that using ActiveRecord's
-   <a href="http://api.rubyonrails.org/classes/ActiveRecord/Aggregations/ClassMethods.html">composed<sub>of</sub></a> facility:
+   a <code>TagList</code> instead of as a raw string. We do that using
+   ActiveRecord's <a href="http://api.rubyonrails.org/classes/ActiveRecord/Aggregations/ClassMethods.html">composed<sub>of</sub></a> facility:
 </p>
 
 
@@ -4331,8 +4395,6 @@ way of going about what you were doing.
 <pre class="src src-ruby">composed_of <span class="org-constant">:tags</span>, <span class="org-constant">:class_name</span> =&gt; <span class="org-string">'TagList'</span>, mapping: %w(tags tags),
                    <span class="org-constant">:converter</span>  =&gt; -&gt;(value) { <span class="org-type">TagList</span>(value) }
 </pre>
-
-
 
 
 <p>
@@ -4345,7 +4407,7 @@ way of going about what you were doing.
    accessor to the underlying Array instance.
 </p>
 <p>
-   The <code>:converter</code> option tells ActiveRecord what do do when some code calls
+   The <code>:converter</code> option tells ActiveRecord what to do when some code calls
    <code>post.tags=</code> with a new value. In this case, it will convert the
    given value into a <code>TagList</code>.
 </p>
@@ -4362,8 +4424,6 @@ way of going about what you were doing.
 </pre>
 
 
-
-
 <p>
    Now whenever the <code>tags</code> field is written to the database, the value
    (an array provided by <code>TagList</code>) will first be serialized into YAML
@@ -4378,7 +4438,7 @@ way of going about what you were doing.
    is loaded before accessing that field, something that can be
    surprisingly tricky when running in development mode with Rails'
    class autoloading enabled. And if we ever changed the
-   representation of <code>TagList</code>, we'd could find ourselves in
+   representation of <code>TagList</code>, we could find ourselves in
    versioning hell as we try to load <code>TagList</code> objects which were
    serialized before the change. It's all-around easier to only
    serialize Ruby built-ins like Arrays and Hashes.
@@ -4388,7 +4448,7 @@ way of going about what you were doing.
 </div>
 
 <div id="outline-container-19" class="outline-2">
-<h2 id="sec-19"><span class="section-number-2">19</span> Making <code>Post</code> more tag-aware </h2>
+<h2 id="sec-19"><span class="section-number-2">19</span> Making <code>Post</code> more tag-aware</h2>
 <div class="outline-text-2" id="text-19">
 
 
@@ -4461,8 +4521,6 @@ way of going about what you were doing.
 </pre>
 
 
-
-
 <p>
 These new specs are satisfied with a trio of new class-level methods
 on <code>Post</code>:
@@ -4488,8 +4546,6 @@ on <code>Post</code>:
 </pre>
 
 
-
-
 <p>
 That last method is worth a second look. Remember that we defined the
 <code>+</code> operator on <code>TagList</code> to combine two tag lists into one. That
@@ -4501,7 +4557,7 @@ combine an arbitrary number of tag lists into one master list.
 </div>
 
 <div id="outline-container-20" class="outline-2">
-<h2 id="sec-20"><span class="section-number-2">20</span> Accepting and displaying tags </h2>
+<h2 id="sec-20"><span class="section-number-2">20</span> Accepting and displaying tags</h2>
 <div class="outline-text-2" id="text-20">
 
 
@@ -4517,8 +4573,6 @@ new field to the "new post" form:
 </pre>
 
 
-
-
 <p>
 We also update the blog entry partial to display any tags that are
 associated with a blog post.
@@ -4530,8 +4584,6 @@ associated with a blog post.
   &lt;<span class="org-function-name">span</span> <span class="org-variable-name">class</span>=<span class="org-string">"tags"</span>&gt;&lt;%= entry.tags %&gt;&lt;/<span class="org-function-name">span</span>&gt;
 &lt;/<span class="org-function-name">p</span>&gt;
 </pre>
-
-
 
 
 <p>
@@ -4559,8 +4611,6 @@ application layout:
 </pre>
 
 
-
-
 <p>
 The <code>tags/tag_item</code> partial is just a thin wrapper around the <code>tags/tag</code>
 partial:
@@ -4572,8 +4622,6 @@ partial:
 </pre>
 
 
-
-
 <p>
 The <code>tags/tag</code> partial renders a link to a tag-filtered view of the
 blog:
@@ -4583,8 +4631,6 @@ blog:
 
 <pre class="src src-html">&lt;%= link_to tag.to_s, root_path(:tag =&gt; tag.to_s) %&gt;
 </pre>
-
-
 
 
 <p>
@@ -4603,8 +4649,6 @@ To make this work, we make a small addition to the <code>BlogController</code>.
 </pre>
 
 
-
-
 <p>
 If a <code>:tag</code> parameter is supplied to the index action, it puts a
 filtered version of the blog into <code>@blog</code>. We define
@@ -4617,8 +4661,6 @@ filtered version of the blog into <code>@blog</code>. We define
   <span class="org-type">FilteredBlog</span>.new(<span class="org-variable-name">self</span>, tag)
 <span class="org-keyword">end</span>
 </pre>
-
-
 
 
 <p>
@@ -4644,8 +4686,6 @@ main <code>Blog</code> instance and filters its <code>#entries</code> by a given
   <span class="org-keyword">end</span>
 <span class="org-keyword">end</span>
 </pre>
-
-
 
 
 <p>
@@ -4684,7 +4724,7 @@ posts which are tagged with that keyword.
 </div>
 
 <div id="outline-container-21" class="outline-2">
-<h2 id="sec-21"><span class="section-number-2">21</span> Extracting a Taggable role </h2>
+<h2 id="sec-21"><span class="section-number-2">21</span> Extracting a Taggable role</h2>
 <div class="outline-text-2" id="text-21">
 
 
@@ -4721,8 +4761,6 @@ feature, we could include a new module in <code>Post</code>:
   <span class="org-comment-delimiter"># </span><span class="org-comment">etc...</span>
 <span class="org-keyword">end</span>
 </pre>
-
-
 
 
 <p>
@@ -4762,8 +4800,6 @@ module will intercept the <code>#tags</code> and <code>#tags=</code> methods.
 </pre>
 
 
-
-
 <p>
 This module will also intercept calls to <code>#save</code>. Before calling the
 object's original <code>#save</code> method, <code>TaggableRecord</code> updates's the
@@ -4785,8 +4821,6 @@ to write the new <code>tags</code> value so as to avoid calling the
 </pre>
 
 
-
-
 <p>
 <code>TaggableRecord</code> also uses the ActiveRecord-provided <code>#[]</code> to
 initially load up its <code>TagList</code> with values from the original record.
@@ -4803,8 +4837,6 @@ initially load up its <code>TagList</code> with values from the original record.
   <span class="org-keyword">end</span>
 <span class="org-keyword">end</span>
 </pre>
-
-
 
 
 <p>
@@ -4847,8 +4879,6 @@ module for that next:
 </pre>
 
 
-
-
 <p>
 These are pretty much exactly as they were in <code>Post</code>.
 </p>
@@ -4871,8 +4901,6 @@ basis. For that we define another global conversion method:
   item.extend(::<span class="org-type">Taggable</span>)
 <span class="org-keyword">end</span>
 </pre>
-
-
 
 
 <p>
@@ -4904,8 +4932,6 @@ serialize <span class="org-constant">:tags</span>
 </pre>
 
 
-
-
 <p>
 In fact, the only tagging-related code we can't get rid of is the line
 that tells ActiveRecord to serialize the <code>tags</code> field:
@@ -4915,8 +4941,6 @@ that tells ActiveRecord to serialize the <code>tags</code> field:
 
 <pre class="src src-ruby">serialize <span class="org-constant">:tags</span>
 </pre>
-
-
 
 
 <p>
@@ -4941,8 +4965,6 @@ before rendering the tag list:
 </pre>
 
 
-
-
 <p>
 And in the <code>PostsController</code> we apply it to a post which is about to
 be saved, so that any <code>tags</code> which were written to the new post are
@@ -4964,11 +4986,9 @@ correctly serialized.
 </pre>
 
 
-
-
 <p>
 Note that in wherever we use <code>Taggable()</code>, we use its return value as
-the "taggable" entity. We do this even know we know that <code>Taggable()</code>
+the "taggable" entity. We do this even though we know that <code>Taggable()</code>
 extends its argument with a module, altering it in place. We could just as
 well do this:
 </p>
@@ -4979,8 +4999,6 @@ well do this:
 some_object.tags = <span class="org-string">"foo, bar"</span>
 <span class="org-comment-delimiter"># </span><span class="org-comment">...</span>
 </pre>
-
-
 
 
 <p>
@@ -4997,8 +5015,8 @@ ourselves from the mental burden of having to remember how a
 particular conversion works. Not only that, but we future-proof our
 code this way: if, at some point, we decide we <em>do</em> want to use a
 decorator instead of a module, we can alter the implementation of
-<code>Taggable()</code> know that it will continue to work wherever we've used
-it.
+<code>Taggable()</code> and know that it will continue to work wherever we've
+used it.
 </p>
 
 </div>
@@ -5006,7 +5024,7 @@ it.
 </div>
 
 <div id="outline-container-22" class="outline-2">
-<h2 id="sec-22"><span class="section-number-2">22</span> Refactoring to a separate ActiveRecord model </h2>
+<h2 id="sec-22"><span class="section-number-2">22</span> Refactoring to a separate ActiveRecord model</h2>
 <div class="outline-text-2" id="text-22">
 
 <p>  We don't have to spend much time with our new tagging system to
@@ -5065,8 +5083,6 @@ it.
 </pre>
 
 
-
-
 <p>
 Note that we define any ActiveRecord models we need for the data migration within
 the context of the migration. This will enable the migration to
@@ -5094,8 +5110,6 @@ called <code>app/data</code>.
 
 
 
-
-
 <pre class="src src-ruby"><span class="org-comment-delimiter"># </span><span class="org-comment">app/data/tag.rb</span>
 <span class="org-keyword">class</span> <span class="org-type">ItemTag</span> &lt; <span class="org-type">ActiveRecord</span>::<span class="org-type">Base</span>
   belongs_to <span class="org-constant">:tag</span>
@@ -5103,8 +5117,6 @@ called <code>app/data</code>.
   delegate <span class="org-constant">:name</span>, to: <span class="org-constant">:tag</span>
 <span class="org-keyword">end</span>
 </pre>
-
-
 
 
 <p>
@@ -5124,16 +5136,14 @@ serialize <span class="org-constant">:tags</span>
 </pre>
 
 
-
-
 <p>
 Now <code>Post</code> contains no tag-related code whatsoever.
 </p>
 <p>
 Currently, our <code>TaggableRecord</code> role module uses a record's
 <code>#[]=/=#[]=</code> methods to write tags into the record. That won't do
-anymore. We rewrite <code>TaggableRecord</code> to talk to use a "tag storage"
-object for reading and writing tags instead.
+anymore. We rewrite <code>TaggableRecord</code> to use a "tag storage" object for
+reading and writing tags instead.
 </p>
 
 
@@ -5161,8 +5171,6 @@ object for reading and writing tags instead.
 
 
 
-
-
 <p>
 What's a tag storage object? Defining it is our next job. From our
 definition in <code>TaggableRecord</code>, we know it needs to respond to two
@@ -5186,8 +5194,6 @@ tags for.
 </pre>
 
 
-
-
 <p>
 Loading tags will map across an <code>ItemTag</code> collection to get the names
 of all the tags applied to the item.
@@ -5203,10 +5209,8 @@ of all the tags applied to the item.
 </pre>
 
 
-
-
 <p>
-Item tags is simply a memoizing later on top of <code>#fetch_item_tags</code>:
+Item tags is simply a memoizing layer on top of <code>#fetch_item_tags</code>:
 </p>
 
 
@@ -5217,8 +5221,6 @@ Item tags is simply a memoizing later on top of <code>#fetch_item_tags</code>:
 <span class="org-keyword">end</span>
 <span class="org-comment-delimiter"># </span><span class="org-comment">...</span>
 </pre>
-
-
 
 
 <p>
@@ -5236,8 +5238,6 @@ in the query, since we know we'll be needing the tag names.
 <span class="org-keyword">end</span>
 <span class="org-comment-delimiter"># </span><span class="org-comment">...</span>
 </pre>
-
-
 
 
 <p>
@@ -5261,8 +5261,6 @@ and <code>Tag</code> records accordingly.
 </pre>
 
 
-
-
 <p>
 <code>#add_tags</code> determines which tags have been added, and creates the
 needed <code>ItemTag</code> mappings:
@@ -5281,8 +5279,6 @@ needed <code>ItemTag</code> mappings:
 </pre>
 
 
-
-
 <p>
 It uses a helper method <code>#item_tag_attributes</code> to generate the
 attributes for new <code>ItemTag</code> records:
@@ -5297,8 +5293,6 @@ attributes for new <code>ItemTag</code> records:
 <span class="org-keyword">end</span>
 <span class="org-comment-delimiter"># </span><span class="org-comment">...</span>
 </pre>
-
-
 
 
 <p>
@@ -5321,8 +5315,6 @@ cached list and the database.
 <span class="org-keyword">end</span>
 <span class="org-comment-delimiter"># </span><span class="org-comment">...</span>
 </pre>
-
-
 
 
 <p>
@@ -5352,8 +5344,6 @@ update our <code>Taggable</code> conversion.
 </pre>
 
 
-
-
 <p>
 The <code>Taggable()</code> code reminds us: what about wrapping classes and
 relations? How does that change now that we are storing tags in the
@@ -5372,8 +5362,6 @@ The <code>#all_tags</code> accessor doesn't change much, except now it's queryin
 <span class="org-keyword">end</span>
 <span class="org-comment-delimiter"># </span><span class="org-comment">...</span>
 </pre>
-
-
 
 
 <p>
@@ -5396,8 +5384,6 @@ complain that no such attribute exists.
 </pre>
 
 
-
-
 <p>
 The last <code>TaggableRelation</code> method we need to update is the one that
 enables us to get a list of all items tagged with a particular
@@ -5413,8 +5399,6 @@ keyword. This method turns out to be a bit of a doozy.
     where(<span class="org-string">"tags.name = ?"</span>, tag)
 <span class="org-keyword">end</span>
 </pre>
-
-
 
 
 <p>
@@ -5467,43 +5451,15 @@ flexible and cheap to maintain.
 </blockquote>
 
 
+
+
 </div>
 
 </div>
 
 <div id="outline-container-23" class="outline-2">
-<h2 id="sec-23"><span class="section-number-2">23</span> Data-Context-Interaction </h2>
+<h2 id="sec-23"><span class="section-number-2">23</span> Conclusion</h2>
 <div class="outline-text-2" id="text-23">
-
-
-<p>  
-  If this process of factoring out roles has intrigued you, you may be
-  interested in exploring the the Data-Context-Interaction (DCI)
-  pattern. Here are some links to further reading
-</p>
-<ul>
-<li>Jim Gay is writing a <a href="http://www.clean-ruby.com/">book on using DCI in Ruby and Rails</a>. I've
-    seen Jim present on this topic and he's at the forefront of
-    applying this approach to Rails projects. I'm eagerly looking
-    forward to reading his book.
-</li>
-<li>Andrzej Krzywda has a great <a href="http://andrzejonsoftware.blogspot.com/2011/02/dci-and-rails.html">intro post on DCI and Rails</a>.
-</li>
-<li>An <a href="http://www.artima.com/articles/dci_vision.html">article by the inventors of DCI</a> laying out the foundations of
-    the pattern.
-</li>
-</ul>
-
-
-
-
-</div>
-
-</div>
-
-<div id="outline-container-24" class="outline-2">
-<h2 id="sec-24"><span class="section-number-2">24</span> Conclusion </h2>
-<div class="outline-text-2" id="text-24">
 
 
 <p>
@@ -5524,9 +5480,9 @@ flexible and cheap to maintain.
 
 </div>
 
-<div id="outline-container-24-1" class="outline-3">
-<h3 id="sec-24-1"><span class="section-number-3">24.1</span> Feelin' the burn </h3>
-<div class="outline-text-3" id="text-24-1">
+<div id="outline-container-23-1" class="outline-3">
+<h3 id="sec-23-1"><span class="section-number-3">23.1</span> Feelin' the burn</h3>
+<div class="outline-text-3" id="text-23-1">
 
 <blockquote>
 
@@ -5560,13 +5516,13 @@ muscles from knotting up in the first place.
 
 </div>
 
-<div id="outline-container-24-2" class="outline-3">
-<h3 id="sec-24-2"><span class="section-number-3">24.2</span> Wrap-up </h3>
-<div class="outline-text-3" id="text-24-2">
+<div id="outline-container-23-2" class="outline-3">
+<h3 id="sec-23-2"><span class="section-number-3">23.2</span> Wrap-up</h3>
+<div class="outline-text-3" id="text-23-2">
 
 
 <p>
-I'm not sure mini-books like this are well-served by long
+I'm not sure mini-books like this are well served by long
 afterwards. (Or long introductions, for that matter; sorry about
 that!). It's been a ton of work but a lot of fun writing this; I hope
 you get some value from it. If you have questions, corrections,
@@ -5582,9 +5538,9 @@ Thanks for reading, and happy hacking!
 
 </div>
 
-<div id="outline-container-25" class="outline-2">
-<h2 id="sec-25"><span class="section-number-2">25</span> Further reading </h2>
-<div class="outline-text-2" id="text-25">
+<div id="outline-container-24" class="outline-2">
+<h2 id="sec-24"><span class="section-number-2">24</span> Further reading</h2>
+<div class="outline-text-2" id="text-24">
 
 
 <p>
@@ -5592,11 +5548,17 @@ Thanks for reading, and happy hacking!
   Oriented principles to Rails development lately. Here are some
   starting points for further reading.
 </p>
+
+</div>
+
+<div id="outline-container-24-1" class="outline-3">
+<h3 id="sec-24-1"><span class="section-number-3">24.1</span> General</h3>
+<div class="outline-text-3" id="text-24-1">
+
+
 <ul>
 <li>Steven Baker is writing an eBook on applying SOLID principles to
   Rails code, called <a href="http://solidrailsbook.com">Solid Rails</a>.
-</li>
-<li>As I mentioned earlier, Jim Gay has a forthcoming book on <a href="http://www.clean-ruby.com/">DCI in Ruby and Rails</a>.
 </li>
 <li>Steve Klabnick wrote an article called "<a href="http://blog.steveklabnik.com/2011/09/06/the-secret-to-rails-oo-design.html">The Secret to Rails OO Design</a>"
 
@@ -5617,6 +5579,23 @@ Thanks for reading, and happy hacking!
 </li>
 <li>Nicholas Henry: "<a href="http://blog.firsthand.ca/2011/10/rails-is-not-your-application.html">Rails is Not Your Application</a>".
 </li>
+<li>Dan Croak wrote a <a href="http://robots.thoughtbot.com/post/14825364877/evaluating-alternative-decorator-implementations-in">comprehensive overview of Decorator implementations</a> in Ruby
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-24-2" class="outline-3">
+<h3 id="sec-24-2"><span class="section-number-3">24.2</span> Fast Tests and Mock Objects</h3>
+<div class="outline-text-3" id="text-24-2">
+
+<ul>
+<li>Greg Moeck explains why <a href="http://gmoeck.github.com/2011/10/26/stubbing-is-not-enough.html">stubs are not enough</a>. I also really
+     enjoyed his RubyConf 2011 presentation <a href="http://confreaks.net/videos/659-rubyconf2011-why-you-don-t-get-mock-objects">"Why You Don't Get Mock Objects"</a>.
+</li>
 <li>Corey Haines has been giving talks on <a href="http://confreaks.net/videos/641-gogaruco2011-fast-rails-tests">fast rails tests</a>.
 </li>
 </ul>
@@ -5626,9 +5605,42 @@ Thanks for reading, and happy hacking!
 
 </div>
 
-<div id="outline-container-26" class="outline-2">
-<h2 id="sec-26"><span class="section-number-2">26</span> Photo Credits </h2>
-<div class="outline-text-2" id="text-26">
+<div id="outline-container-24-3" class="outline-3">
+<h3 id="sec-24-3"><span class="section-number-3">24.3</span> Data-Context-Interaction</h3>
+<div class="outline-text-3" id="text-24-3">
+
+<p>   A number of Rails practitioners have begun exploring the
+   application of the Data-Context-Interaction (DCI) pattern to Rails
+   apps. DCI is the brainchild of the same people who came up with
+   MVC, and offers some novel techniques for breaking down
+   functionality along use-case boundaries. Here are some reading
+   suggestions to get you started learning about DCI.
+</p>
+<ul>
+<li>An <a href="http://www.artima.com/articles/dci_vision.html">article by the inventors of DCI</a> laying out the foundations of
+    the pattern.
+</li>
+<li>Jim Gay is writing a <a href="http://www.clean-ruby.com/">book on using DCI in Ruby and Rails</a>. I've
+    seen Jim present on this topic and he's at the forefront of
+    applying this approach to Rails projects. I'm eagerly looking
+    forward to reading his book.
+</li>
+<li>Andrzej Krzywda has a great <a href="http://andrzejonsoftware.blogspot.com/2011/02/dci-and-rails.html">intro post on DCI and Rails</a>.
+</li>
+<li>Mike Pack: <a href="http://mikepackdev.com/blog_posts/24-the-right-way-to-code-dci-in-ruby">The right way to code DCI in Ruby</a>.
+</li>
+</ul>
+
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-25" class="outline-2">
+<h2 id="sec-25"><span class="section-number-2">25</span> Photo Credits</h2>
+<div class="outline-text-2" id="text-25">
 
 <ul>
 <li>"Wet Paint" photo by <a href="http://www.flickr.com/photos/bixentro/2828929186/">"bixentro" on Flickr</a>. 
@@ -5636,96 +5648,17 @@ Thanks for reading, and happy hacking!
 </ul>
 
 
-</div>
-
-</div>
-
-<div id="outline-container-27" class="outline-2">
-<h2 id="sec-27"><span class="section-number-2">27</span> Issues </h2>
-<div class="outline-text-2" id="text-27">
 
 
-</div>
 
-<div id="outline-container-27-1" class="outline-3">
-<h3 id="sec-27-1"><span class="section-number-3">27.1</span> <span class="todo TODO"> TODO</span> Either resolve or explain mixed "entries"/"posts" terminology </h3>
-<div class="outline-text-3" id="text-27-1">
-
-</div>
-
-</div>
-
-<div id="outline-container-27-2" class="outline-3">
-<h3 id="sec-27-2"><span class="section-number-3">27.2</span> <span class="todo TODO"> TODO</span> Show all requires? </h3>
-<div class="outline-text-3" id="text-27-2">
-
-<p>   I've omitted many 'require' lines for brevity; perhaps I should
-   either show them all or explain that I omit them.
-</p></div>
-
-</div>
-
-<div id="outline-container-27-3" class="outline-3">
-<h3 id="sec-27-3"><span class="section-number-3">27.3</span> <span class="todo TODO"> TODO</span> Show definition of <code>pubdate</code> accessors </h3>
-<div class="outline-text-3" id="text-27-3">
-
-</div>
-
-</div>
-
-<div id="outline-container-27-4" class="outline-3">
-<h3 id="sec-27-4"><span class="section-number-3">27.4</span> <span class="todo TODO"> TODO</span> Reference Greg Moeck's work </h3>
-<div class="outline-text-3" id="text-27-4">
-
-<ul>
-<li><a href="http://gmoeck.github.com/2011/10/26/stubbing-is-not-enough.html">http://gmoeck.github.com/2011/10/26/stubbing-is-not-enough.html</a>
-</li>
-<li><a href="http://confreaks.net/videos/659-rubyconf2011-why-you-don-t-get-mock-objects">http://confreaks.net/videos/659-rubyconf2011-why-you-don-t-get-mock-objects</a>
-</li>
-</ul>
-
-</div>
-
-</div>
-
-<div id="outline-container-27-5" class="outline-3">
-<h3 id="sec-27-5"><span class="section-number-3">27.5</span> <span class="todo TODO"> TODO</span> Consider Droid Sans for HTML version </h3>
-<div class="outline-text-3" id="text-27-5">
-
-<p>   From Martin Samson:
-</p>
-<blockquote>
-
-<p>   Add the following line in the html code just before the style:
-&lt;link href="<a href="http://fonts.googleapis.com/css?family=Droid">http://fonts.googleapis.com/css?family=Droid</a>
-Sans&amp;subset=latin" rel="stylesheet" type="text/css"&gt;
-</p>
-<p>
-Add 'Droid Sans' in the font-family of html:
- html { font-family: 'Droid Sans', Times, serif; font-size: 12pt; }
-</p>
-</blockquote>
-
-
-</div>
-
-</div>
-
-<div id="outline-container-27-6" class="outline-3">
-<h3 id="sec-27-6"><span class="section-number-3">27.6</span> <span class="todo TODO"> TODO</span> Talk a little about the project setup </h3>
-<div class="outline-text-3" id="text-27-6">
-
-<p>   Ruby/Rails/Gem versions
-</p>
-</div>
 </div>
 </div>
 </div>
 
 <div id="postamble">
-<p class="date">Date: 2011-11-16 01:13:53 EST</p>
+<p class="date">Date: 2012-02-03 15:12:26 EST</p>
 <p class="author">Author: Avdi Grimm</p>
-<p class="creator">Org version 7.7 with Emacs version 24</p>
+<p class="creator">Org version 7.8.03 with Emacs version 24</p>
 <a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
 
 </div>
