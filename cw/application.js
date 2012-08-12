@@ -1,7 +1,7 @@
 $(function() {
   // Show coderwall
-  $('#coderwall').proudify({'username':'huntca', 'service':'coderwall'});
+  $('#coderwall').proudify({'username':'chrishunt', 'service':'coderwall'});
 
   // Show GitHub repos
-  $('#github').proudify({'username':'huntca', 'service':'github'});
+  $('#github').proudify({'username':'chrishunt', 'service':'github'});
 });
