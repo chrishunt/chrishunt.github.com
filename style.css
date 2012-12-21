@@ -4,68 +4,35 @@
 }
 
 body {
-  font-family: Georgia, Times, serif;
-  font-size: 30px;
-  background: #eee;
-  color: #888;
-}
-
-h1 {
-  color: #555;
-  font-size: 100px;
-  text-align: center;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: lowercase;
+  font-family: 'Open Sans', sans-serif;
+  color: #111;
+  background-color: #eee;
 }
 
 p {
-  margin-top: 10px;
   text-align: center;
 }
 
 a {
-  color: #aaa;
+  color: #777;
   text-decoration: none;
 }
 
 a:hover {
-  opacity: 0.9;
+  color: #aaa;
 }
 
-#aboutme {
-  margin-top: 30px;
-  text-align: center;
+#avatar img{
+  width: 60px;
+  border-radius: 100px;
+}
+
+#social {
+  margin: 60px 0 0 0;
+  font-size: 60px;
 }
 
 #bio {
-  font-style: italic;
-  margin-right: 10px;
-}
-
-#avatar {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-}
-
-#avatar:hover {
-  opacity: 0.9;
-}
-
-#avatar, #twitter_update_list {
-  z-index: -10;
-}
-
-#twitter_update_list {
-  position: fixed;
-  left: 170px;
-  bottom: 10px;
-  font-size: 15px;
-  padding: 10px;
-}
-
-#twitter_update_list li {
-  list-style: none;
+  font-size: 16px;
+  line-height: 160%;
 }
