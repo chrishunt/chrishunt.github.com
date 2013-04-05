@@ -9,6 +9,11 @@ body {
   background-color: #eee;
 }
 
+h1 {
+  margin: 1em 0;
+  font-size: 200%;
+}
+
 p {
   text-align: center;
 }
@@ -20,6 +25,18 @@ a {
 
 a:hover {
   color: #aaa;
+}
+
+.talk {
+  width: 700px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.slides {
+  padding-top: 20px;
+  margin: auto;
 }
 
 #avatar img{
