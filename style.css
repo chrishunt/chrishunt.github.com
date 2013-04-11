@@ -34,6 +34,12 @@ a:hover {
   text-align: center;
 }
 
+.description {
+  border-top: 0.25em solid #ddd;
+  border-bottom: 0.25em solid #ddd;
+  padding: 1em 0
+}
+
 .slides {
   padding-top: 20px;
   margin: auto;
