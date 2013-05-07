@@ -29,7 +29,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a:hover, .current {
   color: #84596B;
 }
 
@@ -61,7 +61,7 @@ article {
   border-radius: 100px;
 }
 
-#social {
+#navigation {
   margin: 60px 0 0 0;
   font-size: 60px;
   text-align: center;
