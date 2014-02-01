@@ -56,7 +56,7 @@ article {
   text-align: center;
 }
 
-#avatar img{
+#avatar img, #blog img {
   width: 60px;
   border-radius: 100px;
 }
