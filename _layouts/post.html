@@ -7,4 +7,7 @@ layout: default
   {{ content }}
 </article>
 
-<script> $(function() { $("#talks").addClass("current"); }); </script>
+<script>
+  var nav = document.getElementById("talks");
+  nav.className = nav.className + " current";
+</script>
