@@ -82,7 +82,7 @@ article {
   padding-bottom: 15px;
 }
 
-#blog img {
+.icon img {
   width: 40px;
 }
 
@@ -101,7 +101,7 @@ article {
     width: 140px;
   }
 
-  #blog img {
+  .icon img {
     width: 70px;
   }
 
