@@ -1,5 +1,6 @@
 ---
 title: Solving the Rubik's Cube Blindfolded
+category: cfps
 ---
 
 # Solving the Rubik's Cube Blindfolded
