@@ -64,7 +64,7 @@ title: "KTM 300"
 - [Hondo Garage Buzz-Kill Isolator](http://chrshnt.com/2kyUiGu)
 
 ## Log
-The speedometer cable broke at 25.6 hours and was replaced at 45 hours on 2017-03-07. The on-board computer is now 19.4 house behind actual hours.
+The speedometer cable broke at 25.6 hours and was replaced at 45 hours on 2017-03-07. The computer is now 19.4 house behind actual hours.
 
 #### 2016-11-15 (0hs)
 - Purchased new from See See
