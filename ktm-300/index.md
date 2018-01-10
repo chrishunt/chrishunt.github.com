@@ -29,8 +29,13 @@ title: "KTM 300"
 - Engine **50:1 mix** with fully synthetic **Motorex Cross Power 2T**
 - Transmission **800ml** of **Motorex Top Speed 4T 15W/50**
 
-### Chain
-- **55-58mm of slack** measured above the swingarm, just past chain guard
+### Post Ride Checklist
+- Wash bike
+- Oil chain
+- Measure chain slack (55-58mm above swingarm, just past chain guard)
+- Check wheel bearings (wobble wheel back and forth)
+- Check/clean air filter
+- Change oil (10-20 hours)
 
 ## Installed
 - [Bullet Proof Designs Radiator Guards](http://chrshnt.com/2k98KSL)
@@ -123,3 +128,9 @@ The speedometer cable broke at 25.6 hours and was replaced at 45 hours on 2017-0
 
 #### 2017-01-05 (90hs, 71 on speedo)
 - Install Cycra HCM mounts in garage
+
+#### 2017-01-11 (92hs, 72.3 on speedo)
+- Install FMF Gnarly Torque pipe and P3 guard at See See
+- Repack FMF Turbine Core II Silencer at See See
+- Install Rekluse Radius CX clutch at See See
+- Install V-Force 4R reed at See See
