@@ -134,3 +134,6 @@ The speedometer cable broke at 25.6 hours and was replaced at 45 hours on 2017-0
 - Repack FMF Turbine Core II Silencer at See See
 - Install Rekluse Radius CX clutch at See See
 - Install V-Force 4R reed at See See
+
+#### 2017-01-14 (94hs, 74.8 on speedo)
+- Oil change at home
