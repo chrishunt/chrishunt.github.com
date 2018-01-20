@@ -11,19 +11,20 @@ title: "KTM 300"
 - **Purchased:** 2016-11-15 at [See See KTM of Portland](https://www.seeseektm.com)
 
 ### Tools
-- **8/13mm spanners** for misc bolts around the bike
+- **8/13mm spanners** for bolts around the bike (oil drain plug)
 - **10mm spanner** for the front axle bolts/rim lock
 - **17mm spanner** for front axle
+- **19mm spanner** for oil cap
 - **27mm spanner** for rear axle
 
 ### Tires
 - **GoldenTyre GT 216AA** 90/100 21 (*current*)
-- **GoldenTyre GT 369X** 110/100 18 (*current*)
+- **GoldenTyre GT 216X** 140/80 18 (*current*)
+- **GoldenTyre GT 369X** 110/100 18
 - **GoldenTyre GT 523KX** 110/100 18
-- **GoldenTyre GT 216X** 140/80 18
 - **GoldenTyre G-Mousse** 90/90 21 (*current*)
-- **GoldenTyre G-Mousse** 120/90 18 (*current*)
-- **GoldenTyre G-Mousse** 140/80 18
+- **GoldenTyre G-Mousse** 140/80 18 (*current*)
+- **GoldenTyre G-Mousse** 120/90 18
 
 ### Oil
 - Engine **50:1 mix** with fully synthetic **Motorex Cross Power 2T**
@@ -137,3 +138,7 @@ The speedometer cable broke at 25.6 hours and was replaced at 45 hours on 2017-0
 
 #### 2017-01-14 (94hs, 74.8 on speedo)
 - Oil change at home
+
+#### 2017-01-19 (97hs, 77.0 on speedo)
+- Install GT216AA, G-Mousse 90/90 in garage
+- Install GT216X, G-Mousse 140/80 in garage
