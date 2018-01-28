@@ -52,6 +52,7 @@ title: "KTM 300"
 - [Midwest Mountain Engineering Clutch Lever](http://chrshnt.com/2gQiqQo)
 - [Motorsport Products Pro Panel Stand](http://chrshnt.com/2gc4zVF)
 - [Orange Tusk Oil Filler Plug](http://chrshnt.com/2mbOeo0)
+- [ODI V2 Emig MX Grips](http://chrshnt.com/2ByiQVT)
 - [P3 Carbon Pipe Guard](http://chrshnt.com/2maBhed)
 - [Pro Pegs Titanium Footpegs Mud Version](http://chrshnt.com/2kVBn82)
 - [Pro Pegs Titanium Rear Brake Lever Tip](http://chrshnt.com/2kVrU0H)
@@ -142,3 +143,6 @@ The speedometer cable broke at 25.6 hours and was replaced at 45 hours on 2017-0
 #### 2017-01-19 (97hs, 77.0 on speedo)
 - Install GT216AA, G-Mousse 90/90 in garage
 - Install GT216X, G-Mousse 140/80 in garage
+
+#### 2017-01-27 (99hs, 79.4 on speedo)
+- Install Odi V2 Emig MX grips in garage
