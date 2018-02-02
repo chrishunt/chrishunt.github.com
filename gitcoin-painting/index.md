@@ -5,7 +5,7 @@ title: "Gitcoin Painting"
 
 ## Fundación Fraternidad Sin Fronteras
 
-Thursday, February 2, 2018. Mexico City, Mexico.
+Thursday, February 1, 2018. Mexico City, Mexico.
 
 <p class='video'>
   <iframe
