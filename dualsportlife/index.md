@@ -4,16 +4,12 @@ title: "Garage Series - @dualsportlife"
 ---
 
 # D U A L S P O R T L I F E
-### Garage Series, Chris Hunt, [instagram/@huntca](https://www.instagram.com/huntca)
-February 8, 2018 - Portland, Oregon USA
+### Garage Series, February 2018
+- Name: **Chris Hunt ([@huntca](https://www.instagram.com/huntca))**
+- Location: **Portland OR USA**
+- Bike: **2017 KTM 300 XC-W Six Days**
 
 ![](dualsportlife-1.jpg)
-![](dualsportlife-2.jpg)
-![](dualsportlife-3.jpg)
-![](dualsportlife-4.jpg)
-![](dualsportlife-5.jpg)
-![](dualsportlife-6.jpg)
-![](dualsportlife-7.jpg)
 
 ### How long have you been riding and what got you started?
 
@@ -23,9 +19,8 @@ My first motorcycle was a 2008 Yamaha TW200 and I bought it new the same year. I
 
 I was first attracted to trail riding because of how dang beautiful everything is once you get on a bike and ride for 15 minutes into the forest. It's completely silent and there's no signs, lights, garbage, or other people. It's also the only time I don't have internet access, which is kind of cool I think. The more I ride, the more I like this feeling and look for it. I get almost as much satisfaction from taking photos on the trails as I do from riding them.
 
-### What bike do you ride?
-
-2017 KTM 300 XC-W Six Days
+![](dualsportlife-2.jpg)
+![](dualsportlife-3.jpg)
 
 ### What mods have you done to the bike?
 
@@ -52,6 +47,8 @@ I was first attracted to trail riding because of how dang beautiful everything i
 - [Enduro Engineering Rear Disc Guard](http://chrshnt.com/2geJFVO)
 - [Bullet Proof Designs Radiator Guards](http://chrshnt.com/2k98KSL)
 
+![](dualsportlife-4.jpg)
+
 ### What do you like about the bike?
 
 I like the light weight (230lbs), low vibrations, easy/cheap maintenance, and comfortable suspension. It's the perfect bike for the challenging trails we have near home in Oregon. It also has a wide ratio transmission so it can hit highway speeds between trails. Although it doesn't ship from KTM 'street legal', it wasn't much work to get it ready and legal for the street. It's a great dualsport for folks who prefer the dirt.
@@ -60,6 +57,11 @@ I like the light weight (230lbs), low vibrations, easy/cheap maintenance, and co
 
 It's a newer two stroke, so it doesn't like riding at steady speeds for long periods of time. On the road, I'll often find myself bouncing between 40 and 60 mph with out even trying because it's just what the bike wants to do. It's not ideal for lengthy 'adventure' trips and I sometimes dream of having the slightly longer-legged KTM 500. I think the correct solution here is to just get a second bike, but I've always owned a single bike and like trying to make it work.
 
+![](dualsportlife-5.jpg)
+![](dualsportlife-6.jpg)
+
 ### Overall would you recommend the bike to other people?
 
 Yes and I do all the time. I think the KTM 300 is one of the best bikes you can be riding when you're on the trails. The 2017 and later models are even more desirable because improvements to the engine have made the bike vibrate less than almost any other bike in the same category (like the four stroke 250, 350, 500).
+
+![](dualsportlife-7.jpg)
