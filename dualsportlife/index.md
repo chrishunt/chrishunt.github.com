@@ -13,7 +13,7 @@ title: "Garage Series - @dualsportlife"
 
 ### How long have you been riding and what got you started?
 
-My first motorcycle was a 2008 Yamaha TW200 and I bought it new the same year. I was living in Seattle at the time and thought it would be a fun way to spice up my commute. It never saw dirt or an oil change, but lasted me 10k miles as my only vehicle before I sold it for a Harley Sportster, later a Triumph Bonneville, then Tiger 800, then Yamaha WR250R, and finally the 2017 KTM 300 XC-W that I ride today.
+My first motorcycle was a 2008 Yamaha TW200 and I bought it new the same year. I was living in Seattle at the time and thought it would be a fun way to spice up my commute. It never saw dirt or an oil change, but lasted me 10k miles as my only vehicle before I sold it for a Harley Sportster, later a Triumph Bonneville, then Tiger 800, a Yamaha WR250R, and finally the 2017 KTM 300 XC-W that I ride today.
 
 ### What do you like most about the dual-sport lifestyle?
 
