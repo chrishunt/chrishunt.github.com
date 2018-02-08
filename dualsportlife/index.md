@@ -55,7 +55,7 @@ I like the light weight (230lbs), low vibrations, easy/cheap maintenance, and co
 
 ### What do you not like about the bike?
 
-It's a newer two stroke, so it doesn't like riding at steady speeds for long periods of time. On the road, I'll often find myself bouncing between 40 and 60 mph with out even trying because it's just what the bike wants to do. It's not ideal for lengthy 'adventure' trips and I sometimes dream of having the slightly longer-legged KTM 500. I think the correct solution here is to just get a second bike, but I've always owned a single bike and like trying to make it work.
+It's a newer two stroke, so it doesn't like riding at steady speeds for long periods of time. On the road, I'll often find myself bouncing between 40 and 60 mph with out even trying because it's just what the bike wants to do. It's not ideal for lengthy adventure trips and I sometimes dream of having the slightly longer-legged KTM 500. I think the correct solution here is to just get a second bike, but I've always owned a single bike and like trying to make it work.
 
 ![](dualsportlife-5.jpg)
 ![](dualsportlife-6.jpg)
