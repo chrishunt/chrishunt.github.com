@@ -5,9 +5,9 @@ title: "Garage Series - @dualsportlife"
 
 # D U A L S P O R T L I F E
 ### Garage Series, February 2018
-- Name: **Chris Hunt ([@huntca](https://www.instagram.com/huntca))**
-- Location: **Portland OR USA**
-- Bike: **2017 KTM 300 XC-W Six Days**
+- **Chris Hunt ([@huntca](https://www.instagram.com/huntca))**
+- **Portland OR USA**
+- **2017 KTM 300 XC-W Six Days**
 
 ![](dualsportlife-1.jpg)
 
