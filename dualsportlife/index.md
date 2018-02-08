@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Garage Series - @dualsportlife"
+---
+
 # D U A L S P O R T L I F E
 ### Garage Series, Chris Hunt, [instagram/@huntca](https://www.instagram.com/huntca)
 February 8, 2018 - Portland, Oregon USA
