@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: titleless
 title: "Garage Series - @dualsportlife"
 ---
 
