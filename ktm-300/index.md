@@ -147,3 +147,6 @@ The speedometer cable broke at 25.6 hours and was replaced at 45 hours on 2017-0
 #### 2017-01-27 (99hs, 79.4 on speedo)
 - Install Odi V2 Emig MX grips in garage
 - Install front brake pads in garage
+
+#### 2018-02-12 (105hs, 85.2 on speedo)
+- Oil change in garage
