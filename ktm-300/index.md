@@ -68,30 +68,56 @@ title: "KTM 300"
 ## Log
 The speedometer cable broke at 25.6 hours and was replaced at 45 hours on 2017-03-07. The computer is now 19.4 house behind actual hours.
 
-#### 2016-11-15 (0hs)
-- Purchased new from See See
+#### 2018-02-12 (105hs, 85.2 on speedo)
+- Oil change in garage
 
-#### 2016-12-05 (5hs)
-- 5 hours service at See See
+#### 2017-01-27 (99hs, 79.4 on speedo)
+- Install Odi V2 Emig MX grips in garage
+- Install front brake pads in garage
 
-#### 2016-12-22 (10hs)
-- GT 216/523 tires and HD tubes installed at See See
+#### 2017-01-19 (97hs, 77.0 on speedo)
+- Install GT216AA, G-Mousse 90/90 in garage
+- Install GT216X, G-Mousse 140/80 in garage
 
-#### 2017-01-13 (16hs)
-- Suspension services by Konflict Motorsports, stock springs, re-valved
+#### 2017-01-14 (94hs, 74.8 on speedo)
+- Oil change at home
 
-#### 2017-01-18 (18hs)
-- 20 hour service at See See
+#### 2017-01-11 (92hs, 72.3 on speedo)
+- Install FMF Gnarly Torque pipe and P3 guard at See See
+- Repack FMF Turbine Core II Silencer at See See
+- Install Rekluse Radius CX clutch at See See
+- Install V-Force 4R reed at See See
 
-#### 2017-01-25 (20hs)
-- Replace drive sprocket nut/washer at See See
+#### 2017-01-05 (90hs, 71 on speedo)
+- Install Cycra HCM mounts in garage
 
-#### 2017-01-29 (26hs)
-- Speedometer cable breaks at 25.6 hours
-- Hour computer is now 19.4 hours behind actual hours
+#### 2017-12-31 (88hs, 69 on speedo)
+- Oil and air filter change in garage
 
-#### 2017-03-04 (42hs)
-- New rear brake pads installed by me in OHV staging area
+#### 2017-12-21 (87hs, 67.9 on speedo)
+- Installed Pro Pegs Titanium Footpegs in garage
+- Installed Pro Pegs Titanium Rear Brake Lever Tip in garage
+- Installed Hondo Garage Phone Mount in garage
+
+#### 2017-11-16 (84hs, 64.3 on speedo)
+- New top end at See See (piston, gaskets, o-ring, spark plug)
+
+#### 2017-06-02 (80hs, 60.4 on speedo)
+- Change oil at See See
+- Install 369X and G-Mousse at See See
+
+#### 2017-05-02 (71hs, 51.3 on speedo)
+- Change oil and air filter at See See
+- Adjust clutch at See See
+
+#### 2017-04-15 (61hs, 41.7 on speedo)
+- 60 hour service at See See
+- Suspension service at Konflict Motorsports
+
+#### 2017-03-21 (53hs, 33.4 on speedo)
+- Change oil and air filter at See See
+- Install 216AA, 216X, and G-Mousse at See See
+- Install new plastics and racing graphics at See See
 
 #### 2017-03-07 (45hs, 25.6 on speedo)
 - 40 hour service at See See
@@ -100,53 +126,27 @@ The speedometer cable broke at 25.6 hours and was replaced at 45 hours on 2017-0
 - Lectron carb installed at See See
 - Advised to change oil every 10 hours
 
-#### 2017-03-21 (53hs, 33.4 on speedo)
-- Change oil and air filter at See See
-- Install 216AA, 216X, and G-Mousse at See See
-- Install new plastics and racing graphics at See See
+#### 2017-03-04 (42hs)
+- New rear brake pads installed by me in OHV staging area
 
-#### 2017-04-15 (61hs, 41.7 on speedo)
-- 60 hour service at See See
-- Suspension service at Konflict Motorsports
+#### 2017-01-29 (26hs)
+- Speedometer cable breaks at 25.6 hours
+- Hour computer is now 19.4 hours behind actual hours
 
-#### 2017-05-02 (71hs, 51.3 on speedo)
-- Change oil and air filter at See See
-- Adjust clutch at See See
+#### 2017-01-25 (20hs)
+- Replace drive sprocket nut/washer at See See
 
-#### 2017-06-02 (80hs, 60.4 on speedo)
-- Change oil at See See
-- Install 369X and G-Mousse at See See
+#### 2017-01-18 (18hs)
+- 20 hour service at See See
 
-#### 2017-11-16 (84hs, 64.3 on speedo)
-- New top end at See See (piston, gaskets, o-ring, spark plug)
+#### 2017-01-13 (16hs)
+- Suspension services by Konflict Motorsports, stock springs, re-valved
 
-#### 2017-12-21 (87hs, 67.9 on speedo)
-- Installed Pro Pegs Titanium Footpegs in garage
-- Installed Pro Pegs Titanium Rear Brake Lever Tip in garage
-- Installed Hondo Garage Phone Mount in garage
+#### 2016-12-22 (10hs)
+- GT 216/523 tires and HD tubes installed at See See
 
-#### 2017-12-31 (88hs, 69 on speedo)
-- Oil and air filter change in garage
+#### 2016-12-05 (5hs)
+- 5 hours service at See See
 
-#### 2017-01-05 (90hs, 71 on speedo)
-- Install Cycra HCM mounts in garage
-
-#### 2017-01-11 (92hs, 72.3 on speedo)
-- Install FMF Gnarly Torque pipe and P3 guard at See See
-- Repack FMF Turbine Core II Silencer at See See
-- Install Rekluse Radius CX clutch at See See
-- Install V-Force 4R reed at See See
-
-#### 2017-01-14 (94hs, 74.8 on speedo)
-- Oil change at home
-
-#### 2017-01-19 (97hs, 77.0 on speedo)
-- Install GT216AA, G-Mousse 90/90 in garage
-- Install GT216X, G-Mousse 140/80 in garage
-
-#### 2017-01-27 (99hs, 79.4 on speedo)
-- Install Odi V2 Emig MX grips in garage
-- Install front brake pads in garage
-
-#### 2018-02-12 (105hs, 85.2 on speedo)
-- Oil change in garage
+#### 2016-11-15 (0hs)
+- Purchased new from See See
