@@ -32,6 +32,11 @@ title: "KTM 300"
 - **27mm spanner** for rear axle
 
 ## Installed
+- [Rekluse Radius CX Clutch](http://chrshnt.com/2maAuKh)
+- [Slavens Mule HV Lectron Carburetor](http://chrshnt.com/2mTlouJ)
+- [V-Force 4R Reed](http://chrshnt.com/2qBdKrs)
+- [FMF Gold Series "Gnarly Torque" Pipe](http://chrshnt.com/2majio9)
+- [FMF Turbine Core II Silencer](http://chrshnt.com/2k9hYOV)
 - [Bullet Proof Designs Radiator Guards](http://chrshnt.com/2k98KSL)
 - [Cycra HCM Mounts](http://chrshnt.com/2mbStQF)
 - [Cycra ProBend Handguards](http://chrshnt.com/2qxU3Ro)
@@ -39,8 +44,6 @@ title: "KTM 300"
 - [Enduro Engineering KTM Grab Handle ](http://chrshnt.com/2gc8Rw4)
 - [Enduro Engineering Rear Disc Guard](http://chrshnt.com/2geJFVO)
 - [Enduro Engineering Skid Plate](http://chrshnt.com/2g8bIoC)
-- [FMF Gold Series "Gnarly Torque" Pipe](http://chrshnt.com/2majio9)
-- [FMF Turbine Core II Silencer](http://chrshnt.com/2k9hYOV)
 - [Konflict Suspension](http://www.konflictmotorsports.com)
 - [Midwest Mountain Engineering Clutch Lever](http://chrshnt.com/2gQiqQo)
 - [Motorsport Products Pro Panel Stand](http://chrshnt.com/2gc4zVF)
@@ -49,10 +52,7 @@ title: "KTM 300"
 - [P3 Carbon Pipe Guard](http://chrshnt.com/2maBhed)
 - [Pro Pegs Titanium Footpegs Mud Version](http://chrshnt.com/2kVBn82)
 - [Pro Pegs Titanium Rear Brake Lever Tip](http://chrshnt.com/2kVrU0H)
-- [Rekluse Radius CX Clutch](http://chrshnt.com/2maAuKh)
 - [See See KTM Racing Graphics](http://chrshnt.com/2kVTDhP)
-- [Slavens Mule HV Lectron Carburetor](http://chrshnt.com/2mTlouJ)
-- [V-Force 4R Reed](http://chrshnt.com/2qBdKrs)
 - [Hondo Garage Perfect Squeeze Phone Mount](http://chrshnt.com/2kWYwXU)
 - [Hondo Garage Low Profile Bar Clamp](http://chrshnt.com/2kzWA8g)
 - [Hondo Garage Portrait Adapter Plate](http://chrshnt.com/2kUjpmq)
