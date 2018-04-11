@@ -30,14 +30,6 @@ title: "KTM 300"
 - Engine **50:1 mix** with fully synthetic **Motorex Cross Power 2T**
 - Transmission **800ml** of **Motorex Top Speed 4T 15W/50**
 
-### Post Ride Checklist
-- Wash bike
-- Oil chain
-- Measure chain slack (55-58mm above swingarm, just past chain guard)
-- Check wheel bearings (wobble wheel back and forth)
-- Check/clean air filter
-- Change oil (10-20 hours)
-
 ## Installed
 - [Bullet Proof Designs Radiator Guards](http://chrshnt.com/2k98KSL)
 - [Cycra HCM Mounts](http://chrshnt.com/2mbStQF)
