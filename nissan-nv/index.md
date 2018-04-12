@@ -3,10 +3,9 @@ layout: default
 title: "4x4 Nissan NV 3500"
 ---
 
-# 4x4 2014 Nissan NV 3500HD SV
+### 2014 Nissan NV 3500HD SV High Roof with Quigley 4x4
 
 ![](https://photos.smugmug.com/photos/i-BNTvBNt/0/a709af42/XL/i-BNTvBNt-XL.jpg)
-**2014 Nissan NV 3500HD SV High Roof with Quigley 4x4**
 
 ### About
 
