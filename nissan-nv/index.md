@@ -60,10 +60,9 @@ Synthetic oil changed and tires rotated every 3k miles and air filter replaced e
 Please watch the video below (it's 3 minutes, 30 seconds) for a tour of the exterior and interior of
 the van.
 
-The back-right window (seen at 0:45 in video) is missing, but screen is still
-attached. Another Hehr awning screened window will need to be installed (on the
-existing mounts) if you don't like the ventilation. I wanted to point this out
-explicitly just in case you don't see it while watching the video.
+The back-right window (pointed out at 0:45 in video) is missing, but screen is
+still attached. Another Hehr awning screened window will need to be installed
+(on the existing mounts) if you don't like the ventilation.
 
 There are no mechanical issues and van was serviced regularly (every 3k) at
 Nissan dealer. Oil changed at 3k, air filter at 6k, and tires rotated at 3k or
