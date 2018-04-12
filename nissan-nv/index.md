@@ -9,7 +9,7 @@ title: "4x4 Nissan NV 3500"
 
 ### About
 
-This is the high-top version of Nissan's commercial cargo van equipped with four wheel drive from Quigley motors. It's setup for overnight adventures, including rear folding bed/bench, solar panel, USB ports, deep cycle battery bank, air compressor and fans. This van has been primarily used to haul my dirt bike to pretty places and spend the night.
+This is the high-top version of Nissan's commercial cargo van equipped with four wheel drive from Quigley motors. It's setup for overnight adventures, including rear folding bed/bench, solar panel, smart charger, USB ports, deep cycle battery bank, air compressor and fans. This van has been primarily used to haul my dirt bike to pretty places and spend the night.
 
 - **Miles:** 43k
 - **VIN:** 1N6AF0LY8EN107616
