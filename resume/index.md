@@ -3,7 +3,7 @@ layout: default
 title: "Resume"
 ---
 
-Portland, Oregon &middot;
+San Francisco, California &middot;
 [huntca@gmail.com](mailto:huntca@gmail.com) &middot;
 [360-440-3635](tel:360-440-3635)<br/>
 GitHub: [@chrishunt](https://github.com/chrishunt) &middot;
