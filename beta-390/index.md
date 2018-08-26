@@ -6,6 +6,16 @@ title: "Beta 390"
 # 2018 Beta 390 RR-S
 ![](beta-390.jpg)
 
+### Documents
+
+- [Specifications](documents/2018-beta-390-rrs-specifications.pdf)
+- [Users Manual](documents/2018-beta-390-rrs-users-manual.pdf)
+- [Service Manual](documents/2018-beta-390-rrs-service-manual.pdf)
+- [Parts Diagram](documents/2018-beta-390-rrs-parts-diagram.pdf)
+- [Torque Values](documents/2018-beta-390-rrs-torque-values.pdf)
+- [Gearing Chart](documents/2018-beta-390-rrs-gearing-chart.pdf)
+- [Trail Tech Voyager Manual](documents/trail-tech-voyager-manual.pdf)
+
 ### About
 
 - **Chris Hunt:** [Instagram](https://chrshnt.com/2N80K3n) / [Email](mailto: c@chrishunt.co)
