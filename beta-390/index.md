@@ -34,6 +34,8 @@ title: "Beta 390"
 
 ### Installed
 - [Rekluse RadiusCX Clutch](https://chrshnt.com/2vMmAmE)
+- [Rekluse Rear Brake Kit](https://chrshnt.com/2w9RRjx)
+- [Low Seat Concepts Seat](https://chrshnt.com/2MCIwek)
 - [Bullet Proof Designs radiator guards](https://chrshnt.com/2KRY5Jg)
 - [Cycra Probend Hanguards](http://chrshnt.com/2qxU3Ro)
 - [BRP Handguard Mounts](https://chrshnt.com/2OVepv9)
@@ -62,13 +64,13 @@ title: "Beta 390"
 - BRP Handguard Mounts installed by dealer
 
 ### Needs to be installed
+- Low Seat Concepts Seat
+- Rekluse Rear Brake Kit
 - 13 tooth front sprocket
 - Goldentyre 216AA Fatty (90/100-21) & NM21-235 Nitro Mousse (90/100-21)
 - Goldentyre GT333 (120/100-18) & NM18-325 Nitro Mousse (140/80-18)
 
 ### Wishlist
-- [Rekluse Rear Brake Kit](https://chrshnt.com/2w9RRjx)
-- Low Seat Concepts Seat
 - [IMS 3 gallon tank](https://chrshnt.com/2MJmo1a)
 - Baja Designs Squadron Pro (motominded.com)
 - Plate holder for rear fender
