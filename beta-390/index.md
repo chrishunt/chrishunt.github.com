@@ -43,6 +43,9 @@ title: "Beta 390"
 
 ### Service Log
 
+#### 2018-08-26: 1.5 hours
+- TM Designworks Rear Disc Protector installed by me
+
 #### 2018-08-25: 1.5 hours
 - TM Designworks Skid Plate installed by me
 - Fastway Evo 4 Foot Pegs installed by me
@@ -58,20 +61,19 @@ title: "Beta 390"
 - Cycra Probend Hanguards installed by dealer
 - BRP Handguard Mounts installed by dealer
 
-### In a box, needs to be installed
-- TM Designworks Rear Disc Protector
+### Needs to be installed
 - 13 tooth front sprocket
 - Goldentyre 216AA Fatty (90/100-21) & NM21-235 Nitro Mousse (90/100-21)
 - Goldentyre GT333 (120/100-18) & NM18-325 Nitro Mousse (140/80-18)
 
 ### Wishlist
 - [Rekluse Rear Brake Kit](https://chrshnt.com/2w9RRjx)
-- Baja Designs Squadron Pro (motominded.com)
-- [IMS 3 gallon tank](https://chrshnt.com/2MJmo1a)
 - Low Seat Concepts Seat
+- [IMS 3 gallon tank](https://chrshnt.com/2MJmo1a)
+- Baja Designs Squadron Pro (motominded.com)
 - Plate holder for rear fender
 - LED turn signals
 - [TM Design case saver](https://chrshnt.com/2OCPzjQ)
 - Metal oil pump gears (betaboano.com?)
 - [Fastway Kickstand](https://chrshnt.com/2wmZTpt)
-- ARV levers
+- ARC levers
