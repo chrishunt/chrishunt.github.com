@@ -17,16 +17,27 @@ title: "Beta 390"
 - [Trail Tech Voyager Manual](documents/trail-tech-voyager-manual.pdf)
 
 ### About
-
 - **Chris Hunt:** [Instagram](https://chrshnt.com/2N80K3n) / [Email](mailto: c@chrishunt.co)
 - **Purchased:** 2018-08-24 at [MotoXotica](http://www.motoxotica.com/) in CA
-- **Hours:** 2
+- **Hours:** 5
+- **Color**: RAL 3020 Traffic Red
 
 ### Dealer Information
-
 - **Name:** MotoXotica
 - **Phone:** 707-446-4282
 - **Address:** 357 Merchant St, Vacaville, CA 95688
+
+### Tools
+- 4mm hex for skid plate
+- 13mm for oil drain plugs
+  - 15nm/133inchLBS for engine oil
+  - 20nm/177inchLBS for trans oil
+- 8mm for oil filter cover
+  - 10NM/89inchLBS for filter cover
+
+### Oil
+- 750ml engine oil
+- 750ml trans oil
 
 ### Tires
 - Goldentyre 216AA Fatty (90/100-21) & NM21-235 Nitro Mousse (90/100-21)
@@ -44,6 +55,12 @@ title: "Beta 390"
 - [TM Designworks Rear Disc Protector](https://chrshnt.com/2KUocPQ)
 
 ### Service Log
+
+#### 2018-09-08: 4.5 hours
+- Rekluse Left Hand Rear Brake installed by me
+
+#### 2018-08-29: 2.1 hours
+- Oil and filter change by me
 
 #### 2018-08-26: 1.5 hours
 - TM Designworks Rear Disc Protector installed by me
@@ -63,19 +80,13 @@ title: "Beta 390"
 - Cycra Probend Hanguards installed by dealer
 - BRP Handguard Mounts installed by dealer
 
-### Needs to be installed
-- Low Seat Concepts Seat
-- Rekluse Rear Brake Kit
-- 13 tooth front sprocket
-- Goldentyre 216AA Fatty (90/100-21) & NM21-235 Nitro Mousse (90/100-21)
-- Goldentyre GT333 (120/100-18) & NM18-325 Nitro Mousse (140/80-18)
-
 ### Wishlist
+- License plate holder
 - [IMS 3 gallon tank](https://chrshnt.com/2MJmo1a)
 - Baja Designs Squadron Pro (motominded.com)
-- Plate holder for rear fender
+- ARC levers
 - LED turn signals
 - [TM Design case saver](https://chrshnt.com/2OCPzjQ)
 - Metal oil pump gears (betaboano.com?)
 - [Fastway Kickstand](https://chrshnt.com/2wmZTpt)
-- ARC levers
+- Garmin GPSMAP 78 + Ram Mount + Garmin Power Data Cable
