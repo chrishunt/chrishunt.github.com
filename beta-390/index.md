@@ -19,7 +19,7 @@ title: "Beta 390"
 ### About
 - **Chris Hunt:** [Instagram](https://chrshnt.com/2N80K3n) / [Email](mailto: c@chrishunt.co)
 - **Purchased:** 2018-08-24 at [MotoXotica](http://www.motoxotica.com/) in CA
-- **Hours:** 5
+- **Hours:** 12.5
 - **Color**: RAL 3020 Traffic Red
 
 ### Dealer Information
@@ -32,7 +32,7 @@ title: "Beta 390"
 - 13mm for oil drain plugs
   - 15nm/133inchLBS for engine oil
   - 20nm/177inchLBS for trans oil
-- 8mm for oil filter cover
+- 8mm for oil filter cover, wheel pinch bolts
   - 10NM/89inchLBS for filter cover
 
 ### Oil
@@ -46,15 +46,27 @@ title: "Beta 390"
 ### Installed
 - [Rekluse RadiusCX Clutch](https://chrshnt.com/2vMmAmE)
 - [Rekluse Rear Brake Kit](https://chrshnt.com/2w9RRjx)
+- [Trail Tech Voyager Pro](https://chrshnt.com/2Iu54c0)
 - [Low Seat Concepts Seat](https://chrshnt.com/2MCIwek)
 - [Bullet Proof Designs radiator guards](https://chrshnt.com/2KRY5Jg)
 - [Cycra Probend Hanguards](http://chrshnt.com/2qxU3Ro)
 - [BRP Handguard Mounts](https://chrshnt.com/2OVepv9)
 - [Fastway Evo 4 Foot Pegs](https://chrshnt.com/2w6He0W)
+- [Hammerhead Offset Forged Shift Lever](https://chrshnt.com/2IswcYK)
 - [TM Designworks Skid Plate](https://chrshnt.com/2PsqtFi)
 - [TM Designworks Rear Disc Protector](https://chrshnt.com/2KUocPQ)
 
 ### Service Log
+
+#### 2018-09-29: 12.5 hours
+- Hammerhead Offset Forged Shift Lever installed by me
+- Trail Tech Voyager Pro installed by me
+
+#### 2018-09-21: 4.5 hours
+- Goldentyre 216AA Fatty and heavy duty tube installed by Webb Powersports
+
+#### 2018-09-12: 4.5 hours
+- Goldentyre GT333 and heavy duty tube installed by me
 
 #### 2018-09-08: 4.5 hours
 - Rekluse Left Hand Rear Brake installed by me
@@ -89,4 +101,3 @@ title: "Beta 390"
 - [TM Design case saver](https://chrshnt.com/2OCPzjQ)
 - Metal oil pump gears (betaboano.com?)
 - [Fastway Kickstand](https://chrshnt.com/2wmZTpt)
-- Garmin GPSMAP 78 + Ram Mount + Garmin Power Data Cable
