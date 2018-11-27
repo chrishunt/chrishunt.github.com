@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "2018 Toyota Tacoma TRD Pro"
+title: "Toyota Tacoma"
 ---
 
 # 2018 Toyota Tacoma TRD Pro
