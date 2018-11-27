@@ -10,7 +10,6 @@ title: "2018 Toyota Tacoma TRD Pro"
 - **Chris Hunt:** [Instagram](https://www.instagram.com/huntca/) / [Email](mailto: c@chrishunt.co)
 - **Purchased:** 2018-04-13 at [Gresham Toyota](https://www.greshamtoyota.com/)
 - **Miles:** 15,090
-- **VIN:** 5TFCZ5AN2JX137167
 
 ### Tires
 - 265/75r-16 (32s) BFGoodrich All Terrain TA KO2 @ 35 PSI
