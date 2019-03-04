@@ -13,7 +13,7 @@ Web: [chrishunt.co](http://www.chrishunt.co)
 ## Experience
 
 Senior Software Engineer &middot; <span class='highlight'>Coinbase</span> &middot; May 2018 - Present<br/>
-*Ruby, Rails, JavaScript* - Internal Tools
+*Ruby, Rails, JavaScript* - Internal Tools, Notifications, Transaction Monitoring
 
 Software Engineer &middot; <span class='highlight'>GitHub</span> &middot; Jun 2013 - May 2018<br/>
 *Ruby, Rails, JavaScript* - GitHub Marketplace, GitHub Billing, GitHub Enterprise
