@@ -3,7 +3,7 @@ layout: default
 title: "Resume"
 ---
 
-San Francisco, California &middot;
+Denver, Colorado &middot;
 [huntca@gmail.com](mailto:huntca@gmail.com) &middot;
 [360-440-3635](tel:360-440-3635)<br/>
 GitHub: [@chrishunt](https://github.com/chrishunt) &middot;
@@ -12,7 +12,10 @@ Web: [chrishunt.co](http://www.chrishunt.co)
 
 ## Experience
 
-Senior Software Engineer &middot; <span class='highlight'>Coinbase</span> &middot; May 2018 - Present<br/>
+Senior Blockchain Developer &middot; <span class='highlight'>OmiseGO</span> &middot; June 2019 - Present<br/>
+*Elixir, Plasma, JavaScript* - Ethereum Plasma, Specs, Docker
+
+Senior Software Engineer &middot; <span class='highlight'>Coinbase</span> &middot; May 2018 - June 2019<br/>
 *Ruby, Rails, JavaScript* - Internal Tools, Notifications, Transaction Monitoring
 
 Software Engineer &middot; <span class='highlight'>GitHub</span> &middot; Jun 2013 - May 2018<br/>
