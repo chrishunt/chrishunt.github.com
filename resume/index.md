@@ -12,7 +12,10 @@ Web: [chrishunt.co](http://www.chrishunt.co)
 
 ## Experience
 
-Senior Blockchain Developer &middot; <span class='highlight'>OmiseGO</span> &middot; June 2019 - Present<br/>
+Backend / API Engineer &middot; <span class='highlight'>Stripe</span> &middot; Jan 2020 - Present<br/>
+*Ruby, Sinatra, Sorbet* - Stripe Connect Accounts API
+
+Senior Blockchain Developer &middot; <span class='highlight'>OmiseGO</span> &middot; June 2019 - Dec 2019<br/>
 *Elixir, Plasma, JavaScript* - Ethereum Plasma, Specs, Docker
 
 Senior Software Engineer &middot; <span class='highlight'>Coinbase</span> &middot; May 2018 - June 2019<br/>
@@ -35,6 +38,7 @@ Software Engineer &middot; <span class='highlight'>Progeny Systems</span> &middo
 
 ## On-the-side
 - [briefs.fm](https://www.briefs.fm) - **Start a podcast** before you close this tab (*Ruby/Rails/Audio*)
+- [zwiftsegments.com](https://www.zwiftsegments.com) - *Track your progress* on Zwift indoor cycling (*Ruby/Rails/Strava*)
 - [trailmix.life](https://www.trailmix.life) - A private **place to write** (*Ruby/Rails*)
 
 ## Talks
