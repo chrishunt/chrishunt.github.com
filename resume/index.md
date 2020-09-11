@@ -38,7 +38,7 @@ Software Engineer &middot; <span class='highlight'>Progeny Systems</span> &middo
 
 ## On-the-side
 - [briefs.fm](https://www.briefs.fm) - **Start a podcast** before you close this tab (*Ruby/Rails/Audio*)
-- [zwiftsegments.com](https://www.zwiftsegments.com) - *Track your progress* on Zwift indoor cycling (*Ruby/Rails/Strava*)
+- [zwiftsegments.com](https://www.zwiftsegments.com) - **Track your progress** on Zwift (*Ruby/Rails/Strava*)
 - [trailmix.life](https://www.trailmix.life) - A private **place to write** (*Ruby/Rails*)
 
 ## Talks
