@@ -14,7 +14,7 @@ const Bio = () => {
     query BioQuery {
       avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
         childImageSharp {
-          fixed(width: 50, height: 50, quality: 95) {
+          fixed(width: 100, height: 100, quality: 95) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -40,24 +40,30 @@ const Bio = () => {
   const avatar = data?.avatar?.childImageSharp?.fixed
 
   return (
-    <div className="bio">
-      {avatar && (
-        <Image
-          fixed={avatar}
-          alt={author?.name || ``}
-          className="bio-avatar"
-          imgStyle={{
-            borderRadius: `50%`,
-          }}
-        />
-      )}
+    <div className="my-4">
       {author?.name && (
         <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
-          {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
-          </a>
+          {avatar && (
+            <Image
+              fixed={avatar}
+              alt={author?.name || ``}
+              className='inline-block align-middle'
+              style={{
+                width: '50px',
+                height: '50px',
+              }}
+              imgStyle={{
+                borderRadius: `50%`,
+              }}
+            />
+          )}
+
+          <span className='pl-2'>
+            Written by <a href={`https://twitter.com/${social?.twitter || ``}`}>
+              <strong>{author.name}</strong>
+            </a> {author?.summary || null}
+            {` `}
+          </span>
         </p>
       )}
     </div>

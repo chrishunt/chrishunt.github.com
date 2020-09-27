@@ -27,6 +27,18 @@ You can also write code blocks here!
 const saltyDuckEgg = "chinese preserved food product"
 ```
 
+```shell
+$ echo $HELLO
+```
+
+```ruby
+class FooBar
+  def self.this(thing)
+    puts thing
+  end
+end
+```
+
 | Number | Title                                    | Year |
 | :----- | :--------------------------------------- | ---: |
 | 1      | Harry Potter and the Philosopher’s Stone | 2001 |
