@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -10,8 +10,16 @@ const NotFoundPage = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="404: Not Found" />
-      <h1>404: Not Found</h1>
-      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+      <h1 className='py-4 font-bold text-4xl'>404: Not Found</h1>
+      <p className='py-4'>
+        Sorry, there's nothing here :(
+      </p>
+
+      <nav className="py-4 opacity-50">
+        <p>
+          <Link className="" to="/">← all posts</Link>
+        </p>
+      </nav>
     </Layout>
   )
 }
