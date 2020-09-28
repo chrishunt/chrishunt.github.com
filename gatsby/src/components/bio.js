@@ -14,9 +14,9 @@ const Bio = () => {
         <span className='font-bold'>&#8595; Chris Hunt</span> <br/>
         <a className='text-blue-700' href='mailto:c@chrishunt.co'> Email </a> ·
         <a className='text-blue-700' href='/resume'> Resume </a> ·
-        <a className='text-blue-700' href='https://github.com/chrishunt'> GitHub </a> ·
+        <a className='text-blue-700' href='https://github.com/chrishunt'> Git </a> ·
         <a className='text-blue-700' href='https://twitter.com/chrishunt'> Twitter </a> ·
-        <a className='text-blue-700' href='https://www.instagram.com/huntca/'> Instagram </a>
+        <a className='text-blue-700' href='https://www.instagram.com/huntca/'> Insta</a>
       </p>
     </div>
   )
