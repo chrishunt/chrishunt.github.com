@@ -15,7 +15,7 @@ Imagine we have three marbles and each marble is a different color. One is red,
 another is green, and the third is blue. If we were to place the marbles in a
 row on the table in front of us, how would we arrange them?
 
-![01-marbles.png](m1h89fwdupk1a_small.png)
+![01-marbles.png](./m1h89fwdupk1a_small.png)
 
 The ordering that we've selected is just one possible position of many. We
 might have chosen to put green first instead of red. Each of these positions is
@@ -35,7 +35,7 @@ permutations, but exactly how many are there? One way to count is to rearrange
 the marbles on a table until we've found each permutation. Doing this, we can
 see that we have **six permutations**.
 
-![02-marbles.png](dwxeb8d4xfcc4g_small.png)
+![02-marbles.png](./dwxeb8d4xfcc4g_small.png)
 
 ### When We've Lost Our Marbles
 
@@ -53,7 +53,7 @@ of all positive integers less than or equal to n." - wikipedia
 Since we have three marbles, we can calculate the total number of permutations
 by calculating **three factorial**.
 
-![03-three-factorial.png](6akljtu8szh3g_small.png)
+![03-three-factorial.png](./6akljtu8szh3g_small.png)
 
 ## Getting Oriented
 
@@ -69,14 +69,14 @@ Initially, the problem looks the same. We have three cards and know that they
 can be arranged in **three factorial** different permutations, just like the
 marbles.
 
-![04-cards.png](zjj7aooizhwehq_small.png)
+![04-cards.png](./zjj7aooizhwehq_small.png)
 
 Playing cards, however, *do* have an orientation. We can flip any of the three
 cards and we'll end up with a *different* position. In order to calculate the
 total number of positions, we'll need to factor in **both the permutation and
 orientation** of each card.
 
-![05-cards.png](wxtbgbb0fa5uvw_small.png)
+![05-cards.png](./wxtbgbb0fa5uvw_small.png)
 
 We've already learned how to calculate the total number of permutations as
 **three factorial**. Next, we'll see how to calculate the total number of
@@ -86,7 +86,7 @@ We have **three playing cards** and each card has **two possible
 orientations**, face *up* or face *down*. For each of our **three factorial
 permutations**, we are able to reach all of these orientations.
 
-![06-all-card-permutations.png](f82qff73bqzatw_small.png)
+![06-all-card-permutations.png](./f82qff73bqzatw_small.png)
 
 How many total orientations are there for one permutation of our set of three
 cards? We could count them using the image above, but it's faster to calculate.
@@ -95,7 +95,7 @@ We have **three playing cards** and each card has **two orientations**. The
 total number of orientations for one permutation of the cards can be calculated
 as the **third power of two**.
 
-![07-third-power-of-two.png](7vqqrgkecweka_small.png)
+![07-third-power-of-two.png](./7vqqrgkecweka_small.png)
 
 ### Total Positions for Three Cards
 
@@ -104,7 +104,7 @@ factorial** and the total number of orientations for each of those permutations
 is the **third power of two**. Calculating the number of positions is done by
 multiplying the number of permutations by the number of orientations.
 
-![08-card-total-permutations.png](pqz7dxg9lg6wa_small.png)
+![08-card-total-permutations.png](./pqz7dxg9lg6wa_small.png)
 
 A set of three playing cards has 48 possible positions when all permutations
 and orientations are considered.
@@ -116,7 +116,7 @@ positions for the Rubik's Cube. We know that, given a set of *n* items with *p*
 orientations, the total number of positions for that set of items can be
 calculated.
 
-![09-equation-total-perms.png](mdvpysojodz6ka_small.png)
+![09-equation-total-perms.png](./mdvpysojodz6ka_small.png)
 
 Once we understand how the Rubik's Cube is built, we can apply this formula and
 calculate the total number of positions.
@@ -158,8 +158,8 @@ Intuitively we know that something with *one* permutations and *one*
 orientation has a **single position**, but we can verify by plugging these
 numbers into our equation.
 
-![11-center-permutations.png](55tzbpl0cgaauw_small.png)
-![12-centers.png](4j5xjke8vkn0gq_small.png)
+![11-center-permutations.png](./55tzbpl0cgaauw_small.png)
+![12-centers.png](./4j5xjke8vkn0gq_small.png)
 
 ### Corner Positions
 
@@ -176,8 +176,8 @@ orientations for each position of the corners is the **eighth power of three**.
 With these numbers, we can calculate the total number of positions for the
 corner pieces.
 
-![13-corner-perms.png](dg15curynbgew_small.png)
-![14-corners.png](3p458nwmxiyr5w_small.png)
+![13-corner-perms.png](./dg15curynbgew_small.png)
+![14-corners.png](./p458nwmxiyr5w_small.png)
 
 ### Edge Positions
 
@@ -193,8 +193,8 @@ each position of the edges is the **twelfth power of two**.
 With these numbers, we can calculate the total number of positions for the edge
 pieces.
 
-![15-edge-perms.png](myltudgc4d7qfg_small.png)
-![16-edges.png](oqgjl53l0tmhsg_small.png)
+![15-edge-perms.png](./myltudgc4d7qfg_small.png)
+![16-edges.png](./oqgjl53l0tmhsg_small.png)
 
 ### Putting It All Together
 
@@ -202,7 +202,7 @@ We've calculated the number of positions for the center pieces, the corner
 pieces, and the edge pieces. The final step to finding the total positions for
 the entire Rubik's Cube is multiplying these numbers together.
 
-![17-total-cube-perms.png](evkjq166zx52ha_small.png)
+![17-total-cube-perms.png](./evkjq166zx52ha_small.png)
 
 ### But Wait, There's More
 
@@ -219,13 +219,13 @@ Because of the limitations of the Rubik's Cube, only [**1 in
 by turning the sides of the cube. We can factor this in to our equation and
 settle on the total number of *legal* positions of the Rubik's Cube.
 
-![18-total-legal-cube-perms.png](c88bk9pt5voctw_small.png)
+![18-total-legal-cube-perms.png](./c88bk9pt5voctw_small.png)
 
 ## How Large Is That?
 
 There are over 43 quintillion legal positions of the Rubik's Cube.
 
-![19-big-number.png](yc2gedgtjumscg_small.png)
+![19-big-number.png](./yc2gedgtjumscg_small.png)
 
 - It would take **thirteen hundred million years** to see every position if you
   were able to view one thousand per second.
