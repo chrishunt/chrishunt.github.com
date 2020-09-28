@@ -67,6 +67,7 @@ module.exports = {
                 paragraph: "py-4",
                 list: "list-disc pl-8 py-4",
                 link: "text-blue-700",
+                blockquote: "p-4 my-4 bg-orange-200 border-l-4 border-orange-500 italic",
               },
             },
           },

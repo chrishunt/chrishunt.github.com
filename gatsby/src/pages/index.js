@@ -27,6 +27,12 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
       <Bio />
+      <blockquote class='p-4 my-4 bg-orange-200 border-l-4 border-orange-500 italic'>
+        <p>
+          "No more secrets" <span className='opacity-50'>- Marty, Sneakers 1992</span>
+        </p>
+      </blockquote>
+
       {posts.map(post => {
         const title = post.frontmatter.title || post.fields.slug
         return (
