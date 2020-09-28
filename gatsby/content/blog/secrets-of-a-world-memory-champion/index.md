@@ -1,6 +1,7 @@
 ---
 title: Secrets of a World Memory Champion
 date: "2014-04-25"
+draft: false
 ---
 
 You don't have a bad memory, you were just never taught how to use it. We are

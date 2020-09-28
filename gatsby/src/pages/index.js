@@ -53,7 +53,7 @@ const BlogIndex = ({ data, location }) => {
               />
 
               <p className='opacity-50'>
-                {post.frontmatter.date} by Chris Hunt
+                {post.frontmatter.date}
               </p>
             </section>
           </article>
@@ -72,7 +72,10 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC },
+      filter: { frontmatter: { draft: { eq: false } } }
+    ) {
       nodes {
         excerpt
         fields {

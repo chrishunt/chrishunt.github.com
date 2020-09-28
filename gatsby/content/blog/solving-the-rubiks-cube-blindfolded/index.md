@@ -1,6 +1,7 @@
 ---
 title: Solving The Rubik's Cube Blindfolded
 date: "2014-10-24"
+draft: false
 ---
 
 You think solving a Rubik's Cube is difficult? Imagine scrambling it,

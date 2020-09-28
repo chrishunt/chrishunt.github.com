@@ -1,6 +1,7 @@
 ---
 title: Solving The Rubik's Cube in 20 Seconds
 date: "2013-09-20"
+draft: false
 ---
 
 Come to San Francisco as a Rubyist, leave as a speedcuber. We are going to use

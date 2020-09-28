@@ -7,7 +7,6 @@ import SEO from "../components/seo"
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
-  const { previous, next } = pageContext
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -16,7 +15,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         description={post.frontmatter.description || post.excerpt}
       />
       <article
-        className="blog-post"
+        className="pt-4"
         itemScope
         itemType="http://schema.org/Article"
       >
@@ -28,7 +27,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             {post.frontmatter.title}
           </h1>
           <p className='opacity-50 pb-4'>
-            {post.frontmatter.date} by <a href='/'>Chris Hunt</a>
+            {post.frontmatter.date} by
+            <a className='text-blue-700' href='/'> Chris Hunt</a>
           </p>
         </header>
         <section
