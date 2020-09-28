@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -22,43 +21,25 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         itemType="http://schema.org/Article"
       >
         <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+          <h1
+            itemProp="headline"
+            className='text-4xl font-bold'
+          >
+            {post.frontmatter.title}
+          </h1>
+          <p className='opacity-50 pb-4'>
+            {post.frontmatter.date} by <a href='/'>Chris Hunt</a>
+          </p>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
-        <hr />
-        <footer>
-          <Bio />
-        </footer>
       </article>
-      <nav className="blog-post-nav">
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
+      <nav className="py-4 opacity-50">
+        <p>
+          <Link className="" to="/">← all posts</Link>
+        </p>
       </nav>
     </Layout>
   )

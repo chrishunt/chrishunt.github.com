@@ -6,17 +6,8 @@ const Layout = ({ location, title, children }) => {
   const isRootPath = location.pathname === rootPath
   let header
 
-  if (!isRootPath) {
-    header = (
-      <p>
-        ← <Link className="underline" to="/">index</Link>
-      </p>
-    )
-  }
-
   return (
-    <div className="p-4 max-w-3xl mx-auto" data-is-root-path={isRootPath}>
-      <header className="">{header}</header>
+    <div className="p-4 max-w-3xl mx-auto text-xl leading-relaxed" data-is-root-path={isRootPath}>
       <main>{children}</main>
     </div>
   )

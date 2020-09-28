@@ -40,32 +40,13 @@ const Bio = () => {
   const avatar = data?.avatar?.childImageSharp?.fixed
 
   return (
-    <div className="my-4">
-      {author?.name && (
-        <p>
-          {avatar && (
-            <Image
-              fixed={avatar}
-              alt={author?.name || ``}
-              className='inline-block align-middle'
-              style={{
-                width: '50px',
-                height: '50px',
-              }}
-              imgStyle={{
-                borderRadius: `50%`,
-              }}
-            />
-          )}
-
-          <span className='pl-2'>
-            Written by <a href={`https://twitter.com/${social?.twitter || ``}`}>
-              <strong>{author.name}</strong>
-            </a> {author?.summary || null}
-            {` `}
-          </span>
-        </p>
-      )}
+    <div className="my-4 opacity-50">
+      <p>
+        <a href='https://twitter.com/chrishunt'> twitter </a> ·
+        <a href='https://www.linkedin.com/in/huntchris/'> linkedin </a> ·
+        <a href='https://www.instagram.com/huntca/'> instagram </a> ·
+        <a href='https://www.strava.com/athletes/312201'> strava </a>
+      </p>
     </div>
   )
 }

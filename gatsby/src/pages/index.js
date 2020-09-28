@@ -32,17 +32,16 @@ const BlogIndex = ({ data, location }) => {
         return (
           <article
             key={post.fields.slug}
-            className="py-2"
+            className="py-4"
             itemScope
             itemType="http://schema.org/Article"
           >
-            <header>
-              <h2>
-                <Link to={post.fields.slug} itemProp="url" className='underline'>
-                  <span itemProp="headline">{title}</span>
+            <header className=''>
+              <h2 className='font-bold text-4xl'>
+                <Link to={post.fields.slug} itemProp="url">
+                  {title}
                 </Link>
               </h2>
-              <small>{post.frontmatter.date}</small>
             </header>
             <section>
               <p
@@ -50,7 +49,12 @@ const BlogIndex = ({ data, location }) => {
                   __html: post.frontmatter.description || post.excerpt,
                 }}
                 itemProp="description"
+                className="py-2"
               />
+
+              <p className='opacity-50'>
+                {post.frontmatter.date} by Chris Hunt
+              </p>
             </section>
           </article>
         )
