@@ -10,7 +10,10 @@ const ResumePage = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Resume" />
-      <h1 className='pt-4 font-bold text-4xl'>Chris Hunt</h1>
+      <h1 className='pt-4 font-bold text-4xl'>
+        <a href='/'>Chris Hunt</a>
+      </h1>
+
       <p>
         Denver, Colorado ·
         <a className='text-blue-700' href='mailto:huntca@gmail.com'> huntca@gmail.com </a>·
