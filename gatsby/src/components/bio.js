@@ -42,8 +42,9 @@ const Bio = () => {
   return (
     <div className="my-4 opacity-50">
       <p>
-        <a href='https://twitter.com/chrishunt'> twitter </a> ·
+        <a href='mailto:c@chrishunt.co'> email </a> ·
         <a href='https://www.linkedin.com/in/huntchris/'> linkedin </a> ·
+        <a href='https://twitter.com/chrishunt'> twitter </a> ·
         <a href='https://www.instagram.com/huntca/'> instagram </a> ·
         <a href='https://www.strava.com/athletes/312201'> strava </a>
       </p>
