@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chris Hunt]]></title><description><![CDATA[Chris Hunt]]></description><link>https://www.chrishunt.co</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 29 Sep 2020 04:36:23 GMT</lastBuildDate><item><title><![CDATA[Solving The Rubik's Cube Blindfolded]]></title><description><![CDATA[You think solving a Rubik’s Cube is difficult? Imagine scrambling it,
+memorizing it, and solving it with your eyes closed. In this two part…]]></description><link>https://www.chrishunt.co/solving-the-rubiks-cube-blindfolded/</link><guid isPermaLink="false">https://www.chrishunt.co/solving-the-rubiks-cube-blindfolded/</guid><pubDate>Fri, 24 Oct 2014 00:00:00 GMT</pubDate><content:encoded>&lt;p class=&quot;py-4&quot;&gt;You think solving a Rubik’s Cube is difficult? Imagine scrambling it,
+memorizing it, and solving it with your eyes closed.&lt;/p&gt;
+&lt;p class=&quot;py-4&quot;&gt;In this two part talk, we are going to combine techniques mastered by
+professional speedcubers and memory athletes to learn how to solve the Rubik’s
+Cube blindfolded.&lt;/p&gt;
+&lt;p class=&quot;py-4&quot;&gt;This is not just a party trick. You will leave RubyConf Argentina with a
+greater appreciation for the Rubik’s Cube and the ability to memorize anything
+in the world.&lt;/p&gt;
+&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.285714285714285%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;iframe src=&quot;//www.youtube.com/embed/4GBYo-vF7GQ&quot; class=&quot;py-4&quot; frameborder=&quot;0&quot; allowfullscreen style=&quot; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot;&gt; &lt;/iframe&gt; &lt;/div&gt;</content:encoded></item><item><title><![CDATA[Secrets of a World Memory Champion]]></title><description><![CDATA[You don’t have a bad memory, you were just never taught how to use it. We are
+going to practice several powerful memory techniques that have…]]></description><link>https://www.chrishunt.co/secrets-of-a-world-memory-champion/</link><guid isPermaLink="false">https://www.chrishunt.co/secrets-of-a-world-memory-champion/</guid><pubDate>Fri, 25 Apr 2014 00:00:00 GMT</pubDate><content:encoded>&lt;p class=&quot;py-4&quot;&gt;You don’t have a bad memory, you were just never taught how to use it. We are
+going to practice several powerful memory techniques that have been perfected
+by memory contest champions over the last hundred years.&lt;/p&gt;
+&lt;p class=&quot;py-4&quot;&gt;By the end of this talk, you will know how to quickly memorize a foreign
+language, driving directions, phone conversations, the entire Chuck Norris
+filmography, your friend’s credit card number, a shuffled deck of playing
+cards, and the name of every person you meet at RailsConf.&lt;/p&gt;
+&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.285714285714285%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;iframe src=&quot;//www.youtube.com/embed/k44oJ961eFM&quot; class=&quot;py-4&quot; frameborder=&quot;0&quot; allowfullscreen style=&quot; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot;&gt; &lt;/iframe&gt; &lt;/div&gt;</content:encoded></item><item><title><![CDATA[How Many Positions on a Rubik's Cube?]]></title><description><![CDATA[The Rubik’s Cube is a challenging puzzle to solve, largely because there are so
+many positions. Wouldn’t it be fun to know exactly how many…]]></description><link>https://www.chrishunt.co/how-many-positions-on-a-rubiks-cube/</link><guid isPermaLink="false">https://www.chrishunt.co/how-many-positions-on-a-rubiks-cube/</guid><pubDate>Wed, 05 Feb 2014 00:00:00 GMT</pubDate><content:encoded>&lt;p class=&quot;py-4&quot;&gt;The Rubik’s Cube is a challenging puzzle to solve, largely because there are so
+many positions. Wouldn’t it be fun to know exactly how many positions there
+are? Wouldn’t it be even &lt;em&gt;more&lt;/em&gt; fun to know how to calculate that number for
+yourself?&lt;/p&gt;
+&lt;h2 class=&quot;font-bold py-4 text-4xl&quot;&gt;Back To The Basics&lt;/h2&gt;
+&lt;p class=&quot;py-4&quot;&gt;Imagine we have three marbles and each marble is a different color. One is red,
+another is green, and the third is blue. If we were to place the marbles in a
+row on the table in front of us, how would we arrange them?&lt;/p&gt;
+&lt;p class=&quot;py-4&quot;&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 622px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d610f9b8b65599aee13b85d2fa35e7e8/604ec/m1h89fwdupk1a_small.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 31.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAAsSAAALEgHS3X78AAABbklEQVQY0yXQWUsCURjGcb9eNxFBV92FVkbSBpaQGC12EYRUaOWCLRakCWWQRhYKNha00AZl6IXj7tTMHM95Z86MYxN9gB//h8cAQhFwGbgCMFckHYdGnkBVESpl8T0tnj8KKSpWZLFEcfHjrZZKNgufFU0uEoEFkTUAKulAjh4pPq/kdLaW52npK09egiTgAY8NzQT5zTYuZzM/fq+6sabYrHCTqv97A0h1iblWwxHt4V6JhLFlFI72T7RYgsazbcZN3ENoIMsyx6EOw2hXyfbCHJ21or8y0jFtQOKEbm+rFwl5J4gHTWRrLaDtHsJBTD51tVz9Yl8sd+lf75ydKdGI6rBLZiMSmqz0h0kFco/ENk2mJrHJKPT1tJ/uktK5mR8eF8d6v3tHOFMLFXxuZBmRJyxSdxf4Pc0OLWJex/phUCPPmdbKIlqYxbdJkBtUKCX4YztnXeWWWP5Vw1Wuxu4Fmg7bTzhU16/Ss/ryX6icHUtvWm8sAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;01-marbles.png&quot;
+        title=&quot;01-marbles.png&quot;
+        src=&quot;/static/d610f9b8b65599aee13b85d2fa35e7e8/604ec/m1h89fwdupk1a_small.png&quot;
+        srcset=&quot;/static/d610f9b8b65599aee13b85d2fa35e7e8/772e8/m1h89fwdupk1a_small.png 200w,
+/static/d610f9b8b65599aee13b85d2fa35e7e8/e17e5/m1h89fwdupk1a_small.png 400w,
+/static/d610f9b8b65599aee13b85d2fa35e7e8/604ec/m1h89fwdupk1a_small.png 622w&quot;
+        sizes=&quot;(max-width: 622px) 100vw, 622px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;py-4&quot;&gt;The ordering that we’ve selected is just one possible position of many. We
+might have chosen to put green first instead of red. Each of these positions is
+a &lt;a href=&quot;http://en.wikipedia.org/wiki/Permutation&quot; class=&quot;text-blue-700&quot;&gt;&lt;em&gt;permutation&lt;/em&gt;&lt;/a&gt; of our marbles. If
+we were to rearrange the marbles, then we would find another permutation.&lt;/p&gt;
+&lt;blockquote class=&quot;p-4 my-4 bg-orange-200 border-l-4 border-orange-500 italic&quot;&gt;
+&lt;p class=&quot;py-4&quot;&gt;“A &lt;strong&gt;permutation&lt;/strong&gt; of a set of objects is an arrangement of those objects
+into a particular order.” - wikipedia&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p class=&quot;py-4&quot;&gt;In order to count how many positions we have for the Rubik’s Cube, we will
+first learn how to count permutations for our set of marbles.&lt;/p&gt;
+&lt;h3 class=&quot;font-bold py-4 text-3xl&quot;&gt;Counting Permutations&lt;/h3&gt;
+&lt;p class=&quot;py-4&quot;&gt;We intuitively know that our set of three marbles has several different
+permutations, but exactly how many are there? One way to count is to rearrange
+the marbles on a table until we’ve found each permutation. Doing this, we can
+see that we have &lt;strong&gt;six permutations&lt;/strong&gt;.&lt;/p&gt;
+&lt;p class=&quot;py-4&quot;&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/cb755f60af6047657f7e2637da7aa669/a6d36/dwxeb8d4xfcc4g_small.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 63.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsSAAALEgHS3X78AAAC8ElEQVQozw3M61fSYACA8f2rfeicrGOapYcumhVg3rqoSGopTK4SINdkCCmwlIiLhJhNaRBxZ5tj7t3Gxpufn/N7kD7fOIpj5MXJQOyQFznsi6tHlYVeLYK5SSIHB0w+EztJxyDkfhxH/G6LAlpU88LnNncbBKII7cRBoJBLwD5NEtkvfnuPqvRBMxxwJQ6DUKFmNdNOu/EGF3K40fCBaZd+F5JvF7XF/BECpQZRzFcuTyHsJvEwFvQPxAagaqGI4+YFBeb07NtpAYfyVb16FvXaGarMXlX3d603FckkmyajhMcFkqjZzdd+r0ied0OcwwJMp0IqzyRQsHkgR9rNvGhGJd+ucPkTRPx9m0VK4cishl6Ykx07ytoKrXoEnHZosXXuc7c3BdTGW19ST2ZYDQo/49+W5OFHkssFTMbe+KhkNIgmFEketh+PgI0VrnTeeD3Tm5riC2nGIayOsHeDnC3NHjxgRxf5xXozIy+ohckJIXMouHeEB2OidRuhwS9n3fODOh6IVTYabvv2IVsiit2dQIUsdWC73A7ZrlJR+bp1HGt+dVeZDl0CuWAVvexlkaXuvF5cdsPASWJzMPkChgOsx/N0EnisijMAG8s65b0OYv6cKfFkahDcgz4v/ZxRmZXPbsGFGKjVO9ywVn57nnMq98b602oQcL3UgPEJaR2FjAUVx4bgkoYIJh+OyJrHSsDNzPeejfP317j3CM9Wo3n9zz9+KLHlrLe4v97nq61SOaxL136TslQ7QzFyD4eDViL/awvLAqZRp4jVtKdYzyPA6xhsbEMsRlyGFuUVHwynruPKR73itcHk3r63rt+C0Sg8Oi/o5dkw9KT4r+YNzmOGiYiAcPNqbnoS6j7Fvi/fBkN6oLdTn6Th0d6bJbi9otf+VakkwzLcjMeH+Fs6sLbNGFSj3PxCf2NNQHgiw82peTvK0eQWvfqG0pZBUTzEWPW0iIeqlda7OcqK0mz3n4VZf02pKyCdxTvaV/RBuP0ff6ReIrz6zFAAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;02-marbles.png&quot;
+        title=&quot;02-marbles.png&quot;
+        src=&quot;/static/cb755f60af6047657f7e2637da7aa669/a6d36/dwxeb8d4xfcc4g_small.png&quot;
+        srcset=&quot;/static/cb755f60af6047657f7e2637da7aa669/772e8/dwxeb8d4xfcc4g_small.png 200w,
+/static/cb755f60af6047657f7e2637da7aa669/e17e5/dwxeb8d4xfcc4g_small.png 400w,
+/static/cb755f60af6047657f7e2637da7aa669/a6d36/dwxeb8d4xfcc4g_small.png 650w&quot;
+        sizes=&quot;(max-width: 650px) 100vw, 650px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3 class=&quot;font-bold py-4 text-3xl&quot;&gt;When We’ve Lost Our Marbles&lt;/h3&gt;
+&lt;p class=&quot;py-4&quot;&gt;Visualizing each permutation works well when we only have three marbles, but
+what if we wanted to count permutations for a bag of 500 marbles? We’ll need a
+different strategy.&lt;/p&gt;
+&lt;p class=&quot;py-4&quot;&gt;There’s a nice mathematical trick we can use for counting permutations called
+the &lt;a href=&quot;http://en.wikipedia.org/wiki/Factorial&quot; class=&quot;text-blue-700&quot;&gt;&lt;em&gt;factorial&lt;/em&gt;&lt;/a&gt;. Given &lt;em&gt;n&lt;/em&gt; items, the
+factorial of &lt;em&gt;n&lt;/em&gt; is equal to the number of permutations of &lt;em&gt;n&lt;/em&gt;.&lt;/p&gt;
+&lt;blockquote class=&quot;p-4 my-4 bg-orange-200 border-l-4 border-orange-500 italic&quot;&gt;
+&lt;p class=&quot;py-4&quot;&gt;“The &lt;strong&gt;factorial&lt;/strong&gt; of a non-negative integer n, denoted by n!, is the product
+of all positive integers less than or equal to n.” - wikipedia&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p class=&quot;py-4&quot;&gt;Since we have three marbles, we can calculate the total number of permutations
+by calculating &lt;strong&gt;three factorial&lt;/strong&gt;.&lt;/p&gt;
+&lt;p class=&quot;py-4&quot;&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/1ffbbd5b4c4c7fc0fbad989a50ec081f/a6d36/6akljtu8szh3g_small.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 11.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAIAAADXZGvcAAAACXBIWXMAAAsSAAALEgHS3X78AAAAf0lEQVQI1x3L4QtDQBzGcf//f6P2BiUx6VxRx47YDodNuHE3trzza/W8+PbUR+vr1Db1ZXx8ZbctfJecRO46MZicqxg7/2BK1CUNf6r7vJtje4LKSKAVt9C1L/CWFOcp2leOfLNlBPmWGArAY58HngEmiTwlqiS+vlp6z7Bj6SfSGWaxbAw7ZgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;03-three-factorial.png&quot;
+        title=&quot;03-three-factorial.png&quot;
+        src=&quot;/static/1ffbbd5b4c4c7fc0fbad989a50ec081f/a6d36/6akljtu8szh3g_small.png&quot;
+        srcset=&quot;/static/1ffbbd5b4c4c7fc0fbad989a50ec081f/772e8/6akljtu8szh3g_small.png 200w,
+/static/1ffbbd5b4c4c7fc0fbad989a50ec081f/e17e5/6akljtu8szh3g_small.png 400w,
+/static/1ffbbd5b4c4c7fc0fbad989a50ec081f/a6d36/6akljtu8szh3g_small.png 650w&quot;
+        sizes=&quot;(max-width: 650px) 100vw, 650px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2 class=&quot;font-bold py-4 text-4xl&quot;&gt;Getting Oriented&lt;/h2&gt;
+&lt;p class=&quot;py-4&quot;&gt;A marble does not have an orientation. It cannot be flipped or rotated. It
+always appears the same no matter how it’s placed on the table. When we counted
+the the number of positions for our marbles, all we cared about was their
+permutation.&lt;/p&gt;
+&lt;p class=&quot;py-4&quot;&gt;What if we wanted to calculate the total number of positions for a set of
+&lt;strong&gt;three playing cards&lt;/strong&gt;?&lt;/p&gt;
+&lt;p class=&quot;py-4&quot;&gt;Initially, the problem looks the same. We have three cards and know that they
+can be arranged in &lt;strong&gt;three factorial&lt;/strong&gt; different permutations, just like the
+marbles.&lt;/p&gt;
+&lt;p class=&quot;py-4&quot;&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/93a8c71eff11aacad14bbcc21f3e4239/a6d36/zjj7aooizhwehq_small.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 48%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAAB+klEQVQoz1VSz2saQRQW9CbxGiEFr4Jnc/If8OzR/6DVq5ecipdoiyDmVEupIVsspFLdoidFQoitNptGawuJqTYpuinVmB1358fuzvatWSh9zAzfe7zvzTdvnuvubmHoOuecUaJTomEVXV0whAzL0g1DtyyD8+Vy/v3bsNfrtVpNy7LeHR7eyjI3TVe/3wf/QBAwxgCoxf+knxJRZMOvxnhMuz1TlqnBBOEgGo2Gw2FJkrxeb7H4EpJd0+m03W673e5qtQq+hjX1/Mv9zs6vzU1VEH56PLhWg/vrYm00GhUKBb/fX6lUGGM2GfZ8Pu90OrPZDDDBGtWZhRDpdm336MhiDBMNcLlcjkQiqVRqe3sb8h2yY5zbsgmmWPsXWQc1bQVnPp9PJBLL5TIWi9Xr9f/Ja1PVFaXkgeqQOccr5aEv6XQaIZRMJuGlDllRlMFgsFgsHNnQYwWRtTByfAyytbWWXC4XCoUymUwgEGg0Gg4ZEDRMFEVZvv1QfW+Xy2ZvNjZW+/vXHg/a21sNB/BhBGNQ7vP5IPPy8qLZbLrWUlWoCl99eipld3chok8mTJKMqx/6cKiVSr+fP4Ng4vGTYDDYarW2th7F4/EXxaJLZ0xn1G6OaSjK/c31mBLVhNmAZRr2qCBFmYyAfCZ9flt+A6D0+lX//OzTx5O/2LTlweWgon0AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;04-cards.png&quot;
+        title=&quot;04-cards.png&quot;
+        src=&quot;/static/93a8c71eff11aacad14bbcc21f3e4239/a6d36/zjj7aooizhwehq_small.png&quot;
+        srcset=&quot;/static/93a8c71eff11aacad14bbcc21f3e4239/772e8/zjj7aooizhwehq_small.png 200w,
+/static/93a8c71eff11aacad14bbcc21f3e4239/e17e5/zjj7aooizhwehq_small.png 400w,
+/static/93a8c71eff11aacad14bbcc21f3e4239/a6d36/zjj7aooizhwehq_small.png 650w&quot;
+        sizes=&quot;(max-width: 650px) 100vw, 650px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;py-4&quot;&gt;Playing cards, however, &lt;em&gt;do&lt;/em&gt; have an orientation. We can flip any of the three
+cards and we’ll end up with a &lt;em&gt;different&lt;/em&gt; position. In order to calculate the
+total number of positions, we’ll need to factor in &lt;strong&gt;both the permutation and
+orientation&lt;/strong&gt; of each card.&lt;/p&gt;
+&lt;p class=&quot;py-4&quot;&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/f981e78dfaa5a07c1b19c8eaee0f18f3/a6d36/wxtbgbb0fa5uvw_small.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 48%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAACN0lEQVQoz2N4//7d79+///379/Pnjx8/f/z+9XXOop3ljcsbu9d0TFrf0LW6snnZ4hW77ty+furUyX379v7//3/NmtUvXjz/9/cPw8VLl4D8pUuXfv/+/T8I/KluXZpaNMc/ptc/thdIphfP6Jy4evXqle4enqampufOnefm5p49ew5QKcOzZ88OHDjAzMy8ceNGIP/f35+NHcui0iY5BbRmlMx1CWyNz57YP23dnt07b9++PXnyZAkJiXXr1v369QukGYjfvn17/Pjx58+fQ2yua1/qGdJs5lrpG9Vp513rFVbfO3kVUGLZ8uXW1tZl5WVmZqZA9VDNUPDvH0Rzc/fK4ITesOQJYUl9oYk94YmdE6atA0pMmDAhJyfnw4cPwcEh27ZtQ9X8///fv8BQ+AHUHJIA1NYXntwPRCEJHROmrQXKLl68pLm5+fPnz3l5uUCfQjV/+vTp8pXL796/g9jc1LXSO6Ldxqs+ILbb0q3aN6IZ4uze3l5tbe3Ozk55efnt27dDNQNZzCzMmzdvBnp7754dbf1rI9MmeoR1pBXNcfBtik3v7Z4I0gyMjokTJ/Lx8QFV3r59a+/evSDNX79+7evrA0b16dNnJ07obevfkFo42zui2zeq1yu8Oyl/SnPXEqCy7OwcDQ2Nffv2ScvIREdHz549m+H3r1+/f/0EBdff3x8/fnjx/PGilfsqm5e39K7pmLiuqQeYSJYsXbkLqPnc2TMrViwDMhYsmHfxwvmTJ44DADIuk4bUQkT9AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;05-cards.png&quot;
+        title=&quot;05-cards.png&quot;
+        src=&quot;/static/f981e78dfaa5a07c1b19c8eaee0f18f3/a6d36/wxtbgbb0fa5uvw_small.png&quot;
+        srcset=&quot;/static/f981e78dfaa5a07c1b19c8eaee0f18f3/772e8/wxtbgbb0fa5uvw_small.png 200w,
+/static/f981e78dfaa5a07c1b19c8eaee0f18f3/e17e5/wxtbgbb0fa5uvw_small.png 400w,
+/static/f981e78dfaa5a07c1b19c8eaee0f18f3/a6d36/wxtbgbb0fa5uvw_small.png 650w&quot;
+        sizes=&quot;(max-width: 650px) 100vw, 650px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;py-4&quot;&gt;We’ve already learned how to calculate the total number of permutations as
+&lt;strong&gt;three factorial&lt;/strong&gt;. Next, we’ll see how to calculate the total number of
+orientations for each position.&lt;/p&gt;
+&lt;p class=&quot;py-4&quot;&gt;We have &lt;strong&gt;three playing cards&lt;/strong&gt; and each card has &lt;strong&gt;two possible
+orientations&lt;/strong&gt;, face &lt;em&gt;up&lt;/em&gt; or face &lt;em&gt;down&lt;/em&gt;. For each of our &lt;strong&gt;three factorial
+permutations&lt;/strong&gt;, we are able to reach all of these orientations.&lt;/p&gt;
+&lt;p class=&quot;py-4&quot;&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 656px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/46d98cdf7fc19e733b3d325dc1047e99/748f4/f82qff73bqzatw_small.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 54.49999999999999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAACpElEQVQozw2QC09SAQBG729rrqWVgeI0Y7DWZJbpmCjIQ7i8Ea9SEALynIoSPlCehqZTQRgJKlzoTpGHoBioRWQgjogfcM6+8wGKaSuFoZcpLCyekS+el06tkhl6pXqNwZ4dmzCFgsFkIp67zB4dhgr5q+8x+Cx+kstdHIaCt9d5gMzQPkGDQzRVB1aMJ0BEsqoZzaYyNaguYe+ANJvNZTLn1epDMpUqFou/isVUKlWr1RKJZKn0G6CyDI9fgKQRVRcewvVAJKqmpY1NY+lQL8cI/bJC4TpxdlKpVM7P0/kfuVKphCBIuVxuKLLZDKDWrYkgk0prp4NGUDA/KVsdHNF/Ulgam5UaWzgSX3d7AgcRry/8dcvXIEOhUCwWg+FoIwRYXjbz+ewvG77u15MDQwomd7atW2SYsfJ5oMWywhGaMVgxyJvBYMdHuXM6nYHDYUdjMQqF4nTagX3PHiQWORx76E4+oU9CpmketdAXzBtS6cfFpRUW19iKARlsbaNlmK5xONd5fEE2k52EIFcD9vh9ZDrVYLS+6p0iEOU80QIGO2ZzeuVyiVozzRSZ0fgJjmgW1yPhiEzb21usURoci/IhSK3TAPmA/8LvO/H6j9c2IjsByZT9/aBKpXWMS8wTH0yBJRfi3nU59/tIGtHEolJtYwnn3MuuW68nfXwEVOHIv2CwepWrh77V0imG0NSMYtFA7fMOQU+/7OdBsI7AHm+4qRUkDivevJM2odjWhfX6QeAhkwHubwrVcLh8fXN/Gi8jCEsw/7Sdw+TqO3Hit4PyQjJdP0V23P7mNg6RrOgnKZ+1s+1Obz2d+hs/Be4vs5WtrTsYrkajd5ubPKGpAweBgjk8QTpA0eajSD3g2/3sasdNkunawRFt43ab1VOHw3+83v82H7BRu06JYQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;06-all-card-permutations.png&quot;
+        title=&quot;06-all-card-permutations.png&quot;
+        src=&quot;/static/46d98cdf7fc19e733b3d325dc1047e99/748f4/f82qff73bqzatw_small.png&quot;
+        srcset=&quot;/static/46d98cdf7fc19e733b3d325dc1047e99/772e8/f82qff73bqzatw_small.png 200w,
+/static/46d98cdf7fc19e733b3d325dc1047e99/e17e5/f82qff73bqzatw_small.png 400w,
+/static/46d98cdf7fc19e733b3d325dc1047e99/748f4/f82qff73bqzatw_small.png 656w&quot;
+        sizes=&quot;(max-width: 656px) 100vw, 656px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;py-4&quot;&gt;How many total orientations are there for one permutation of our set of three
+cards? We could count them using the image above, but it’s faster to calculate.&lt;/p&gt;
+&lt;p class=&quot;py-4&quot;&gt;We have &lt;strong&gt;three playing cards&lt;/strong&gt; and each card has &lt;strong&gt;two orientations&lt;/strong&gt;. The
+total number of orientations for one permutation of the cards can be calculated
+as the &lt;strong&gt;third power of two&lt;/strong&gt;.&lt;/p&gt;
+&lt;p class=&quot;py-4&quot;&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/fc232be656347c9ed75552f1d21371d0/a6d36/7vqqrgkecweka_small.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 13%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAIAAAAcOLh5AAAACXBIWXMAAAsSAAALEgHS3X78AAAAqElEQVQI1w2N2Q6CMBQF+f/v0TeDCQSNgAhoAZGtLRYqyqpFAxrv45zM5EgMo6OlPhs8j3weS9HRgqC2Sr5vPonidg0qdp5ECdhWMSMIBNBgEV0umdtV5Bv9I01DC0f2qyWes8kuB0CauiX13L1CYicOzKHG+518L0JAEIYGS5a+/n0qaKCkiTv2VJEXPA9CpDN8Qo6GbI0mThQYPPdVeQnPEJPYHersDxa3nWlWfjRUAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;07-third-power-of-two.png&quot;
+        title=&quot;07-third-power-of-two.png&quot;
+        src=&quot;/static/fc232be656347c9ed75552f1d21371d0/a6d36/7vqqrgkecweka_small.png&quot;
+        srcset=&quot;/static/fc232be656347c9ed75552f1d21371d0/772e8/7vqqrgkecweka_small.png 200w,
+/static/fc232be656347c9ed75552f1d21371d0/e17e5/7vqqrgkecweka_small.png 400w,
+/static/fc232be656347c9ed75552f1d21371d0/a6d36/7vqqrgkecweka_small.png 650w&quot;
+        sizes=&quot;(max-width: 650px) 100vw, 650px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3 class=&quot;font-bold py-4 text-3xl&quot;&gt;Total Positions for Three Cards&lt;/h3&gt;
+&lt;p class=&quot;py-4&quot;&gt;We’ve determined the total number of permutations for our cards is &lt;strong&gt;three
+factorial&lt;/strong&gt; and the total number of orientations for each of those permutations
+is the &lt;strong&gt;third power of two&lt;/strong&gt;. Calculating the number of positions is done by
+multiplying the number of permutations by the number of orientations.&lt;/p&gt;
+&lt;p class=&quot;py-4&quot;&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 542px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/fe43118105fcf863b5d7898e9fd17c7e/c0388/pqz7dxg9lg6wa_small.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 20%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAIAAAABPYjBAAAACXBIWXMAAAsSAAALEgHS3X78AAAA3UlEQVQI1zWOWW+CUBCF+f9/o+lD00YblxY1uGGvrQt6L17cwiIgxAoFWVRsH3peTCaTnHNmvhnhkrh57ETfevpjXdM9JDoclLWdoW65X6T7W+YV9/Q+YwuuqX503ySx5Bi0yLws2iFbsmFfqo5Ji037v2c/Dowo0JPQ+rscXJPRSU9V5PXiU4iPxqBTG5EWLiwZEatP55OTRRZTZM/mSWiCteZfkLZOAcIm6b23G+Vm/UXQVxNJLM9GHdz0dpxTArzcrr0+PwCHb8Hybc0x1MDfwNEoqZQet9qYzwf/ZlPOeRiHGLUAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;08-card-total-permutations.png&quot;
+        title=&quot;08-card-total-permutations.png&quot;
+        src=&quot;/static/fe43118105fcf863b5d7898e9fd17c7e/c0388/pqz7dxg9lg6wa_small.png&quot;
+        srcset=&quot;/static/fe43118105fcf863b5d7898e9fd17c7e/772e8/pqz7dxg9lg6wa_small.png 200w,
+/static/fe43118105fcf863b5d7898e9fd17c7e/e17e5/pqz7dxg9lg6wa_small.png 400w,
+/static/fe43118105fcf863b5d7898e9fd17c7e/c0388/pqz7dxg9lg6wa_small.png 542w&quot;
+        sizes=&quot;(max-width: 542px) 100vw, 542px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;py-4&quot;&gt;A set of three playing cards has 48 possible positions when all permutations
+and orientations are considered.&lt;/p&gt;
+&lt;h2 class=&quot;font-bold py-4 text-4xl&quot;&gt;Understanding the Rubik’s Cube&lt;/h2&gt;
+&lt;p class=&quot;py-4&quot;&gt;We now have all the knowledge we need to calculate the total number of
+positions for the Rubik’s Cube. We know that, given a set of &lt;em&gt;n&lt;/em&gt; items with &lt;em&gt;p&lt;/em&gt;
+orientations, the total number of positions for that set of items can be
+calculated.&lt;/p&gt;
+&lt;p class=&quot;py-4&quot;&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 316px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/cef6d9963b674d082fde1a24a679d716/67145/mdvpysojodz6ka_small.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 34%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAIAAACHqfpvAAAACXBIWXMAAAsSAAALEgHS3X78AAABZklEQVQY0y2QWU/CQBSF+8t9MDFREx94MDEx8oICBgiCIigIBoWGpVWKFmSV0o1WgVK6saQegWRyM3OXued8hDUbmtoQ0ZkL41H7Luq3dd6a8ZvkLm4O2jhHFxShSZdyzTqp/fQIWxdW9siZi+5SlXn26GDPngvoXloyJhemhAY8F4bomLK7ULvNSuLGfx8PykOWmCjtdDLCMoVy4VERGrGwb2FI2CNxn1TpqdOo4I7JBlN8TsfYWrFO58XBx+f761TtEvr4++LMw/eZ4OX5r9xq1IoYxsK3cu7kcP82egVRa1shX1KZVITMJx8SIdfVoA6KCGFQj0V8va9qOOCdjDoMlYdnFPotKhm/pkpZY8q57iQRC1TJDGKvRcGRoXHwQihis9+iJ2qnzZbBAKowbM6GS1OCKKxF08qSQwEvXc4CCvKobikSzj8JCajxH8SsHWVL2wBnHZGDBbA59RzD/G6nvuXP/wHyjmwUHJf6agAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;09-equation-total-perms.png&quot;
+        title=&quot;09-equation-total-perms.png&quot;
+        src=&quot;/static/cef6d9963b674d082fde1a24a679d716/67145/mdvpysojodz6ka_small.png&quot;
+        srcset=&quot;/static/cef6d9963b674d082fde1a24a679d716/772e8/mdvpysojodz6ka_small.png 200w,
+/static/cef6d9963b674d082fde1a24a679d716/67145/mdvpysojodz6ka_small.png 316w&quot;
+        sizes=&quot;(max-width: 316px) 100vw, 316px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;py-4&quot;&gt;Once we understand how the Rubik’s Cube is built, we can apply this formula and
+calculate the total number of positions.&lt;/p&gt;
+&lt;h3 class=&quot;font-bold py-4 text-3xl&quot;&gt;Anatomy of a Rubik’s Cube&lt;/h3&gt;
+&lt;p class=&quot;py-4&quot;&gt;The Rubik’s Cube has six sides and each side has nine squares, but this is not
+a good way to think about the cube when trying to count the number of
+positions. Instead, we need to understand &lt;a href=&quot;https://www.youtube.com/watch?v=1p0qN1_qWoA&quot; class=&quot;text-blue-700&quot;&gt;how the cube is
+built&lt;/a&gt;, what types of pieces there
+are, and how each piece moves around the puzzle.&lt;/p&gt;
+&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.285714285714285%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;iframe src=&quot;//www.youtube.com/embed/1p0qN1_qWoA&quot; class=&quot;py-4&quot; frameborder=&quot;0&quot; allowfullscreen style=&quot; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot;&gt; &lt;/iframe&gt; &lt;/div&gt;
+&lt;p class=&quot;py-4&quot;&gt;It’s important to understand that the Rubik’s Cube has &lt;strong&gt;three types of
+pieces&lt;/strong&gt;. Each behaves differently as we turn the sides of the cube. We’ll keep
+this in mind as we do our calculations.&lt;/p&gt;
+&lt;h2 class=&quot;font-bold py-4 text-4xl&quot;&gt;Calculating Positions&lt;/h2&gt;
+&lt;p class=&quot;py-4&quot;&gt;The total number of positions for the Rubik’s Cube can be calculated by looking
+at each of the three types of pieces separately.&lt;/p&gt;
+&lt;h3 class=&quot;font-bold py-4 text-3xl&quot;&gt;Center Positions&lt;/h3&gt;
+&lt;p class=&quot;py-4&quot;&gt;There are six center pieces and they are located at the center of each face of
+the Rubik’s Cube. &lt;a href=&quot;https://www.youtube.com/watch?v=1p0qN1_qWoA&quot; class=&quot;text-blue-700&quot;&gt;As we learned&lt;/a&gt;,
+the center pieces are part of a fixed axle that does not move. All the other
+pieces move &lt;em&gt;around&lt;/em&gt; the center pieces.  This means that the center pieces have
+&lt;strong&gt;one permutation&lt;/strong&gt; and &lt;strong&gt;one orientation&lt;/strong&gt;.&lt;/p&gt;
+&lt;p class=&quot;py-4&quot;&gt;Intuitively we know that something with &lt;em&gt;one&lt;/em&gt; permutations and &lt;em&gt;one&lt;/em&gt;
+orientation has a &lt;strong&gt;single position&lt;/strong&gt;, but we can verify by plugging these
+numbers into our equation.&lt;/p&gt;
+&lt;p class=&quot;py-4&quot;&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 488px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/3572ea1c880111dbd7c4ca4c47c9019d/bd48c/55tzbpl0cgaauw_small.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 21.999999999999996%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAIAAAABPYjBAAAACXBIWXMAAAsSAAALEgHS3X78AAAAxklEQVQI1yVOfQ+BYBzs+38V/eV13idRhoWKUKSkIq3SG2o5a7s9u+d297sjkuAKRJ4WPM/py4gDPfZ1KHg/kakp69tFBMG3ROkvCeHa8pIdKNKi2ySL3H2HN1izxN5tpgdxBh0kT23oEAEUAPNp19K3BApHvaqh8uJq8o2tdr2y2zBF9pR4ZkZ3fOdkaiJ09cjBIPGs9zjl6Z0eNi7yCmGV6tdsQ7qeeZxv18m9wBZfB7UIYwvmvUMDYYEbY4Xn/MMM1UL4Bw5k0svu7ARlAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;11-center-permutations.png&quot;
+        title=&quot;11-center-permutations.png&quot;
+        src=&quot;/static/3572ea1c880111dbd7c4ca4c47c9019d/bd48c/55tzbpl0cgaauw_small.png&quot;
+        srcset=&quot;/static/3572ea1c880111dbd7c4ca4c47c9019d/772e8/55tzbpl0cgaauw_small.png 200w,
+/static/3572ea1c880111dbd7c4ca4c47c9019d/e17e5/55tzbpl0cgaauw_small.png 400w,
+/static/3572ea1c880111dbd7c4ca4c47c9019d/bd48c/55tzbpl0cgaauw_small.png 488w&quot;
+        sizes=&quot;(max-width: 488px) 100vw, 488px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 640px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/78d5c35c16a1a66695669879aa5ef766/6af66/4j5xjke8vkn0gq_small.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsSAAALEgHS3X78AAAD8ElEQVQ4y21USW/bVhB+sZFfUaCHIkXXQ3tpes2laC/t3ajQSxK0p956CnoKAiSuE9spjMYpLTneY8OLYpmSqM0URUukNi4SKSmyREuOYkmWKIqidrHPJuCmQIGHwcwbfrO8+YagrZwaR2sUB+1ytZSJUH4mRolcFN3bwt32RIyK06SYZKy7L4Okj4vTYiLuQK0O2xZ4F/lG4g+92Fm53Ov1uUJxB/efj0Z1Xe/peihE2Q5QWW6oaktRFMvi0saqBVwhG9Wc/cAaClJZSUKdzsVbt1iTibt7NzUxsX3nzurmZoLnBUHA8cOnT2dfZ4+97gNwiawUc6zTbiuXK4PBgOe47Rs3ZABqY2Pda9coAPYfPlS7XVVR6vU6hmEuF1Y8feN27gOYUznPuzCUpsOZTNpmt5sfP2bu3WMfPBCnprZMppUnT3hJSvL8IY5PTk7WajWGiedyedS2DWCfTvt+pXo+HA4zmYzVam3Cti77ZLNZO0l2BgNNVSEmFAr5fD5VbcbjMbPZ8sL8DBA45sRckUjE6/XOzc2RJBkMBo8IwoNhf87OUkdHgUCApmmLxVKtVlmWUZQmglhe7e/jPicoSplOF6bRZVmGIaACSzDMaDQKlX6/DyUMoaoKwxxvbt5fWjKVSqrTvgNy2WSzCcvUYeAQFYJKp9sZ6aNKtUJR1IXZ6UDp9+OtVhdBHhEESCQm8pLmce2BQj7d6XSNVLFY7CpzQ27EY/F3MuM7O67lZZOmAZa9TZLpteV5EKUDBBHgODaAkzMrf2zwCyvh5xuMeR6fRlb+TvJJiqZEUZyenqIogeMeNZvg4OCbxUUbansJ0iJTKr1tqHJDUn/0ffe+Bj45H/+0Of6eBOZ900NNL1fLmqZhmL3V0gXhPssCBPk1ny97sFfgJJ8yytZl/ZfoD5/r4Obw+tf69Y9lsBZF4HWvf+ElCBz27nD8vrv7G02nCoUTzPFf8M/R7z/TwVfD8Zv6+EcyWDXAgwtvOBxOJBIIYpZlleMYjku4HHsgLTCQa3WlVsspP3m//VAFX1TGv2yMfZAD896Zvjp4e1aCD76+vo6iKAzRbmsoat9YW2zWJEAHcbfbA29dmGve8swXcTsDqIfCdrCtBQsCJ08ECOg1m81wmVIp+Hap1aWF2lkG8hoUJDiq3v+OKnY5KrgqBkl6vR5cir/mZpr1k377TJOLQDoWtfYFDeDGGAwzvr4yjTlDXRDEF5bnlVJq0ClDJNxlkE3zDUWFbriPgQB5SanuaPSvqWltKLe3d2dnJhs1CSJbcsH4hcDMfCbFF6RMWmTpkB8quaxwkk+nBMYwj18nTwvHXpft9IQfdqtXSHj+AZuLwxKyzHxCAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;12-centers.png&quot;
+        title=&quot;12-centers.png&quot;
+        src=&quot;/static/78d5c35c16a1a66695669879aa5ef766/6af66/4j5xjke8vkn0gq_small.png&quot;
+        srcset=&quot;/static/78d5c35c16a1a66695669879aa5ef766/772e8/4j5xjke8vkn0gq_small.png 200w,
+/static/78d5c35c16a1a66695669879aa5ef766/e17e5/4j5xjke8vkn0gq_small.png 400w,
+/static/78d5c35c16a1a66695669879aa5ef766/6af66/4j5xjke8vkn0gq_small.png 640w&quot;
+        sizes=&quot;(max-width: 640px) 100vw, 640px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3 class=&quot;font-bold py-4 text-3xl&quot;&gt;Corner Positions&lt;/h3&gt;
+&lt;p class=&quot;py-4&quot;&gt;Every three dimensional cube has &lt;strong&gt;eight corners&lt;/strong&gt; and the Rubik’s Cube is no
+exception. Unlike the centers, each corner piece can be moved and rotated.
+Since we have eight corners, our total number of permutations for these pieces
+is &lt;strong&gt;eight factorial&lt;/strong&gt;.&lt;/p&gt;
+&lt;p class=&quot;py-4&quot;&gt;To figure out the number of orientations for a single piece, we need to count
+the number of stickers. A corner pieces has three stickers, so it must have
+&lt;strong&gt;three orientations&lt;/strong&gt;. As we learned, this means the total number of
+orientations for each position of the corners is the &lt;strong&gt;eighth power of three&lt;/strong&gt;.&lt;/p&gt;
+&lt;p class=&quot;py-4&quot;&gt;With these numbers, we can calculate the total number of positions for the
+corner pieces.&lt;/p&gt;
+&lt;p class=&quot;py-4&quot;&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 289px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/87735e56e3ab925594f8a6f2c6e21731/c969a/dg15curynbgew_small.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 37.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAAAsSAAALEgHS3X78AAABkklEQVQY021RWUsCURid/xm99NpDRCCUEBVEEBSR2IMRhT0oiSWpLS6lqDVp44KOuWTqqDPjMo6mjo7bdFLoKbhczr3f+c49537E4Ls87Fb67RLAZFDD/u8CQe5U5kASGa5I19kUgatWLTeWONzm05Q0U/lr+AOjPi+1y51mUZmKpO/B67pNxgIEGpLRQDToEfjs2spyRyhADmwsKEotBmDS5/MZKvTifLRe0RF/Ok7ubK67H64J/dkJxDwuK1uIHx/sdZsF+TcIK3fZaik5HdTQrwzr1Ks7S789PVp02sNE1A/brnszca7TLC0ukH6HMmwYL087Qn7U48TqJ96x3xhgauaCmQyEVqN4odNwpSQ4WToIj0Ts3Rsm3VtqFZLDDwp4FgWz8Xx3W+1/tkMLQXiGRoki3dqjfWUsgIO/IBw2k6LICJD7CCUivp5YRAFCYXi0mVLx157IgG3Q64ATYd+GalUZNUCDIyIa8gQDjq80hYPHYUHC2fDYYY8TuMxErs2HhCB0xOe8M1cK8bHEzwfxA7MWmG1SilMbAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;13-corner-perms.png&quot;
+        title=&quot;13-corner-perms.png&quot;
+        src=&quot;/static/87735e56e3ab925594f8a6f2c6e21731/c969a/dg15curynbgew_small.png&quot;
+        srcset=&quot;/static/87735e56e3ab925594f8a6f2c6e21731/772e8/dg15curynbgew_small.png 200w,
+/static/87735e56e3ab925594f8a6f2c6e21731/c969a/dg15curynbgew_small.png 289w&quot;
+        sizes=&quot;(max-width: 289px) 100vw, 289px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 640px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/367e6d71e05201df01ce50cc68161d9e/6af66/p458nwmxiyr5w_small.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsSAAALEgHS3X78AAAEYklEQVQ4y1WTe0xTVxzHf7aaDLcs079km9kiyLLoQJTFR9yysGxsS8QOprC5/aOOidNNg62ZGB7b/hjqBNkSzJZaHgIjbIgbUGuB1r5s6YOW29KC0N4LlQJ9t7f39nG7s1uNWUx++eZ8c/LJ9+Sc8wU68vDxUKFFJuH3+RcMF/nmr6sc1cfFJ79UKMdsmNFs0DjmHX/392hPHJv6ptp++oSk8ojkVjc8Id0Mtbq0OC3bv9sDEOdyLQADgvN+Mhb0+ZNMWjs2PrRxYwAgwl0ThLWifdD359kMTIXdDOkJe513ukS6qqq5hoaRior22topHLdaLDM268DgYE9jo/Vktb3uwr2jp1srNs8tgWy0BjIkveIOEFLTxGoymUbItrAwMD4epumgn81k9PPzw1ptDCESoWCSkuofjGpOu90wdpcPqfhqMOKWfP7J/Q/em/2YN1RaKrpxw2IyYWbztHOur6erszDfUs6z8nj3it+/9F1VIIgskxdcLhAP88H70KV75wAJgLjceYDbZ85EE4lYNJpIJWf1dk12LspscaLA1VSAXPkRGUVm81mRCDpFbfC7tPFDARz9+RlePfBry/TWBxqNSqNRqxTasoZdh+vhi6a1hy5zvhKsI6NgthyIRJBQePGfob8Ucjm0LNS8lIAilLUpDJenGhBCyXQyoyGm1FSYh6CA4bDph7RcFAOTpbS/X37zZpfHs3L3zm1onRPkRuAttH6LF67q6liMSlBpxFC+OE+3swDBHpqbj9YcUWbg34T5arXdZjPjODE+KoZmvOblOLyJsrJDcHXy6eTJwtcQ7EhxtqI1h9UwfmtLR7eQomhsCtNoNL03fwWh/qdiVc6n2L53FTn13YJZ65zeMGG2TGoVus+6S3jWgnJ9UZlj18GW7diExYJZSTI6MiLp6MgWD58Cp2M65CHTJFolfEq5kqJifr8/Go3iBK6R30cUIn00q3KpioyRdjuGYbhQeAjHYVzKBwJ30PEEe85QKGQ0GdlFOp1+bE2PbCqVYlWlUsbjtERyZ3BQptefW1wEqYQPC/hM/AlsMpmehjOWYRhWDQazzWYQCvmhEMKw8xgGo5IrMGu3eB4uxyIk4SJkMhlJkl6vNxwOu1wuuUxOkZR3xZuMJ/r+GBwRv2gwlNA0EotP9fUejAZ80KqtzR2D/YZNeVI4137CapxWqpXaCa1Cqipp31FoXL9bvaHAsKFM9Gw6AtMzFQ5HoKfremBlkW0EXCNqXo3DXpS1OQTNTz8Vb3LnNgRFDOd1BJVqDkqCWLrneltvNORM0ctsi+EXp2ArDW+j53KC0GJsZLEEk7mCRDBVbizagWBvat0biHvMuHbJDqL2I16Pm4lnSLbL0DRb80IEtqOs51fhR3Xmh8XiFPNvmlyli9XbNiPIozivIM7+Aei8VukPehl6OfaIzMByZ//3M8ebibM/OI7f1nUuE4RzfprAZ5x2e5uusYmovjL37aXFk62jdb4FN5P4n2TnP9KFPRc67IoJAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;14-corners.png&quot;
+        title=&quot;14-corners.png&quot;
+        src=&quot;/static/367e6d71e05201df01ce50cc68161d9e/6af66/p458nwmxiyr5w_small.png&quot;
+        srcset=&quot;/static/367e6d71e05201df01ce50cc68161d9e/772e8/p458nwmxiyr5w_small.png 200w,
+/static/367e6d71e05201df01ce50cc68161d9e/e17e5/p458nwmxiyr5w_small.png 400w,
+/static/367e6d71e05201df01ce50cc68161d9e/6af66/p458nwmxiyr5w_small.png 640w&quot;
+        sizes=&quot;(max-width: 640px) 100vw, 640px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3 class=&quot;font-bold py-4 text-3xl&quot;&gt;Edge Positions&lt;/h3&gt;
+&lt;p class=&quot;py-4&quot;&gt;A Rubik’s Cube has &lt;strong&gt;twelve edge pieces&lt;/strong&gt; and each piece may be moved or
+flipped.  We can calculate the total number of permutations for these pieces as
+&lt;strong&gt;twelve factorial&lt;/strong&gt;.&lt;/p&gt;
+&lt;p class=&quot;py-4&quot;&gt;We can use the same method as we did for the corners to determine the number of
+orientations for a single edge piece. An edge piece has two stickers, so it
+must have &lt;strong&gt;two orientations&lt;/strong&gt;. This means the total number of orientations for
+each position of the edges is the &lt;strong&gt;twelfth power of two&lt;/strong&gt;.&lt;/p&gt;
+&lt;p class=&quot;py-4&quot;&gt;With these numbers, we can calculate the total number of positions for the edge
+pieces.&lt;/p&gt;
+&lt;p class=&quot;py-4&quot;&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 379px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/8c8c14198763c0898405ddf18d9e73b6/811d1/myltudgc4d7qfg_small.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 28.500000000000004%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAAsSAAALEgHS3X78AAABP0lEQVQY0yVQWVOCABDm/7/XdPkgY5ad6ow5yoySiSYo4YWIgAbIXUqIiGi25MseM/sd+yG7jRmu5sGPuguMKDBgDn0N1sBT43ocPHW71n9Da2EJ48G7Y/DDLjGb0Ai0b3MCR2yXkCVmwNSpBnbY2v5SPpJuYhZF5Npcv7F0pGo5a6os08YbtSKSTp4pIkOTlQlL3l1fFXI3OJY7RA6ouY4EFPvQ7NE1YUSlk+d9+q35WrT1cf4xFSsX8xmBo6JAtzSuXHgQOYrtEQCWxW4avaDJKrzjLWarxedL7lZXhobKwuWo3wTzSCZ1Cc7BW6X0BOLAqs568J7Ed9DESYsoA9h35Tpe+CCrG2++9fVwpe3jpDSkUnrm2ZYwItHEKY5lpzwtjTuQ3NqVbY0D59Fa1+QBeM7eo+7XFPD/QSpQ/wCbozJ3YcrjxQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;15-edge-perms.png&quot;
+        title=&quot;15-edge-perms.png&quot;
+        src=&quot;/static/8c8c14198763c0898405ddf18d9e73b6/811d1/myltudgc4d7qfg_small.png&quot;
+        srcset=&quot;/static/8c8c14198763c0898405ddf18d9e73b6/772e8/myltudgc4d7qfg_small.png 200w,
+/static/8c8c14198763c0898405ddf18d9e73b6/811d1/myltudgc4d7qfg_small.png 379w&quot;
+        sizes=&quot;(max-width: 379px) 100vw, 379px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 640px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/89bc4999ff43f89cbde342684e5ed19e/6af66/oqgjl53l0tmhsg_small.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsSAAALEgHS3X78AAAEcElEQVQ4y1WUa0ybVRjHH1oyJfppKolxZiJDd3F02eaY8RJjlAwSRWDLBruRuAk1kSxcDAbITLZBN2Fj07gLKy2XDudYYbBSaDsohQKlLbR9S1uubaGlUkrp9e1L+7LjW50zJifPh3Pyy///3A6EfPZ/Du61kUGHy2ZUD0u1ymHTzKSwp1P23Vn998yJQqbpm5OdhczRERmmGjFNTvQKO3sFbfAfGVpeWlsY0I47I5EwQphGy094ewVglUYjAEZoNAGH60EogJDPH+Bym+63NkZh3LNIEi6vzyE8fWL0yNHZUye78/IaWSwtk4kVF09VV/HT03mJifpz5wyn8wYOH/vlcuWseaFfIgDcYyNxp23R0PthigMgTKfrAPiXLnkR8pAkZUGp0XRt2eID8NJjVoEuygCJNNdmCzwRtQOJL/vWFiSP2pRlP07XXe0sOHM3/hX1iWMT2ZmG1NS2nBxeba2+rMxwhTVQVHHlaJIbB63muNkcFAoewpJVL+p57HK5SYQW7O6BvZ+HARCNhmJiMAAhi0UghCO0FsYVBrtUUREIgEZTwOHcbOIUwZBMLBJLlKqx0X5FXnVqZjmcqqbn1sRmV8L5C8xx4+zQoEw5OsptqHetrOt01T4vsNnbuh6DTFoINusMsU6lRqWI8tVfJSJI3qAzEG2rF1p0DdR1mFynolwuCwSQVlv+4EF8S0uGwwGinhIwzxl8fj+JIhEX+nbsy/cQpBCxB5/G7liBFsVtCgsSQSoODg4Eg2E2+6Jcrp6cZFks0CcphSXL3DrxTLlgIotSZmzQ9yB6ggdaJ9hR5UhUeViOtbdf4PGycBxhuqLhYWhtOQ99ykd3hq7/gXGaZfXHeWlf6xlZqv2Hte+nyXaV8ph8fUuz8labiVdel68eAx2WRpnv7v6hsfGMUCCGWlPxaw5gBOJetQJLWklV1r8aDPsjfmvokJSRgMNOF20rDpliOgqC3piDYVY2u9xicfaJu+CGpXQbAR+jlyifdeM/RX1uRLMIe8is8X0MBAcjscmIljMUiwgQ9H7S0bFbqcxaXAyJe9ujcCIBH6G4tzxw7f9w5vjeZKp+JI2qYp4KbJMv32Fv93gAw/Iw7E9J70O4Zix50w4HfHFvmKGqv4wa/JUVp9frcZpd6f3J2wOwZ5m2k4j57HeQCxsUqsuhEAiFX9xvFfjdszA8Kul4wu9TicRicTb3U4b6xQPyzSljm3eJX6jglsjVgz1ygVQluc35ze9DpqmLJhPcaz7rXraTIQc1JLPEv61iTmS+i2DfBn0/oiU9b9WzIRkMh5FYXHnr5iG/xxsJOaiNAuu8CQ8RUXgNMdUZu6kKkZs+QJt2rME9dRRej0Rf1Wq10Whs4tavOKwksUyR1C7D3LTe6wuQiIw4Ua487XUESQT9naf0eCfclf9KYQGc2n/E53fcuP6z1x0lg3+TUdg6r5+Z0lutUxbTdKPiarU1v2ausMZSWGUsECn4S1bz/OykfXGeWn37gn5j3RX0LD7/uf4CFIosZf0VLbwAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;16-edges.png&quot;
+        title=&quot;16-edges.png&quot;
+        src=&quot;/static/89bc4999ff43f89cbde342684e5ed19e/6af66/oqgjl53l0tmhsg_small.png&quot;
+        srcset=&quot;/static/89bc4999ff43f89cbde342684e5ed19e/772e8/oqgjl53l0tmhsg_small.png 200w,
+/static/89bc4999ff43f89cbde342684e5ed19e/e17e5/oqgjl53l0tmhsg_small.png 400w,
+/static/89bc4999ff43f89cbde342684e5ed19e/6af66/oqgjl53l0tmhsg_small.png 640w&quot;
+        sizes=&quot;(max-width: 640px) 100vw, 640px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3 class=&quot;font-bold py-4 text-3xl&quot;&gt;Putting It All Together&lt;/h3&gt;
+&lt;p class=&quot;py-4&quot;&gt;We’ve calculated the number of positions for the center pieces, the corner
+pieces, and the edge pieces. The final step to finding the total positions for
+the entire Rubik’s Cube is multiplying these numbers together.&lt;/p&gt;
+&lt;p class=&quot;py-4&quot;&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/45f478f080bb34646bafe677901860f4/a6d36/evkjq166zx52ha_small.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 14.500000000000002%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAIAAAAcOLh5AAAACXBIWXMAAAsSAAALEgHS3X78AAAAqElEQVQI1w2O2w6CMBiDef8n8kZD4hEFGZPJnIw5BmMgJxE0xBv/m6Zpmq+1qpwKdh47OU+6Mezib1IeTL2axxzC2jAoKIFljH4fM/Vp/gjjyCVo2z8Ta79euIelloRTjxEHuXaRkkzgW+hIjqDqn2zPWXHqMnIs1BW8liEQI7yzyox2Vfxu5asWdcFAu4o35j40oi3jMqfAUgmGFzAFoeTBPOrvkAHiD9FqnLGralC8AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;17-total-cube-perms.png&quot;
+        title=&quot;17-total-cube-perms.png&quot;
+        src=&quot;/static/45f478f080bb34646bafe677901860f4/a6d36/evkjq166zx52ha_small.png&quot;
+        srcset=&quot;/static/45f478f080bb34646bafe677901860f4/772e8/evkjq166zx52ha_small.png 200w,
+/static/45f478f080bb34646bafe677901860f4/e17e5/evkjq166zx52ha_small.png 400w,
+/static/45f478f080bb34646bafe677901860f4/a6d36/evkjq166zx52ha_small.png 650w&quot;
+        sizes=&quot;(max-width: 650px) 100vw, 650px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3 class=&quot;font-bold py-4 text-3xl&quot;&gt;But Wait, There’s More&lt;/h3&gt;
+&lt;p class=&quot;py-4&quot;&gt;We have successfully calculated the number of positions, but we made one fatal
+assumption; our calculations assume that we can take the cube apart. This is
+&lt;em&gt;cheating&lt;/em&gt;. Not every position of the Rubik’s Cube is possible if we limit
+ourselves to turning the sides.&lt;/p&gt;
+&lt;blockquote class=&quot;p-4 my-4 bg-orange-200 border-l-4 border-orange-500 italic&quot;&gt;
+&lt;p class=&quot;py-4&quot;&gt;“there is no sequence of moves that will swap a single pair of pieces or
+rotate a single corner or edge cube” - wikipedia&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p class=&quot;py-4&quot;&gt;Because of the limitations of the Rubik’s Cube, only &lt;a href=&quot;http://en.wikipedia.org/wiki/Rubiks_Cube&quot; class=&quot;text-blue-700&quot;&gt;&lt;strong&gt;1 in
+12&lt;/strong&gt;&lt;/a&gt; of every position is reachable
+by turning the sides of the cube. We can factor this in to our equation and
+settle on the total number of &lt;em&gt;legal&lt;/em&gt; positions of the Rubik’s Cube.&lt;/p&gt;
+&lt;p class=&quot;py-4&quot;&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/5cf5a1c2921214c9ee58a3935bff0f7a/a6d36/c88bk9pt5voctw_small.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 26%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAIAAADKYVtkAAAACXBIWXMAAAsSAAALEgHS3X78AAAA1ElEQVQY02WO3Y6CMBCFef9n8mJjDPGPxbZAEUqhLbZiFYy6G83e7AEvTSaT6Znv9EzgbaEFKbLN4OVj0E25i9dfXZvfenXvlbdlWye6oixe/FwNFC0p+14IvoUxMJJuwpngUVszJQinSyOZ01xVBJ6DStJdSKN5zpZWpaiMhLAgCfBoNpI4nWFxaMYQp9O6iBGIfBCTSKzK3mZ8ejQcT5DB1UsccHbl2Y39chyHqZdVHuG8tkmGk3xvJ0CA93YPMXg93Gc97/bvt8uTFarvKsxQPrF/ucwHoKfhvB4AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;18-total-legal-cube-perms.png&quot;
+        title=&quot;18-total-legal-cube-perms.png&quot;
+        src=&quot;/static/5cf5a1c2921214c9ee58a3935bff0f7a/a6d36/c88bk9pt5voctw_small.png&quot;
+        srcset=&quot;/static/5cf5a1c2921214c9ee58a3935bff0f7a/772e8/c88bk9pt5voctw_small.png 200w,
+/static/5cf5a1c2921214c9ee58a3935bff0f7a/e17e5/c88bk9pt5voctw_small.png 400w,
+/static/5cf5a1c2921214c9ee58a3935bff0f7a/a6d36/c88bk9pt5voctw_small.png 650w&quot;
+        sizes=&quot;(max-width: 650px) 100vw, 650px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2 class=&quot;font-bold py-4 text-4xl&quot;&gt;How Large Is That?&lt;/h2&gt;
+&lt;p class=&quot;py-4&quot;&gt;There are over 43 quintillion legal positions of the Rubik’s Cube.&lt;/p&gt;
+&lt;p class=&quot;py-4&quot;&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/16247ae68f5bf73fb397f5322d6208ac/a6d36/yc2gedgtjumscg_small.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 8%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAIAAADXZGvcAAAACXBIWXMAAAsSAAALEgHS3X78AAAAd0lEQVQI1w2L7QrCIBhGd//3VFhRNnX6YvOL15zLBBss6A4Snh8HznmGGW4zXK2mn7dXjEhG0PKtBuCnMI8l6d+eOT0IeswRFlRyJHq67C2COA9dLwjRT/0QnUArMkLNpq+9XEb13Z5O31OQJT3qajoEw1rxPf4Dv75kgvvFoY0AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;19-big-number.png&quot;
+        title=&quot;19-big-number.png&quot;
+        src=&quot;/static/16247ae68f5bf73fb397f5322d6208ac/a6d36/yc2gedgtjumscg_small.png&quot;
+        srcset=&quot;/static/16247ae68f5bf73fb397f5322d6208ac/772e8/yc2gedgtjumscg_small.png 200w,
+/static/16247ae68f5bf73fb397f5322d6208ac/e17e5/yc2gedgtjumscg_small.png 400w,
+/static/16247ae68f5bf73fb397f5322d6208ac/a6d36/yc2gedgtjumscg_small.png 650w&quot;
+        sizes=&quot;(max-width: 650px) 100vw, 650px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;list-disc pl-8 py-4&quot;&gt;
+&lt;li&gt;It would take &lt;strong&gt;thirteen hundred million years&lt;/strong&gt; to see every position if you
+were able to view one thousand per second.&lt;/li&gt;
+&lt;li&gt;If we stacked 43 quintillion pennies, the stack would be tall enough to reach
+the sun and return to the earth over &lt;strong&gt;two hundred and nineteen thousand
+times&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Solving The Rubik's Cube in 20 Seconds]]></title><description><![CDATA[Come to San Francisco as a Rubyist, leave as a speedcuber. We are going to use
+Ruby, a video camera, and an insane amount of live…]]></description><link>https://www.chrishunt.co/solving-the-rubiks-cube-in-20-seconds/</link><guid isPermaLink="false">https://www.chrishunt.co/solving-the-rubiks-cube-in-20-seconds/</guid><pubDate>Fri, 20 Sep 2013 00:00:00 GMT</pubDate><content:encoded>&lt;p class=&quot;py-4&quot;&gt;Come to San Francisco as a Rubyist, leave as a speedcuber. We are going to use
+Ruby, a video camera, and an insane amount of live demonstration to learn how
+to solve the Rubik’s Cube in less than 20 seconds.&lt;/p&gt;
+&lt;p class=&quot;py-4&quot;&gt;You will leave this talk knowing which cube to buy, which of the five most
+popular solving methods you should be learning, how to practice for speed,
+where to ask questions, and how Ruby can help teach you to be the fastest
+speedcuber in town. People are solving the Rubik’s Cube quicker today than any
+time in history and there’s a reason why.&lt;/p&gt;
+&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.285714285714285%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;iframe src=&quot;//www.youtube.com/embed/PV9Tsu6ny-0&quot; class=&quot;py-4&quot; frameborder=&quot;0&quot; allowfullscreen style=&quot; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot;&gt; &lt;/iframe&gt; &lt;/div&gt;</content:encoded></item></channel></rss>
