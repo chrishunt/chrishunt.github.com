@@ -59,11 +59,11 @@ module.exports = {
             options: {
               classMap: {
                 heading: "font-bold py-4",
-                "heading[depth=1]": "text-5xl",
-                "heading[depth=2]": "text-4xl",
-                "heading[depth=3]": "text-3xl",
-                "heading[depth=4]": "text-2xl",
-                "heading[depth=5]": "text-xl",
+                "heading[depth=1]": "text-4xl",
+                "heading[depth=2]": "text-3xl",
+                "heading[depth=3]": "text-2xl",
+                "heading[depth=4]": "text-xl",
+                "heading[depth=5]": "text-lg",
                 paragraph: "py-4",
                 list: "list-disc pl-8 py-4",
                 link: "text-blue-700",
