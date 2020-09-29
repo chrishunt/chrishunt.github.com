@@ -5,7 +5,7 @@
 Start development server:
 
 ```
-$ gatsby develop
+$ npm run develop
 ```
 
 View/test on iPhone on another machine:
@@ -17,8 +17,8 @@ $ ngrok http 8000
 Build and test production:
 
 ```
-$ gatsby build
-$ gatsby serve
+$ npm run build
+$ npm run serve
 ```
 
 ## Create a new page
