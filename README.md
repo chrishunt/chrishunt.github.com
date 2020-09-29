@@ -8,6 +8,12 @@ Start development server:
 $ gatsby develop
 ```
 
+View/test on iPhone on another machine:
+
+```
+$ ngrok http 8000
+```
+
 Build and test production:
 
 ```
