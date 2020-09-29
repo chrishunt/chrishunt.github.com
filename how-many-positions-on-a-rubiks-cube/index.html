@@ -4,11 +4,11 @@ are…"/><meta data-react-helmet="true" property="og:title" content="How Many Po
 many positions. Wouldn’t it be fun to know exactly how many positions there
 are…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="chrishunt"/><meta data-react-helmet="true" name="twitter:title" content="How Many Positions on a Rubik&#x27;s Cube?"/><meta data-react-helmet="true" name="twitter:description" content="The Rubik’s Cube is a challenging puzzle to solve, largely because there are so
 many positions. Wouldn’t it be fun to know exactly how many positions there
-are…"/><link as="script" rel="preload" href="/webpack-runtime-61ad2ef771dae787b45c.js"/><link as="script" rel="preload" href="/styles-f7a64dad1c13bebc31fd.js"/><link as="script" rel="preload" href="/framework-a23b24beacc21a89e7ba.js"/><link as="script" rel="preload" href="/app-0f3c50468119b8ee5cf0.js"/><link as="script" rel="preload" href="/commons-d2a53ee1f524f3ce6e64.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-f1e3437c92061b3aee17.js"/><link as="fetch" rel="preload" href="/page-data/how-many-positions-on-a-rubiks-cube/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2841359383.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="p-4 max-w-3xl mx-auto text-xl leading-relaxed" data-is-root-path="false"><main><article class="pt-4" itemscope="" itemType="http://schema.org/Article"><header><h1 itemProp="headline" class="text-4xl font-bold">How Many Positions on a Rubik&#x27;s Cube?</h1><p class="opacity-50 pb-4">February 2014<!-- --> by<a class="text-blue-700" href="/"> Chris Hunt</a></p></header><section itemProp="articleBody"><p class="py-4">The Rubik’s Cube is a challenging puzzle to solve, largely because there are so
+are…"/><link as="script" rel="preload" href="/webpack-runtime-865dc44edd5dff1807b2.js"/><link as="script" rel="preload" href="/styles-f7a64dad1c13bebc31fd.js"/><link as="script" rel="preload" href="/framework-a23b24beacc21a89e7ba.js"/><link as="script" rel="preload" href="/app-0f3c50468119b8ee5cf0.js"/><link as="script" rel="preload" href="/commons-d2a53ee1f524f3ce6e64.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-f1e3437c92061b3aee17.js"/><link as="fetch" rel="preload" href="/page-data/how-many-positions-on-a-rubiks-cube/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2841359383.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="p-4 max-w-3xl mx-auto text-xl leading-relaxed" data-is-root-path="false"><main><article class="pt-4" itemscope="" itemType="http://schema.org/Article"><header><h1 itemProp="headline" class="text-4xl font-bold">How Many Positions on a Rubik&#x27;s Cube?</h1><p class="opacity-50 pb-4">February 2014<!-- --> by<a class="text-blue-700" href="/"> Chris Hunt</a></p></header><section itemProp="articleBody"><p class="py-4">The Rubik’s Cube is a challenging puzzle to solve, largely because there are so
 many positions. Wouldn’t it be fun to know exactly how many positions there
 are? Wouldn’t it be even <em>more</em> fun to know how to calculate that number for
 yourself?</p>
-<h2 class="font-bold py-4 text-4xl">Back To The Basics</h2>
+<h2 class="font-bold py-4 text-3xl">Back To The Basics</h2>
 <p class="py-4">Imagine we have three marbles and each marble is a different color. One is red,
 another is green, and the third is blue. If we were to place the marbles in a
 row on the table in front of us, how would we arrange them?</p>
@@ -51,7 +51,7 @@ into a particular order.” - wikipedia</p>
 </blockquote>
 <p class="py-4">In order to count how many positions we have for the Rubik’s Cube, we will
 first learn how to count permutations for our set of marbles.</p>
-<h3 class="font-bold py-4 text-3xl">Counting Permutations</h3>
+<h3 class="font-bold py-4 text-2xl">Counting Permutations</h3>
 <p class="py-4">We intuitively know that our set of three marbles has several different
 permutations, but exactly how many are there? One way to count is to rearrange
 the marbles on a table until we’ve found each permutation. Doing this, we can
@@ -85,7 +85,7 @@ see that we have <strong>six permutations</strong>.</p>
       />
   </a>
     </span></p>
-<h3 class="font-bold py-4 text-3xl">When We’ve Lost Our Marbles</h3>
+<h3 class="font-bold py-4 text-2xl">When We’ve Lost Our Marbles</h3>
 <p class="py-4">Visualizing each permutation works well when we only have three marbles, but
 what if we wanted to count permutations for a bag of 500 marbles? We’ll need a
 different strategy.</p>
@@ -127,7 +127,7 @@ by calculating <strong>three factorial</strong>.</p>
       />
   </a>
     </span></p>
-<h2 class="font-bold py-4 text-4xl">Getting Oriented</h2>
+<h2 class="font-bold py-4 text-3xl">Getting Oriented</h2>
 <p class="py-4">A marble does not have an orientation. It cannot be flipped or rotated. It
 always appears the same no matter how it’s placed on the table. When we counted
 the the number of positions for our marbles, all we cared about was their
@@ -268,7 +268,7 @@ as the <strong>third power of two</strong>.</p>
       />
   </a>
     </span></p>
-<h3 class="font-bold py-4 text-3xl">Total Positions for Three Cards</h3>
+<h3 class="font-bold py-4 text-2xl">Total Positions for Three Cards</h3>
 <p class="py-4">We’ve determined the total number of permutations for our cards is <strong>three
 factorial</strong> and the total number of orientations for each of those permutations
 is the <strong>third power of two</strong>. Calculating the number of positions is done by
@@ -304,7 +304,7 @@ multiplying the number of permutations by the number of orientations.</p>
     </span></p>
 <p class="py-4">A set of three playing cards has 48 possible positions when all permutations
 and orientations are considered.</p>
-<h2 class="font-bold py-4 text-4xl">Understanding the Rubik’s Cube</h2>
+<h2 class="font-bold py-4 text-3xl">Understanding the Rubik’s Cube</h2>
 <p class="py-4">We now have all the knowledge we need to calculate the total number of
 positions for the Rubik’s Cube. We know that, given a set of <em>n</em> items with <em>p</em>
 orientations, the total number of positions for that set of items can be
@@ -339,7 +339,7 @@ calculated.</p>
     </span></p>
 <p class="py-4">Once we understand how the Rubik’s Cube is built, we can apply this formula and
 calculate the total number of positions.</p>
-<h3 class="font-bold py-4 text-3xl">Anatomy of a Rubik’s Cube</h3>
+<h3 class="font-bold py-4 text-2xl">Anatomy of a Rubik’s Cube</h3>
 <p class="py-4">The Rubik’s Cube has six sides and each side has nine squares, but this is not
 a good way to think about the cube when trying to count the number of
 positions. Instead, we need to understand <a href="https://www.youtube.com/watch?v=1p0qN1_qWoA" class="text-blue-700">how the cube is
@@ -349,10 +349,10 @@ are, and how each piece moves around the puzzle.</p>
 <p class="py-4">It’s important to understand that the Rubik’s Cube has <strong>three types of
 pieces</strong>. Each behaves differently as we turn the sides of the cube. We’ll keep
 this in mind as we do our calculations.</p>
-<h2 class="font-bold py-4 text-4xl">Calculating Positions</h2>
+<h2 class="font-bold py-4 text-3xl">Calculating Positions</h2>
 <p class="py-4">The total number of positions for the Rubik’s Cube can be calculated by looking
 at each of the three types of pieces separately.</p>
-<h3 class="font-bold py-4 text-3xl">Center Positions</h3>
+<h3 class="font-bold py-4 text-2xl">Center Positions</h3>
 <p class="py-4">There are six center pieces and they are located at the center of each face of
 the Rubik’s Cube. <a href="https://www.youtube.com/watch?v=1p0qN1_qWoA" class="text-blue-700">As we learned</a>,
 the center pieces are part of a fixed axle that does not move. All the other
@@ -419,7 +419,7 @@ numbers into our equation.</p>
       />
   </a>
     </span></p>
-<h3 class="font-bold py-4 text-3xl">Corner Positions</h3>
+<h3 class="font-bold py-4 text-2xl">Corner Positions</h3>
 <p class="py-4">Every three dimensional cube has <strong>eight corners</strong> and the Rubik’s Cube is no
 exception. Unlike the centers, each corner piece can be moved and rotated.
 Since we have eight corners, our total number of permutations for these pieces
@@ -487,7 +487,7 @@ corner pieces.</p>
       />
   </a>
     </span></p>
-<h3 class="font-bold py-4 text-3xl">Edge Positions</h3>
+<h3 class="font-bold py-4 text-2xl">Edge Positions</h3>
 <p class="py-4">A Rubik’s Cube has <strong>twelve edge pieces</strong> and each piece may be moved or
 flipped.  We can calculate the total number of permutations for these pieces as
 <strong>twelve factorial</strong>.</p>
@@ -554,7 +554,7 @@ pieces.</p>
       />
   </a>
     </span></p>
-<h3 class="font-bold py-4 text-3xl">Putting It All Together</h3>
+<h3 class="font-bold py-4 text-2xl">Putting It All Together</h3>
 <p class="py-4">We’ve calculated the number of positions for the center pieces, the corner
 pieces, and the edge pieces. The final step to finding the total positions for
 the entire Rubik’s Cube is multiplying these numbers together.</p>
@@ -587,7 +587,7 @@ the entire Rubik’s Cube is multiplying these numbers together.</p>
       />
   </a>
     </span></p>
-<h3 class="font-bold py-4 text-3xl">But Wait, There’s More</h3>
+<h3 class="font-bold py-4 text-2xl">But Wait, There’s More</h3>
 <p class="py-4">We have successfully calculated the number of positions, but we made one fatal
 assumption; our calculations assume that we can take the cube apart. This is
 <em>cheating</em>. Not every position of the Rubik’s Cube is possible if we limit
@@ -629,7 +629,7 @@ settle on the total number of <em>legal</em> positions of the Rubik’s Cube.</p
       />
   </a>
     </span></p>
-<h2 class="font-bold py-4 text-4xl">How Large Is That?</h2>
+<h2 class="font-bold py-4 text-3xl">How Large Is That?</h2>
 <p class="py-4">There are over 43 quintillion legal positions of the Rubik’s Cube.</p>
 <p class="py-4"><span
       class="gatsby-resp-image-wrapper"
@@ -682,4 +682,4 @@ times</strong>.</li>
       
       
       
-      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/how-many-positions-on-a-rubiks-cube/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-4c7cff8f3928a2692fbd.js"],"app":["/app-0f3c50468119b8ee5cf0.js"],"component---src-pages-404-js":["/component---src-pages-404-js-31656d5218b9b50d256e.js"],"component---src-pages-index-js":["/component---src-pages-index-js-3d2fd72add0ee7f6da60.js"],"component---src-pages-resume-js":["/component---src-pages-resume-js-8a8fba2baa7983adc7c5.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-79f28a69b13d7f34bf99.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-f1e3437c92061b3aee17.js"]};/*]]>*/</script><script src="/polyfill-4c7cff8f3928a2692fbd.js" nomodule=""></script><script src="/component---src-templates-blog-post-js-f1e3437c92061b3aee17.js" async=""></script><script src="/commons-d2a53ee1f524f3ce6e64.js" async=""></script><script src="/app-0f3c50468119b8ee5cf0.js" async=""></script><script src="/framework-a23b24beacc21a89e7ba.js" async=""></script><script src="/styles-f7a64dad1c13bebc31fd.js" async=""></script><script src="/webpack-runtime-61ad2ef771dae787b45c.js" async=""></script></body></html>
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/how-many-positions-on-a-rubiks-cube/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-4c7cff8f3928a2692fbd.js"],"app":["/app-0f3c50468119b8ee5cf0.js"],"component---src-pages-404-js":["/component---src-pages-404-js-31656d5218b9b50d256e.js"],"component---src-pages-index-js":["/component---src-pages-index-js-8b00d3f4e6c614cccad2.js"],"component---src-pages-resume-js":["/component---src-pages-resume-js-fa3d22af9d75f657fe28.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-79f28a69b13d7f34bf99.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-f1e3437c92061b3aee17.js"]};/*]]>*/</script><script src="/polyfill-4c7cff8f3928a2692fbd.js" nomodule=""></script><script src="/component---src-templates-blog-post-js-f1e3437c92061b3aee17.js" async=""></script><script src="/commons-d2a53ee1f524f3ce6e64.js" async=""></script><script src="/app-0f3c50468119b8ee5cf0.js" async=""></script><script src="/framework-a23b24beacc21a89e7ba.js" async=""></script><script src="/styles-f7a64dad1c13bebc31fd.js" async=""></script><script src="/webpack-runtime-865dc44edd5dff1807b2.js" async=""></script></body></html>

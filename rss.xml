@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chris Hunt]]></title><description><![CDATA[Chris Hunt]]></description><link>https://www.chrishunt.co</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 29 Sep 2020 04:39:38 GMT</lastBuildDate><item><title><![CDATA[Solving The Rubik's Cube Blindfolded]]></title><description><![CDATA[You think solving a Rubik’s Cube is difficult? Imagine scrambling it,
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chris Hunt]]></title><description><![CDATA[Chris Hunt]]></description><link>https://www.chrishunt.co</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 29 Sep 2020 14:09:11 GMT</lastBuildDate><item><title><![CDATA[Solving The Rubik's Cube Blindfolded]]></title><description><![CDATA[You think solving a Rubik’s Cube is difficult? Imagine scrambling it,
 memorizing it, and solving it with your eyes closed. In this two part…]]></description><link>https://www.chrishunt.co/solving-the-rubiks-cube-blindfolded/</link><guid isPermaLink="false">https://www.chrishunt.co/solving-the-rubiks-cube-blindfolded/</guid><pubDate>Fri, 24 Oct 2014 00:00:00 GMT</pubDate><content:encoded>&lt;p class=&quot;py-4&quot;&gt;You think solving a Rubik’s Cube is difficult? Imagine scrambling it,
 memorizing it, and solving it with your eyes closed.&lt;/p&gt;
 &lt;p class=&quot;py-4&quot;&gt;In this two part talk, we are going to combine techniques mastered by
@@ -20,7 +20,7 @@ many positions. Wouldn’t it be fun to know exactly how many…]]></description
 many positions. Wouldn’t it be fun to know exactly how many positions there
 are? Wouldn’t it be even &lt;em&gt;more&lt;/em&gt; fun to know how to calculate that number for
 yourself?&lt;/p&gt;
-&lt;h2 class=&quot;font-bold py-4 text-4xl&quot;&gt;Back To The Basics&lt;/h2&gt;
+&lt;h2 class=&quot;font-bold py-4 text-3xl&quot;&gt;Back To The Basics&lt;/h2&gt;
 &lt;p class=&quot;py-4&quot;&gt;Imagine we have three marbles and each marble is a different color. One is red,
 another is green, and the third is blue. If we were to place the marbles in a
 row on the table in front of us, how would we arrange them?&lt;/p&gt;
@@ -63,7 +63,7 @@ into a particular order.” - wikipedia&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p class=&quot;py-4&quot;&gt;In order to count how many positions we have for the Rubik’s Cube, we will
 first learn how to count permutations for our set of marbles.&lt;/p&gt;
-&lt;h3 class=&quot;font-bold py-4 text-3xl&quot;&gt;Counting Permutations&lt;/h3&gt;
+&lt;h3 class=&quot;font-bold py-4 text-2xl&quot;&gt;Counting Permutations&lt;/h3&gt;
 &lt;p class=&quot;py-4&quot;&gt;We intuitively know that our set of three marbles has several different
 permutations, but exactly how many are there? One way to count is to rearrange
 the marbles on a table until we’ve found each permutation. Doing this, we can
@@ -97,7 +97,7 @@ see that we have &lt;strong&gt;six permutations&lt;/strong&gt;.&lt;/p&gt;
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;h3 class=&quot;font-bold py-4 text-3xl&quot;&gt;When We’ve Lost Our Marbles&lt;/h3&gt;
+&lt;h3 class=&quot;font-bold py-4 text-2xl&quot;&gt;When We’ve Lost Our Marbles&lt;/h3&gt;
 &lt;p class=&quot;py-4&quot;&gt;Visualizing each permutation works well when we only have three marbles, but
 what if we wanted to count permutations for a bag of 500 marbles? We’ll need a
 different strategy.&lt;/p&gt;
@@ -139,7 +139,7 @@ by calculating &lt;strong&gt;three factorial&lt;/strong&gt;.&lt;/p&gt;
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;h2 class=&quot;font-bold py-4 text-4xl&quot;&gt;Getting Oriented&lt;/h2&gt;
+&lt;h2 class=&quot;font-bold py-4 text-3xl&quot;&gt;Getting Oriented&lt;/h2&gt;
 &lt;p class=&quot;py-4&quot;&gt;A marble does not have an orientation. It cannot be flipped or rotated. It
 always appears the same no matter how it’s placed on the table. When we counted
 the the number of positions for our marbles, all we cared about was their
@@ -280,7 +280,7 @@ as the &lt;strong&gt;third power of two&lt;/strong&gt;.&lt;/p&gt;
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;h3 class=&quot;font-bold py-4 text-3xl&quot;&gt;Total Positions for Three Cards&lt;/h3&gt;
+&lt;h3 class=&quot;font-bold py-4 text-2xl&quot;&gt;Total Positions for Three Cards&lt;/h3&gt;
 &lt;p class=&quot;py-4&quot;&gt;We’ve determined the total number of permutations for our cards is &lt;strong&gt;three
 factorial&lt;/strong&gt; and the total number of orientations for each of those permutations
 is the &lt;strong&gt;third power of two&lt;/strong&gt;. Calculating the number of positions is done by
@@ -316,7 +316,7 @@ multiplying the number of permutations by the number of orientations.&lt;/p&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;p class=&quot;py-4&quot;&gt;A set of three playing cards has 48 possible positions when all permutations
 and orientations are considered.&lt;/p&gt;
-&lt;h2 class=&quot;font-bold py-4 text-4xl&quot;&gt;Understanding the Rubik’s Cube&lt;/h2&gt;
+&lt;h2 class=&quot;font-bold py-4 text-3xl&quot;&gt;Understanding the Rubik’s Cube&lt;/h2&gt;
 &lt;p class=&quot;py-4&quot;&gt;We now have all the knowledge we need to calculate the total number of
 positions for the Rubik’s Cube. We know that, given a set of &lt;em&gt;n&lt;/em&gt; items with &lt;em&gt;p&lt;/em&gt;
 orientations, the total number of positions for that set of items can be
@@ -351,7 +351,7 @@ calculated.&lt;/p&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;p class=&quot;py-4&quot;&gt;Once we understand how the Rubik’s Cube is built, we can apply this formula and
 calculate the total number of positions.&lt;/p&gt;
-&lt;h3 class=&quot;font-bold py-4 text-3xl&quot;&gt;Anatomy of a Rubik’s Cube&lt;/h3&gt;
+&lt;h3 class=&quot;font-bold py-4 text-2xl&quot;&gt;Anatomy of a Rubik’s Cube&lt;/h3&gt;
 &lt;p class=&quot;py-4&quot;&gt;The Rubik’s Cube has six sides and each side has nine squares, but this is not
 a good way to think about the cube when trying to count the number of
 positions. Instead, we need to understand &lt;a href=&quot;https://www.youtube.com/watch?v=1p0qN1_qWoA&quot; class=&quot;text-blue-700&quot;&gt;how the cube is
@@ -361,10 +361,10 @@ are, and how each piece moves around the puzzle.&lt;/p&gt;
 &lt;p class=&quot;py-4&quot;&gt;It’s important to understand that the Rubik’s Cube has &lt;strong&gt;three types of
 pieces&lt;/strong&gt;. Each behaves differently as we turn the sides of the cube. We’ll keep
 this in mind as we do our calculations.&lt;/p&gt;
-&lt;h2 class=&quot;font-bold py-4 text-4xl&quot;&gt;Calculating Positions&lt;/h2&gt;
+&lt;h2 class=&quot;font-bold py-4 text-3xl&quot;&gt;Calculating Positions&lt;/h2&gt;
 &lt;p class=&quot;py-4&quot;&gt;The total number of positions for the Rubik’s Cube can be calculated by looking
 at each of the three types of pieces separately.&lt;/p&gt;
-&lt;h3 class=&quot;font-bold py-4 text-3xl&quot;&gt;Center Positions&lt;/h3&gt;
+&lt;h3 class=&quot;font-bold py-4 text-2xl&quot;&gt;Center Positions&lt;/h3&gt;
 &lt;p class=&quot;py-4&quot;&gt;There are six center pieces and they are located at the center of each face of
 the Rubik’s Cube. &lt;a href=&quot;https://www.youtube.com/watch?v=1p0qN1_qWoA&quot; class=&quot;text-blue-700&quot;&gt;As we learned&lt;/a&gt;,
 the center pieces are part of a fixed axle that does not move. All the other
@@ -431,7 +431,7 @@ numbers into our equation.&lt;/p&gt;
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;h3 class=&quot;font-bold py-4 text-3xl&quot;&gt;Corner Positions&lt;/h3&gt;
+&lt;h3 class=&quot;font-bold py-4 text-2xl&quot;&gt;Corner Positions&lt;/h3&gt;
 &lt;p class=&quot;py-4&quot;&gt;Every three dimensional cube has &lt;strong&gt;eight corners&lt;/strong&gt; and the Rubik’s Cube is no
 exception. Unlike the centers, each corner piece can be moved and rotated.
 Since we have eight corners, our total number of permutations for these pieces
@@ -499,7 +499,7 @@ corner pieces.&lt;/p&gt;
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;h3 class=&quot;font-bold py-4 text-3xl&quot;&gt;Edge Positions&lt;/h3&gt;
+&lt;h3 class=&quot;font-bold py-4 text-2xl&quot;&gt;Edge Positions&lt;/h3&gt;
 &lt;p class=&quot;py-4&quot;&gt;A Rubik’s Cube has &lt;strong&gt;twelve edge pieces&lt;/strong&gt; and each piece may be moved or
 flipped.  We can calculate the total number of permutations for these pieces as
 &lt;strong&gt;twelve factorial&lt;/strong&gt;.&lt;/p&gt;
@@ -566,7 +566,7 @@ pieces.&lt;/p&gt;
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;h3 class=&quot;font-bold py-4 text-3xl&quot;&gt;Putting It All Together&lt;/h3&gt;
+&lt;h3 class=&quot;font-bold py-4 text-2xl&quot;&gt;Putting It All Together&lt;/h3&gt;
 &lt;p class=&quot;py-4&quot;&gt;We’ve calculated the number of positions for the center pieces, the corner
 pieces, and the edge pieces. The final step to finding the total positions for
 the entire Rubik’s Cube is multiplying these numbers together.&lt;/p&gt;
@@ -599,7 +599,7 @@ the entire Rubik’s Cube is multiplying these numbers together.&lt;/p&gt;
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;h3 class=&quot;font-bold py-4 text-3xl&quot;&gt;But Wait, There’s More&lt;/h3&gt;
+&lt;h3 class=&quot;font-bold py-4 text-2xl&quot;&gt;But Wait, There’s More&lt;/h3&gt;
 &lt;p class=&quot;py-4&quot;&gt;We have successfully calculated the number of positions, but we made one fatal
 assumption; our calculations assume that we can take the cube apart. This is
 &lt;em&gt;cheating&lt;/em&gt;. Not every position of the Rubik’s Cube is possible if we limit
@@ -641,7 +641,7 @@ settle on the total number of &lt;em&gt;legal&lt;/em&gt; positions of the Rubik�
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;h2 class=&quot;font-bold py-4 text-4xl&quot;&gt;How Large Is That?&lt;/h2&gt;
+&lt;h2 class=&quot;font-bold py-4 text-3xl&quot;&gt;How Large Is That?&lt;/h2&gt;
 &lt;p class=&quot;py-4&quot;&gt;There are over 43 quintillion legal positions of the Rubik’s Cube.&lt;/p&gt;
 &lt;p class=&quot;py-4&quot;&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
