@@ -17,7 +17,9 @@ const ResumePage = ({ data, location }) => {
       <p>
         Denver, Colorado ·
         <a className='text-blue-700' href='mailto:huntca@gmail.com'> huntca@gmail.com </a>·
-        360-440-3635 <br/>
+        360-440-3635
+      </p>
+      <p>
         GitHub: <a className='text-blue-700' href='https://github.com/chrishunt'>@chrishunt </a>·
         Instagram: <a className='text-blue-700' href='https://www.instagram.com/huntca/'>@huntca </a>·
         Web: <a className='text-blue-700' href='https://www.chrishunt.co/'>chrishunt.co </a>

@@ -11,7 +11,9 @@ const Bio = () => {
   return (
     <div className="my-4 opacity-50">
       <p>
-        <span className='font-bold'>&#8595; Chris Hunt</span> <br/>
+        <span className='font-bold'>&#8595; Chris Hunt</span>
+      </p>
+      <p>
         <a className='text-blue-700' href='mailto:c@chrishunt.co'> Email </a> ·
         <a className='text-blue-700' href='/resume'> Resume </a> ·
         <a className='text-blue-700' href='https://github.com/chrishunt'> Git </a> ·
