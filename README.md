@@ -5,7 +5,7 @@
 Start development server:
 
 ```
-$ npm run develop
+$ yarn run develop
 ```
 
 View/test on iPhone on another machine:
@@ -17,8 +17,8 @@ $ ngrok http 8000
 Build and test production:
 
 ```
-$ npm run build
-$ npm run serve
+$ yarn run build
+$ yarn run serve
 ```
 
 ## Create a new page
@@ -39,5 +39,5 @@ $ vi src/pages/new-page.js
 ## Deploy to gh-pages
 
 ```
-$ npm run deploy
+$ yarn run deploy
 ```
