@@ -30,7 +30,7 @@ const ResumePage = ({ data, location }) => {
       <p className='pt-4'>
         <span className='font-bold'>Principal Backend Engineer</span> ·
         <span className='bg-yellow-200 font-bold'> FortressIQ </span> ·
-        Oct 2020 - Present
+        Oct 2020 - April 2021
       </p>
       <p className='pb-4'>
         <span className='italic'>Ruby, Rails, GoLang</span> -
