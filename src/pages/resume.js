@@ -15,9 +15,8 @@ const ResumePage = ({ data, location }) => {
       </h1>
 
       <p>
-        Denver, Colorado ·
-        <a className='text-blue-700' href='mailto:huntca@gmail.com'> huntca@gmail.com </a>·
-        360-440-3635
+        Southern California ·
+        <a className='text-blue-700' href='mailto:chris@chrshnt.com'> chris@chrshnt.com </a>·
       </p>
       <p>
         GitHub: <a className='text-blue-700' href='https://github.com/chrishunt'>@chrishunt </a>·
@@ -26,6 +25,16 @@ const ResumePage = ({ data, location }) => {
       </p>
 
       <h1 className='pt-4 text-3xl font-bold'>Experience</h1>
+
+      <p className='pt-4'>
+        <span className='font-bold'>Software Engineer</span> ·
+        <span className='bg-yellow-200 font-bold'> Anrok </span> ·
+        March 2021 - Present
+      </p>
+      <p className='pb-4'>
+        <span className='italic'>TypeScript, Node, Google Cloud Platform</span> -
+        Billing system integrations, solutions engineering
+      </p>
 
       <p className='pt-4'>
         <span className='font-bold'>Principal Backend Engineer</span> ·
@@ -120,6 +129,11 @@ const ResumePage = ({ data, location }) => {
       <h1 className='pt-4 text-3xl font-bold'>On-the-side</h1>
 
       <ul className='list-disc pl-8 py-4'>
+        <li>
+          <a className='text-blue-700' href='https://www.wlfxhere.com'>wlfxhere.com</a> -
+          Explore, connect, discover, <span className='font-bold'>FURTHER TOGETHER.</span>
+          <span className='italic'> (Ruby/Rails/Mapbox)</span>
+        </li>
         <li>
           <a className='text-blue-700' href='https://www.mytracks.co'>mytracks.co</a> -
           These are <span className='font-bold'>your tracks</span>
